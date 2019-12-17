@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/tanchuang.js"></script>
+<script type="text/javascript" src="js/movclass/movclass.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/head.css" />
+<link rel="stylesheet" type="text/css" href="css/movclass.css" />
+<link rel="stylesheet" type="text/css" href="css/register.css" />
+<link rel="stylesheet" type="text/css" href="css/login.css" />
+</head>
+
+<body>
+	<div class="cover"></div>
+	<div class="head1">
+		<div class="head2">
+			<a id="search_a1" href=""></a>
+			<div class="head3">
+				<ul class="search_u1">
+					<li class="search_l1"><a class="search_a2 shouye">首页</a></li>
+					<li class="search_l1"><a class="search_a2">爱情</a></li>
+					<li class="search_l1"><a class="search_a2">喜剧</a></li>
+					<li class="search_l1"><a class="search_a2">动作</a></li>
+					<li class="search_l1"><a class="search_a2">科幻</a></li>
+					<li class="search_l1"><a class="search_a2">恐怖</a></li>
+					<li class="search_l1"><a class="search_a2">动画</a></li>
+				</ul>
+			</div>
+			<div class="head4">
+				<form action="search" method="post">
+					<input type="text" name="searchname" id="" placeholder="找影视剧、影人、影院" />
+					<input type="submit" value="" />
+				</form>
+			</div>
+			<div class="menu-bar-user">
+				<div class="menu-bar-denglu">
+					<div class="triangle"></div>
+					<div class="menu-bar-tui">
+						<div class="tui-top">
+							<img src="img/biguser.png" />
+							<p class="user-name">您未登录</p>
+							<div class="tuichu">
+								<a style="cursor: pointer;" class="menu-denglu">请登录</a>
+							</div>
+						</div>
+						<div class="tui-bottom">
+							<ul class="tui-bottom-ul1">
+								<li><img src="img/zhuye.png" /></li>
+								<li><img src="img/huiyuan.png" /></li>
+								<li><img src="img/help.png" /></li>
+								<li><img src="img/shezhi.png" /></li>
+							</ul>
+							<ul class="tui-bottom-ul2">
+								<li>主页</li>
+								<li>会员</li>
+								<li>帮助</li>
+								<li>设置</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="menu-bar-denglu">
+					<div class="triangle"></div>
+					<div class="menu-bar-tui">
+						<div class="tui-top">
+							<img src="img/biguser.png" />
+							<p class="user-name user_phone"></p>
+							<div class="tuichu">
+								<a style="cursor: pointer;" class="menu-tuichu">退出</a>
+							</div>
+						</div>
+						<div class="tui-bottom">
+							<ul class="tui-bottom-ul1">
+								<li><img src="img/zhuye.png" /></li>
+								<li><img src="img/huiyuan.png" /></li>
+								<li><img src="img/help.png" /></li>
+								<li><img src="img/shezhi.png" /></li>
+							</ul>
+							<ul class="tui-bottom-ul2">
+								<li>主页</li>
+								<li>会员</li>
+								<li>帮助</li>
+								<li>设置</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="login1">
+				<a class="xx" style="cursor: pointer;"><em>关闭</em></a>
+				<div class="login2">
+					<ul class="tab">
+						<li class="current">账号登录</li>
+						<li class="loginnas">邮箱登录</li>
+					</ul>
+				</div>
+				<div class="login3">
+					<form action="login" method="post">
+						<input type="hidden" name="url" value="movclass">
+						<p>
+							<span id="s1">账号</span> <input class="loginname" type="text"
+								name="name" id="name" placeholder="请输入手机号码" />
+						</p>
+						<p>
+							<span id="s1">密码</span> <input type="password" name="pwd"
+								id="pwd" placeholder="请输入密码" />
+						</p>
+						<p>
+							<span id="s1">验证码</span> <input type="text" name="yzm" id="yzm"
+								placeholder="验证码" /> <span id="s2" class="ss1"
+								style="cursor: pointer;">获取验证码</span>
+							<!--<span><img src="img/shuaxin.png" id="img1"/></span>-->
+						</p>
+						<p>
+							<input type="checkbox" name="" id="" value="" /> <label>记住我</label>
+							<a style="cursor: pointer;" id="a2">注册</a> <a href="" id="a1">忘记密码？</a>
+						</p>
+						<input type="submit" value="登录" />
+					</form>
+				</div>
+				<div class="login4">
+					<ul>
+						<li class="login4-li li1"></li>
+						<li class="login4-li li2"></li>
+						<li class="login4-li li3"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="register1">
+		<a class="xx" style="cursor: pointer;"><em>关闭</em></a>
+		<div class="register2">
+			<ul class="tab">
+				<li class="current">注册</li>
+			</ul>
+		</div>
+		<div class="register3">
+			<form action="register" method="post">
+				<input type="hidden" name="url" value="movclass">
+				<p>
+					<span id="s1">手机</span> <input class="registername" type="text"
+						name="name" id="name" placeholder="请输入手机号码" />
+				</p>
+				<p>
+					<span id="s1">密码</span> <input type="password" name="pwd" id="pwd"
+						placeholder="请输入6~20位密码" />
+				</p>
+				<p>
+					<span id="s1">验证码</span> <input type="text" name="yzm" id="yzm"
+						placeholder="验证码" /> <span id="s2" class="ss2"
+						style="cursor: pointer;">获取验证码</span>
+					<!--<span><img src="img/shuaxin.png" id="img1"/></span>-->
+				</p>
+				<p>
+					<input type="checkbox" checked="checked" name="" id="" value="" />
+					<span class="s1">我已阅读<a href="" class="a1">影院用户协议</a>及<a
+						href="" class="a1">版权声明</a></span>
+				</p>
+				<input type="submit" value="注册" />
+				<p>
+					<a id="aa1" style="cursor: pointer;">返回账号登录</a>
+				</p>
+			</form>
+		</div>
+		<div class="register4">
+			<ul>
+				<li class="l1"></li>
+				<li class="l2"></li>
+				<li class="l3"></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="movclass_div1">
+		<div class="movclass_div1_div1">
+			<span>区域 :</span>
+			<ul>
+				<li><a href="">全部</a></li>
+				<li><a href="">大陆</a></li>
+				<li><a href="">美国</a></li>
+				<li><a href="">韩国</a></li>
+				<li><a href="">日本</a></li>
+				<li><a href="">泰国</a></li>
+				<li><a href="">印度</a></li>
+				<li><a href="">法国</a></li>
+				<li><a href="">英国</a></li>
+				<li><a href="">德国</a></li>
+				<li><a href="">其他</a></li>
+			</ul>
+		</div>
+		<hr />
+		<div class="movclass_div1_div2">
+			<span>年代 :</span>
+			<ul>
+				<li><a href="">全部</a></li>
+				<li><a href="">2019</a></li>
+				<li><a href="">2018</a></li>
+				<li><a href="">2017</a></li>
+				<li><a href="">2016</a></li>
+				<li><a href="">2015</a></li>
+				<li><a href="">2014</a></li>
+				<li><a href="">2013</a></li>
+				<li><a href="">2012</a></li>
+				<li><a href="">2011</a></li>
+				<li><a href="">2010-2000</a></li>
+				<li><a href="">90年代</a></li>
+				<li><a href="">80年代</a></li>
+				<li><a href="">70年代</a></li>
+				<li><a href="">更早</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="movclass_div2">
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.head1{
+	/*border: 1px solid pink;*/
+	position: fixed;
+    top: 0;
+    z-index: 900;
+    width: 100%;
+    min-width: 1200px;
+    background-color: #fff;
+    border-bottom: 1px solid #d8d8d8;
+}
+.head2{
+	/*border: 1px solid red;*/
+	width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+}
+#search_a1{
+	float: left;
+    width: 133px;
+    height: 80px;
+    background: url(../img/logo.png) no-repeat;
+}
+.head3{
+	display: inline-block;
+    margin-left: 10px;
+    width: 640px;
+    height: 100%;
+    /*background-color: #FF6400;*/
+}
+.search_u1{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+.search_l1{
+	text-align: center;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    width: 60px;
+    font-size: 20px;
+    color: #333;
+    margin-left: 22px;
+}
+.search_a2{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	/*border: 1px solid green;*/
+	line-height: 80px;
+	text-decoration: none;
+	color: #333;
+	cursor: pointer;
+}
+.search_a2:hover{
+	color: #FF6400;
+}
+.head4{
+	position: relative;
+	margin-left: 10px;
+	vertical-align: top;
+	/*border: 1px solid red;*/
+	display: inline-block;
+    width: 300px;
+    height: 100%;
+}
+.head4 input[type="text"]{
+	display: inline-block;
+	margin-top: 18px;
+    height: 44px;
+    line-height: 1.2;
+    width: 220px;
+    padding: 0 38px 0 20px;
+    border: 1px solid rgb(255,100,0,0.5);
+    font-size: 14px;
+    border-radius: 30px;
+    background-color: #faf8fa;
+    overflow: hidden;
+    color: #333;
+    outline: none;
+}
+.head4 input[type="submit"]{
+	display: inline-block;
+	/*border: 2px solid greenyellow;*/
+	border: 0;
+    position: absolute;
+    left: 237px;
+    top: 21px;
+    height: 40px;
+    width: 40px;
+    background-color: #FF6400;
+    border-radius: 30px;
+    background-image: url(../img/search1.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+    cursor: pointer;
+    outline:none;
+}
+.menu-bar-user {
+	/*border: 1px solid red;*/
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	width: 80px;
+	height: 80px;
+	background-image: url(../img/touxiang.png);
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: 10px 15px;
+	cursor: pointer;
+}
+ul,li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.menu-bar-denglu {
+	width: 250px;
+	height: 250px;
+	display: none;
+	margin: 68px -180px;
+}
+.triangle {
+	width: 0;
+	margin-top: -10px;
+	margin-left: 205px;
+	border: 10px solid #D3D3D3;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+.menu-bar-tui {
+	width: 250px;
+	height: 240px;
+	border-radius: 7px;
+	background: white;
+	border-top: 1px solid rgb(240,240,240);
+	border-right: 1px solid rgb(240,240,240);
+	border-left: 1px solid rgb(240,240,240);
+	box-shadow: 0px 0px 5px 2px #D3D3D3;
+}
+.menu-bar-tui .tui-top {
+	width: 100%;
+	height: 170px;
+}
+.menu-bar-tui img {
+	margin: 15px 90px;	
+}
+.menu-bar-tui .user-name {
+	display: block;
+	margin-top: -5px;
+	padding: 0;
+	font-size: 20px;
+	text-align: center;
+}
+.menu-bar-tui .tuichu {
+	width: 100px;
+	height: 30px;
+	margin: -10px auto;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+	font-size: 15px;
+	background: #FF6400;
+	border-radius: 20px;
+}
+.menu-bar-tui .tuichu a {
+	color: white;
+}
+.menu-bar-tui .tui-bottom {
+	width: 100%;
+	height: 60px;
+	margin-top: 8px;
+	background: #FAFAFA;
+	box-shadow: 0px -5px 5px -5px #D3D3D3;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+.tui-bottom ul {
+	float: left;
+}
+.tui-bottom .tui-bottom-ul1 {
+	margin-top: 5px;
+}
+.tui-bottom .tui-bottom-ul1 li {
+	width: 62px;
+	height: 35px;
+	text-align: center;
+	float: left;
+}
+.tui-bottom img {
+	width: 30px;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+}
+.tui-bottom .tui-bottom-ul2 li {
+	width: 47px;
+	margin-left: 15px;
+	height: 20px;
+	color: #696969;
+	font-size: 15px;
+	float: left;
+	line-height: 20px;
+}

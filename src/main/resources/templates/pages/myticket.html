@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/myticket.css" />
+<link rel="stylesheet" type="text/css" href="css/head.css" />
+<link rel="stylesheet" type="text/css" href="css/register.css" />
+<link rel="stylesheet" type="text/css" href="css/login.css" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/tanchuang.js"></script>
+<script type="text/javascript" src="js/myticket.js"></script>
+</head>
+
+<body>
+	<div class="cover"></div>
+	<div class="head1">
+		<div class="head2">
+			<a id="search_a1" href=""></a>
+			<div class="head3">
+				<ul class="search_u1">
+					<li class="search_l1"><a class="search_a2" href="main">首页</a></li>
+					<li class="search_l1"><a class="search_a2"
+						href="movclass1?classname=爱情">爱情</a></li>
+					<li class="search_l1"><a class="search_a2"
+						href="movclass1?classname=喜剧">喜剧</a></li>
+					<li class="search_l1"><a class="search_a2" href="">动作</a></li>
+					<li class="search_l1"><a class="search_a2" href="">科幻</a></li>
+					<li class="search_l1"><a class="search_a2" href="">恐怖</a></li>
+					<li class="search_l1"><a class="search_a2" href="">动画</a></li>
+				</ul>
+			</div>
+			<div class="head4">
+				<form action="search" method="post">
+					<input type="text" name="searchname" id="" placeholder="找影视剧、影人、影院" />
+					<input type="submit" value="" />
+				</form>
+			</div>
+			<div class="menu-bar-user">
+				<div class="menu-bar-denglu">
+					<div class="triangle"></div>
+					<div class="menu-bar-tui">
+						<div class="tui-top">
+							<img src="img/biguser.png" />
+							<p class="user-name">您未登录</p>
+							<div class="tuichu">
+								<a style="cursor: pointer;" class="menu-denglu">请登录</a>
+							</div>
+						</div>
+						<div class="tui-bottom">
+							<ul class="tui-bottom-ul1">
+								<li><img src="img/zhuye.png" /></li>
+								<li><img src="img/huiyuan.png" /></li>
+								<li><img src="img/help.png" /></li>
+								<li><img src="img/shezhi.png" /></li>
+							</ul>
+							<ul class="tui-bottom-ul2">
+								<li>主页</li>
+								<li>会员</li>
+								<li>帮助</li>
+								<li>设置</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="menu-bar-denglu">
+					<div class="triangle"></div>
+					<div class="menu-bar-tui">
+						<div class="tui-top">
+							<img src="img/biguser.png" />
+							<p class="user-name user_phone"></p>
+							<div class="tuichu">
+								<a style="cursor: pointer;" class="menu-tuichu">退出</a>
+							</div>
+						</div>
+						<div class="tui-bottom">
+							<ul class="tui-bottom-ul1">
+								<li><img src="img/zhuye.png" /></li>
+								<li><img src="img/huiyuan.png" /></li>
+								<li><img src="img/help.png" /></li>
+								<li><img src="img/shezhi.png" /></li>
+							</ul>
+							<ul class="tui-bottom-ul2">
+								<li>主页</li>
+								<li>会员</li>
+								<li>帮助</li>
+								<li>设置</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="login1">
+				<a class="xx" style="cursor: pointer;"><em>关闭</em></a>
+				<div class="login2">
+					<ul class="tab">
+						<li class="current">短信登录</li>
+						<li class="loginnas">邮箱登录</li>
+					</ul>
+				</div>
+				<div class="login3">
+					<form action="login" method="post">
+						<input type="hidden" name="url" value="myticket">
+						<p>
+							<span id="s1">账号</span> <input class="loginname" type="text"
+								name="name" id="name" placeholder="请输入手机号码" />
+						</p>
+						<p>
+							<span id="s1">密码</span> <input type="password" name="pwd"
+								id="pwd" placeholder="请输入密码" />
+						</p>
+						<p>
+							<span id="s1">验证码</span> <input type="text" name="yzm" id="yzm"
+								placeholder="验证码" /> <span id="s2" class="ss1"
+								style="cursor: pointer;">获取验证码</span>
+							<!--<span><img src="img/shuaxin.png" id="img1"/></span>-->
+						</p>
+						<p>
+							<input type="checkbox" name="" id="" value="" /> <label>记住我</label>
+							<a style="cursor: pointer;" id="a2">注册</a> <a href="" id="a1">忘记密码？</a>
+						</p>
+						<input type="submit" value="登录" />
+					</form>
+				</div>
+				<div class="login4">
+					<ul>
+						<li class="login4-li li1"></li>
+						<li class="login4-li li2"></li>
+						<li class="login4-li li3"></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="register1">
+				<a class="xx" style="cursor: pointer;"><em>关闭</em></a>
+				<div class="register2">
+					<ul class="tab">
+						<li class="current">注册</li>
+					</ul>
+				</div>
+				<div class="register3">
+					<form action="register" method="post">
+						<input type="hidden" name="url" value="myticket">
+						<p>
+							<span id="s1">手机</span> <input class="registername" type="text"
+								name="name" id="name" placeholder="请输入手机号码" />
+						</p>
+						<p>
+							<span id="s1">密码</span> <input type="password" name="pwd"
+								id="pwd" placeholder="请输入6~20位密码" />
+						</p>
+						<p>
+							<span id="s1">验证码</span> <input type="text" name="yzm" id="yzm"
+								placeholder="验证码" /> <span id="s2" class="ss2"
+								style="cursor: pointer;">获取验证码</span>
+							<!--<span><img src="img/shuaxin.png" id="img1"/></span>-->
+						</p>
+						<p>
+							<input type="checkbox" checked="checked" name="" id="" value="" />
+							<span class="s1">我已阅读<a href="" class="a1">影院用户协议</a>及<a
+								href="" class="a1">版权声明</a></span>
+						</p>
+						<input type="submit" value="注册" />
+						<p>
+							<a id="aa1" style="cursor: pointer;">返回账号登录</a>
+						</p>
+					</form>
+				</div>
+				<div class="register4">
+					<ul>
+						<li class="l1"></li>
+						<li class="l2"></li>
+						<li class="l3"></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div class="content">
+		<!--<div class="main">-->
+		<!--<div class="info-content clearfix">-->
+		<div class="user-profile-nav">
+			<img src="img/touxiang.png" style="margin-top: 20px;" />
+			<h1>个人中心</h1>
+			<a href="#" class="orders acctive">我的订单</a> <a href="#"
+				class="profile">基本信息</a>
+		</div>
+		<div class="orders-controller">
+			<div class="profile-title">我的订单</div>
+		</div>
+		<!--</div>-->
+		<!--</div>-->
+	</div>
+</body>
+
+</html>

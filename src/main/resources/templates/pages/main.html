@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title></title>
+<script type="text/javascript" src="js/main/menu-bar-ul.js"></script>
+<script type="text/javascript" src="js/main/menu-bac.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/tanchuang.js"></script>
+<script type="text/javascript" src="js/main/main.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/loginmain.css" />
+<link rel="stylesheet" type="text/css" href="css/hotmv.css" />
+<link rel="stylesheet" type="text/css" href="css/register.css" />
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+	<div class="cover"></div>
+	<!--头部-->
+	<div class="menu" id="menu">
+		<!--导航条-->
+		<div class="menu-bar">
+			<div class="menu-bar-main">
+				<div class="menu-bar-logo"></div>
+
+				<ul class="menu-bar-ul">
+					<li><a id="menuli1" href="main">首页</a></li>
+					<li><a id="menuli2" class="a1" href="movclass1?classname=爱情">爱情</a>
+					</li>
+					<li><a id="menuli3" class="a1" href="movclass1?classname=喜剧">喜剧</a>
+					</li>
+					<li><a id="menuli4" class="a1" href="#">动作</a></li>
+					<li><a id="menuli5" class="a1" href="#">科幻</a></li>
+					<li><a id="menuli6" class="a1" href="#">恐怖</a></li>
+					<li><a id="menuli7" class="a1" href="#">动画</a></li>
+				</ul>
+
+				<div class="menu-bar-search">
+					<form action="search" method="post">
+						<input type="text" name="searchname" id="autocomplete"
+							placeholder="找影视剧、影人、影院" /> <input type="submit" value="" />
+					</form>
+				</div>
+
+				<div class="menu-bar-user">
+					<div class="menu-bar-denglu">
+						<div class="triangle"></div>
+						<div class="menu-bar-tui">
+							<div class="tui-top">
+								<img src="img/biguser.png" />
+								<p class="user-name">您未登录</p>
+								<div class="tuichu">
+									<a style="cursor: pointer;" class="menu-denglu">请登录</a>
+								</div>
+							</div>
+							<div class="tui-bottom">
+								<ul class="tui-bottom-ul1">
+									<li><img src="img/zhuye.png" /></li>
+									<li><img src="img/huiyuan.png" /></li>
+									<li><img src="img/help.png" /></li>
+									<li><img src="img/shezhi.png" /></li>
+								</ul>
+								<ul class="tui-bottom-ul2">
+									<li>主页</li>
+									<li>会员</li>
+									<li>帮助</li>
+									<li>设置</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="menu-bar-denglu">
+						<div class="triangle"></div>
+						<div class="menu-bar-tui">
+							<div class="tui-top">
+								<img src="img/biguser.png" />
+								<p class="user-name user_phone"></p>
+								<div class="tuichu">
+									<a style="cursor: pointer;" class="menu-tuichu">退出</a>
+								</div>
+							</div>
+							<div class="tui-bottom">
+								<ul class="tui-bottom-ul1">
+									<li><img src="img/zhuye.png" /></li>
+									<li><img src="img/huiyuan.png" /></li>
+									<li><img src="img/help.png" /></li>
+									<li><img src="img/shezhi.png" /></li>
+								</ul>
+								<ul class="tui-bottom-ul2">
+									<li>主页</li>
+									<li>会员</li>
+									<li>帮助</li>
+									<li>设置</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!--轮播图-->
+		<div class="menu-bac">
+			<a class="lunbohref" href="movmessage1?id=2"><img id="menu-img"
+				src="img/lb/lb_pic1.png"></a>
+			<div class="menu-dot">
+				<ul class="menu-dot-ul" id="menu-dots">
+					<li id="menu-dot"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<!--票房榜-->
+			<div class="menu-ranking">
+				<ul class="menu-rank-ul" id="rank-dots">
+					<li id="rank-dot"><a href="">
+							<p class="rank1"></p>
+							<p class="rank2"></p>
+					</a></li>
+					<li><a href="">
+							<p></p>
+							<p></p>
+					</a></li>
+					<li><a href="">
+							<p></p>
+							<p></p>
+					</a></li>
+					<li><a href="">
+							<p></p>
+							<p></p>
+					</a></li>
+					<li><a href="">
+							<p></p>
+							<p></p>
+					</a></li>
+					<li><a href="">
+							<p></p>
+							<p></p>
+					</a></li>
+					<li><a href="">
+							<p></p>
+							<p></p>
+					</a></li>
+					<li><a href="">
+							<p></p>
+							<p></p>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--热映电影-->
+	<div class="hotmv">
+		<div class="hoting">
+			<div class="hot-title">正在热映</div>
+			<div class="hot-all">
+				<a href="">查看全部>></a>
+			</div>
+		</div>
+		<!--热映电影的海报-->
+		<div class="hotmv-pic">
+			<div class="hotmv-pic-ul">
+				<!--大海报-->
+				<ul class="hotmv-pic-big">
+					<li class="pic big-post pic11"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-big">
+							<div class="look">
+								<a href="">查 看</a>
+							</div>
+							<div class="buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+				</ul>
+				<!--小海报-->
+				<ul class="hotmv-pic-sma">
+					<li class="pic shang pic12"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-shang">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+					<li class="pic xia pic18"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-xia">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+				</ul>
+				<ul class="hotmv-pic-sma">
+					<li class="pic shang pic13"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-shang">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+					<li class="pic xia pic19"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-xia">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+				</ul>
+				<ul class="hotmv-pic-sma">
+					<li class="pic shang pic14"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-shang">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+					<li class="pic xia pic110"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-xia">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+				</ul>
+				<ul class="hotmv-pic-sma">
+					<li class="pic shang pic15"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-shang">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+					<li class="pic xia pic111"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-xia">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+				</ul>
+				<ul class="hotmv-pic-sma small05">
+					<li class="pic five pic16"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-zuo">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+					<li class="pic five pic17"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-you">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--最新电影-->
+	<div class="newmv">
+		<div class="newing">
+			<div class="new-title">即将上映</div>
+			<div class="new-all">
+				<a href="">查看全部>></a>
+			</div>
+		</div>
+		<!--最新电影的海报-->
+		<div class="newmv-pic">
+			<div class="newmv-pic-ul">
+				<!--大海报-->
+				<ul class="newmv-pic-big">
+					<li class="pic big-post pic21"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-big">
+							<div class="look">
+								<a href="">查 看</a>
+							</div>
+							<div class="buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+				</ul>
+				<!--小海报-->
+				<ul class="newmv-pic-sma">
+					<li class="pic shang pic22"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-shang">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+					<li class="pic xia pic28"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-xia">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+				</ul>
+				<ul class="newmv-pic-sma">
+					<li class="pic shang pic23"><img src="" />
+						<div class="movie-title">）</div>
+						<div class="mask mask-shang">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+					<li class="pic xia pic29"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-xia">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+				</ul>
+				<ul class="newmv-pic-sma">
+					<li class="pic shang pic24"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-shang">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+					<li class="pic xia pic210"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-xia">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+				</ul>
+				<ul class="newmv-pic-sma">
+					<li class="pic shang pic25"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-shang">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+					<li class="pic xia pic211"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-xia">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+				</ul>
+				<ul class="newmv-pic-sma small05">
+					<li class="pic five pic26"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-zuo">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+					<li class="pic five pic27"><img src="" />
+						<div class="movie-title"></div>
+						<div class="mask mask-you">
+							<div class="small-div look">
+								<a href="">查 看</a>
+							</div>
+							<div class="small-div buy">
+								<a href="">购 票</a>
+							</div>
+						</div></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--分类电影-->
+	<div class="lovemv">
+
+		<div class="loving">
+			<div class="love-title">爱情电影</div>
+			<div class="love-all">
+				<a href="">查看全部>></a>
+			</div>
+		</div>
+		<!--爱情分类电影的海报-->
+		<div class="lovemv-pic">
+			<ul class="lovemv-pic-ul">
+				<li><img src="" />
+					<div class="movie-title"></div>
+					<div class="mask">
+						<div class="look">
+							<a href="">查 看</a>
+						</div>
+						<div class="buy">
+							<a href="">购 票</a>
+						</div>
+					</div></li>
+				<li><img src="" />
+					<div class="movie-title"></div>
+					<div class="mask">
+						<div class="look">
+							<a href="">查 看</a>
+						</div>
+						<div class="buy">
+							<a href="">购 票</a>
+						</div>
+					</div></li>
+				<li><img src="" />
+					<div class="movie-title"></div>
+					<div class="mask">
+						<div class="look">
+							<a href="">查 看</a>
+						</div>
+						<div class="buy">
+							<a href="">购 票</a>
+						</div>
+					</div></li>
+				<li><img src="" />
+					<div class="movie-title"></div>
+					<div class="mask">
+						<div class="look">
+							<a href="">查 看</a>
+						</div>
+						<div class="buy">
+							<a href="">购 票</a>
+						</div>
+					</div></li>
+				<li><img src="" />
+					<div class="movie-title"></div>
+					<div class="mask mask-shang">
+						<div class="small-div look">
+							<a href="">查 看</a>
+						</div>
+						<div class="small-div buy">
+							<a href="">购 票</a>
+						</div>
+					</div></li>
+				<li><img src="" />
+					<div class="movie-title"></div>
+					<div class="mask">
+						<div class="look">
+							<a href="">查 看</a>
+						</div>
+						<div class="buy">
+							<a href="">购 票</a>
+						</div>
+					</div></li>
+			</ul>
+		</div>
+	</div>
+	<!--分类电影-->
+	<div class="lovemv">
+
+		<div class="loving">
+			<div class="love-title">喜剧电影</div>
+			<div class="love-all">
+				<a href="">查看全部>></a>
+			</div>
+		</div>
+		<!--剧情分类电影的海报-->
+		<div class="lovemv-pic xijumv">
+			<ul class="lovemv-pic-ul">
+				<li><img src="" />
+					<div class="movie-title"></div>
+					<div class="mask">
+						<div class="look">
+							<a href="">查 看</a>
+						</div>
+						<div class="buy">
+							<a href="">购 票</a>
+						</div>
+					</div></li>
+				<li><img src="" />
+					<div class="movie-title"></div>
+					<div class="mask">
+						<div class="look">
+							<a href="">查 看</a>
+						</div>
+						<div class="buy">
+							<a href="">购 票</a>
+						</div>
+					</div></li>
+				<li><img src="" />
+					<div class="movie-title"></div>
+					<div class="mask">
+						<div class="look">
+							<a href="">查 看</a>
+						</div>
+						<div class="buy">
+							<a href="">购 票</a>
+						</div>
+					</div></li>
+				<li><img src="" />
+					<div class="movie-title"></div>
+					<div class="mask">
+						<div class="look">
+							<a href="">查 看</a>
+						</div>
+						<div class="buy">
+							<a href="">购 票</a>
+						</div>
+					</div></li>
+				<li><img src="" />
+					<div class="movie-title"></div>
+					<div class="mask mask-shang">
+						<div class="small-div look">
+							<a href="">查 看</a>
+						</div>
+						<div class="small-div buy">
+							<a href="">购 票</a>
+						</div>
+					</div></li>
+				<li><img src="" />
+					<div class="movie-title"></div>
+					<div class="mask">
+						<div class="look">
+							<a href="">查 看</a>
+						</div>
+						<div class="buy">
+							<a href="">购 票</a>
+						</div>
+					</div></li>
+			</ul>
+		</div>
+	</div>
+	<!--弹窗-->
+	<div class="login1">
+		<a class="xx" href=""><em>关闭</em></a>
+		<div class="login2">
+			<ul class="tab">
+				<li class="current">账号登录</li>
+				<li class="loginnas">邮箱登录</li>
+			</ul>
+		</div>
+		<div class="login3">
+			<form action="login" method="post">
+				<input type="hidden" name="url" value="main">
+				<p>
+					<span id="s1">账号</span> <input class="loginname" type="text"
+						name="name" id="name" placeholder="请输入手机号码"
+						onkeyup="value=value.replace(/[^\d]/g,'')" maxlength=11 />
+					<!-- <br>手机号有误 -->
+				</p>
+				<p>
+					<span id="s1">密码</span> <input class="loginpwd" type="password"
+						name="pwd" id="pwd" placeholder="请输入密码" />
+					<!-- <br>密码有误 -->
+				</p>
+				<p>
+					<span id="s1">验证码</span> <input type="text" name="yzm" id="yzm"
+						placeholder="验证码" /> <span id="s2" class="ss1"
+						style="cursor: pointer;">获取验证码</span>
+					<!--<span><img src="img/shuaxin.png" id="img1"/></span>-->
+					<!-- <br>验证码错误 -->
+				</p>
+				<p>
+					<input type="checkbox" name="" id="" value="" /> <label>记住我</label>
+					<a style="cursor: pointer;" id="a2">注册</a> <a href="" id="a1">忘记密码？</a>
+				</p>
+				<input type="submit" value="登录" />
+			</form>
+		</div>
+
+
+		<div class="login4">
+			<ul>
+				<li class="login4-li li1"></li>
+				<li class="login4-li li2"></li>
+				<li class="login4-li li3"></li>
+			</ul>
+		</div>
+	</div>
+	<div class="register1">
+		<a class="xx" style="cursor: pointer;"><em>关闭</em></a>
+		<div class="register2">
+			<ul class="tab">
+				<li class="current">注册</li>
+			</ul>
+		</div>
+		<div class="register3">
+			<form action="register" method="post">
+				<input type="hidden" name="url" value="main">
+				<p>
+					<span id="s1">手机</span> <input class="registername" type="text"
+						name="name" id="name" placeholder="请输入手机号码"
+						onkeyup="value=value.replace(/[^\d]/g,'')" maxlength=11 />
+				</p>
+				<p>
+					<span id="s1">密码</span> <input class="registerpwd" type="password"
+						name="pwd" id="pwd" placeholder="请输入6~20位密码" />
+				</p>
+				<p>
+					<span id="s1">验证码</span> <input type="text" name="yzm" id="yzm"
+						placeholder="验证码" /> <span id="s2" class="ss2"
+						style="cursor: pointer;">获取验证码</span>
+					<!--<span><img src="img/shuaxin.png" id="img1"/></span>-->
+				</p>
+				<p>
+					<input type="checkbox" checked="checked" name="" id="" value="" />
+					<span class="s1">我已阅读<a href="" class="a1">影院用户协议</a>及<a
+						href="" class="a1">版权声明</a></span>
+				</p>
+				<input type="submit" value="注册" />
+				<p>
+					<a id="aa1" style="cursor: pointer;">返回账号登录</a>
+				</p>
+			</form>
+		</div>
+		<div class="register4">
+			<ul>
+				<li class="l1"></li>
+				<li class="l2"></li>
+				<li class="l3"></li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>

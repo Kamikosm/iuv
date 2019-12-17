@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.iuv.dao.CommentDao">
+  <insert id="insertComment">
+  	insert into comment (id,time,comment,movie_id,user_id) values 
+  	(null,now(),#{comment},#{movieId},#{userId})
+  </insert>
+  <select id="selectAll" resultType="map">
+  	select time,comment,(select phone from user where id=user_id) name from comment where movie_id=#{movieId} order by time desc
+  </select>
+</mapper>
