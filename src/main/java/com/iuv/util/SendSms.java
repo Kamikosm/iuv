@@ -30,7 +30,7 @@ public class SendSms {
         request.putQueryParameter("PhoneNumbers", phone);
         request.putQueryParameter("SignName", "iuv电影院");
         request.putQueryParameter("TemplateCode", "SMS_175241027");
-        request.putQueryParameter("TemplateParam", "{\"code\":\""+code+"\"}");
+        request.putQueryParameter("TemplateParam", "{'code':'"+code+"'}");
         try {
             CommonResponse response = client.getCommonResponse(request);
             System.out.println(response.getData());

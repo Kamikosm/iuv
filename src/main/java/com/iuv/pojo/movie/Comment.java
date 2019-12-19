@@ -3,24 +3,26 @@ package com.iuv.pojo.movie;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
 
 import java.util.Date;
 
-/**
- * @author houke_zou
- * @date 2019/12/19 - 13:16
+/*
+ *Author:		Houke_zou
+ *E-mail:		houke_zou@163.com
+ *Date:			2019年12月19日  下午3:56:56
  */
 
-//for test非正式版
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Comment {
     private Integer id;
-    private String username;
-    private Integer parent;
-    private Integer root;
-    private String content;
-    private Date commentTime;
+    private Integer userId;
+    private Integer movieId;
+    private Date time;
+    private Double graded;
+    private Integer likes;
+    private String comment;
+    private Integer parentId;
+    private Integer rootId;
 }
