@@ -1,6 +1,7 @@
 package com.iuv.Test;
 
 import com.iuv.dao.MovieSeatDao;
+import com.iuv.pojo.movie.LittleMovieMsg;
 import com.iuv.pojo.movie.MovieScene;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -36,5 +37,11 @@ public class SceneTest {
     public void saveSeats(){
         int row = dao.addSeats(2, 2, 35);
         System.out.println("row=" + row);
+    }
+
+    @Test
+    public void getMovie(){
+        LittleMovieMsg movieMsg = dao.getMovieMsg(1);
+        System.out.println(movieMsg);
     }
 }

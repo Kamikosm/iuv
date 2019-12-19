@@ -13,6 +13,6 @@ import lombok.Data;
 public class MovieScene implements Serializable{
 	private static final long serialVersionUID = -6335151051761335730L;
 	private Integer id;
-	private Date time;
+	private Date sceneTime;
 	private Integer hall;
 }
