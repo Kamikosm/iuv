@@ -3,6 +3,7 @@ package com.iuv.dao;
 import java.util.List;
 import java.util.Map;
 
+import com.iuv.pojo.movie.LittleMovieMsg;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
@@ -21,4 +22,6 @@ public interface MovieSeatDao {
     List<Integer> getSeats(Integer sceneId);
 
     int addSeats(Integer sceneId,Integer userId,@Param("seatIds") Integer...seatIds);
+
+    LittleMovieMsg getMovieMsg(Integer movieId);
 }
