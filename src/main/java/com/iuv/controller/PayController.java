@@ -53,12 +53,12 @@ public class PayController {
 //        AliOrderInfo orderInfo = new AliOrderInfo();
      
         request.setBizContent("{"
-        		+ "\"out_trade_no\":\""+ UUID.randomUUID().toString() +"\","
-                + "\"total_amount\":\""+ price +"\","
-                + "\"subject\":\"iuv电影院\","
-                + "\"auth_code\":\"28763443825664394\","
-                + "\"scene\":\"bar_code\","
-                + "\"product_code\":\"FAST_INSTANT_TRADE_PAY\"}"
+        		+ "'out_trade_no':'"+ UUID.randomUUID().toString() +"',"
+                + "'total_amount':'"+ price +"',"
+                + "'subject':'iuv电影院',"
+                + "'auth_code':'28763443825664394',"
+                + "'scene':'bar_code',"
+                + "'product_code':'FAST_INSTANT_TRADE_PAY'}"
                 );
         
         String form = "";
