@@ -7,7 +7,8 @@ import org.apache.ibatis.annotations.Mapper;
 import com.iuv.pojo.user.User;
 @Mapper
 public interface UserDao {
-	/**
-	 * 用户
-	 * */
+
+    User queryUserById(Integer id);
+
+    User queryUserByUserName(String username);
 }

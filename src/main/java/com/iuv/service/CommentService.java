@@ -1,13 +1,14 @@
 package com.iuv.service;
 
 import com.iuv.pojo.movie.Comment;
+import com.iuv.pojo.vo.CommentVo;
 
 import java.util.List;
 
 /*
  *Author:		Houke_zou
  *E-mail:		houke_zou@163.com
- *Date:			2019年10月5日  下午3:56:56
+ *Date:			2019年12月19日  下午3:56:56
  */
 
 
@@ -20,6 +21,11 @@ public interface CommentService {
 	List<Comment> getMovieComments(Integer id);
 
 
+	/*
+	* pojo对象转换成vo对象
+	* @Autowired Houke_zou
+	* */
+	CommentVo convertCommentToCommentVo(Comment comment);
 
 
 }

@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.iuv.Test.comment.TestCommentDao
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.537 s <<< FAILURE! - in com.iuv.Test.comment.TestCommentDao
+insertComment(com.iuv.Test.comment.TestCommentDao)  Time elapsed: 0.523 s  <<< ERROR!
+org.springframework.jdbc.BadSqlGrammarException: 
+
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'time' in 'field list'
+### The error may exist in file [D:\AAAA-IUV\target\classes\mapper\CommentMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: INSERT INTO comment     (id,time,comment,movie_id,user_id,parent_id,root_id)     VALUES     (null, now(), ?, ?, ?, ?, ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'time' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'time' in 'field list'
+	at com.iuv.Test.comment.TestCommentDao.insertComment(TestCommentDao.java:41)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'time' in 'field list'
+	at com.iuv.Test.comment.TestCommentDao.insertComment(TestCommentDao.java:41)
+

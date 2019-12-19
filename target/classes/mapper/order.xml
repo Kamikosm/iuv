@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.iuv.dao.OrderDao">
+	<select id="findMvName" resultType="String">
+		select mv_name mvName from
+		movie where id=#{id}
+	</select>
+	<select id="findMvId" resultType="Integer">
+		select id from user where
+		phone=#{phone}
+	</select>
+	<insert id="insert">
+		insert into userorder (mv_name,user_id,price,order_time,seat_id1,seat_id2,seat_id3,seat_id4,seat_id5,seat_id6)
+    	values (#{mvName}, #{userId}, #{price},#{orderTime},#{seatId1},#{seatId2},#{seatId3},#{seatId4},#{seatId5},#{seatId6})
+	</insert>
+	<select id="findAll" resultType="com.iuv.pojo.order.Order">
+		select mv_name mvName,price,order_time orderTime,seat_id1 seatId1,seat_id2 seatId2,
+		seat_id3 seatId3,seat_id4 seatId4,seat_id5 seatId5,seat_id6 seatId6 from userorder where user_id=#{userId} order by order_time desc
+	</select>
+</mapper>
