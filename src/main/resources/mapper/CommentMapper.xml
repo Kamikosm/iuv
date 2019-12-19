@@ -2,11 +2,54 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.iuv.dao.CommentDao">
-  <insert id="insertComment">
-  	insert into comment (id,time,comment,movie_id,user_id) values 
-  	(null,now(),#{comment},#{movieId},#{userId})
-  </insert>
-  <select id="selectAll" resultType="map">
-  	select time,comment,(select phone from user where id=user_id) name from comment where movie_id=#{movieId} order by time desc
-  </select>
+
+    <resultMap type="com.iuv.pojo.movie.Comment" id="Comment">
+        <id column="id" property="id"></id>
+        <result column="user_id" property="userId" />
+        <result column="movie_id" property="movieId" />
+        <result column="create_timecreate_time" property="time" />
+        <result column="graded" property="graded" />
+        <result column="likes" property="likes" />
+        <result column="com_content" property="comment" />
+        <result column="parent_id" property="parentId" />
+        <result column="root_id" property="rootId" />
+    </resultMap>
+
+
+    <insert id="insertComment">
+    INSERT INTO comment
+    (id,create_time,com_content,movie_id,user_id,parent_id,root_id)
+    VALUES
+    (null, now(), #{comment}, #{movieId}, #{userId}, #{parentId}, #{rootId})
+    </insert>
+
+
+    <select id="queryCommentById" resultMap="Comment">
+        SELECT
+		*
+		FROM
+		comment
+		WHERE
+		id = #{id}
+    </select>
+
+    <select id="queryCommentListByMovieId" resultMap="Comment">
+        SELECT
+		*
+		FROM
+		comment
+		WHERE
+		movie_id = #{id}
+    </select>
+
+
+
+
+
+<!--  <select id="selectAll" resultType="Comment">-->
+<!--  	select time,comment,(select phone from user where id=user_id) name from comment where movie_id=#{movieId} order by time desc-->
+<!--  </select>-->
+
+
+
 </mapper>
