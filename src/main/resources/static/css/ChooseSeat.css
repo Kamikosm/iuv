@@ -164,6 +164,8 @@ ul,li {
 	height: 170px;
 }
 .menu-bar-tui img {
+	width: 70px;
+	height: 70px;
 	margin: 15px 90px;	
 }
 .menu-bar-tui .user-name {
@@ -334,7 +336,7 @@ ul,li {
 .seat .screen-block{
 	display:inline-block;
 	position:absolute;
-	top:308px;
+	top:220px;
 	bottom:0;
 	z-index:-1;
 	margin-left:100px;
@@ -520,7 +522,6 @@ ul,li {
 }
 
 #middle .m2 #message .confirm-order{
-	padding:20px 0;
 	text-align:center;
 }
 

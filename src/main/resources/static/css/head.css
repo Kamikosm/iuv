@@ -150,6 +150,8 @@ ul,li {
 }
 .menu-bar-tui img {
 	margin: 15px 90px;	
+	width: 70px;
+	height: 70px;
 }
 .menu-bar-tui .user-name {
 	display: block;

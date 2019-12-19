@@ -1,3 +1,4 @@
+//轮播图js
 window.onload = function() {
 	var imgs = ["lb/lb_pic1.png","lb/lb_pic2.png","lb/lb_pic3.png","lb/lb_pic4.png","lb/lb_pic5.png","lb/lb_pic6.png","lb/lb_pic7.png","lb/lb_pic8.png"];
     var rgbs = ["rgb(200,136,143)","rgb(234,237,242)","rgb(211,159,105)","rgb(169,157,146)","rgb(112,66,41)","rgb(173,181,167)","rgb(99,140,120)","rgb(222,190,141)"]; 

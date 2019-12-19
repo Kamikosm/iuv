@@ -56,107 +56,102 @@
 /*大海报*/
 .hotmv-pic-big,
 .newmv-pic-big {
-	width: 350px;
+	width: 360px;
 	height: 220px;
 	margin-left: 20px;
 	float: left;
+}
+.hotmv-pic-big img {
+	width: 360px;
+	height: 220px;
 }
 /*小海报*/
 .hotmv-pic-sma,
 .newmv-pic-sma {
-	width: 160px;
-	height: 475px;
-	margin-left: 44px;
-	float: left;
-}
-/*小海报(2,1),(2,2)*/
-.hotmv-pic .small05,
-.newmv-pic .small05{
-	width: 350px;
+	width: 805px;
 	height: 220px;
+	margin-left: 420px;
+}
+.hotmv-pic-sma li {
+	float: left;
+	margin-right: 40px;
+}
+/*海报上的电影名(黑色阴影)*/
+.hotmv .movie-title,
+.newmv .movie-title{
+	background: linear-gradient(to bottom,rgba(100,100,100,0.1), rgba(0,0,0,1));
+	text-align: center;
+	font-size: 20px;
 	position: absolute;
-	margin-top: 251px;
-	margin-left: 20px;
+	color:white;
+	margin: auto;
 }
-.hotmv .five,
-.newmv .five{
+.big-post .movie-title{
+	width: 360px;
+	height: 50px;
+	line-height: 50px;
+	top: 170px;
+}
+.sml-post .movie-title{
 	width: 160px;
-	height: 220px;
-	float: left;
-}
-.hotmv-pic .small05 li,
-.newmv-pic .small05 li{
-	display: inline;
-}
-.hotmv-pic .small05 li:first-child,
-.newmv-pic .small05 li:first-child{
-	float: left;
-}
-.hotmv-pic .small05 li:nth-child(2),
-.newmv-pic .small05 li:nth-child(2) {
-	float: right;
-}
-/*第二行电影*/
-.hotmv .xia,
-.newmv .xia{
-	margin-top: 27px;
+	height: 50px;
+	line-height: 50px;
+	top: 170px;
 }
 /*查看和购票按钮*/
 .hotmv .mask,
 .newmv .mask,
-.lovemv .mask{	
-	width: 160px;
-	height: 40px;
+.lovemv .mask {	
+	height: 50px;
 	line-height: 40px;
 	text-align: center;
 	font-size: 20px;
 	position: absolute;
 }
+.hotmv a,
+.newmv a{
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	width: 80px;
+}
+/*查看*/
+.hotmv .look,
+.newmv .look {
+	left: 0;
+}
+/*购买*/
+.hotmv .buy,
+.newmv .buy {
+	right: 0;
+	border-left:1px solid white;
+}
 /*大海报里的查看和购票按钮*/
 .hotmv .mask-big,
 .newmv .mask-big{
-	width: 350px;
-	height: 50px;
-	line-height: 50px;
+	width: 361px;
 	margin: auto;
 	top:170px;
-	text-align: center;
-	font-size: 20px;
-	position: absolute;
-}
-/*小海报里的查看和购票按钮*/
-.hotmv .mask-shang,
-.newmv .mask-shang{
-	margin: auto;
-	top: 182px;
-}
-.hotmv .mask-xia,
-.newmv .mask-xia{
-	top:433px;
-}
-.hotmv .mask-zuo,
-.newmv .mask-zuo{
-	top:182px;
-}
-.hotmv .mask-you,
-.newmv .mask-you{
-	top:182px;
-	float: right;
-}
-/*鼠标经过样式*/
-.hotmv .pic:hover .mask-big,
-.newmv .pic:hover .mask-big {
-	display: block;
 }
 .hotmv .mask-big div,
 .newmv .mask-big div {
 	background: linear-gradient(to bottom,rgba(255,200,170), rgba(255,100,0));
-	width: 175px;
+	width: 180px;
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
 	font-size: 20px;
-	position: absolute;
+	float: left;
+}
+/*小海报里的查看和购票按钮*/
+.hotmv .mask-sml,
+.newmv .mask-sml {
+	width: 161px;
+	height: 40px;
+	line-height: 40px;
+	top:180px;
+	text-align: center;
+	font-size: 20px;
 }
 .hotmv .small-div,
 .newmv .small-div {
@@ -166,31 +161,9 @@
 	line-height: 40px;
 	text-align: center;
 	font-size: 20px;
-	position: absolute;
+	float: left;
 }
-/*按钮*/
-.hotmv a,
-.newmv a{
-	text-decoration: none;
-	color: white;
-	text-align: center;
-	width: 80px;
-}
-.mask-big a{
-	width: 175px;
-}
-/*按钮上的查看*/
-.hotmv .look,
-.newmv .look {
-	left: 0;
-	border-right:1px solid black;
-}
-/*购买*/
-.hotmv .buy,
-.newmv .buy {
-	right: 0;
-	border-left:1px solid white;
-}
+
 /*海报图片和鼠标经过事件*/
 .hotmv .look:hover,
 .newmv .look:hover {
@@ -200,10 +173,6 @@
 .newmv .buy:hover {
 	background: #FF6400;
 }
-.hotmv-pic .pic,
-.newmv-pic .pic {
-	overflow: hidden;
-}
 .hotmv img,
 .newmv img {
 	width:100%;
@@ -212,7 +181,7 @@
 }
 .hotmv .pic:hover img,
 .newmv .pic:hover img {
-	transform: translateY(-20px);
+	transform: translateY(-10px);
 }
 .hotmv .mask,
 .newmv .mask {
@@ -225,53 +194,27 @@
 	transform: translateY(0px);
 	transition:transform 0.3s, opacity 0.1s;
 }
-/*海报上的电影名*/
-.hotmv .movie-title,
-.newmv .movie-title{
-	background: linear-gradient(to bottom,rgba(100,100,100,0.1), rgba(0,0,0,1));
-	text-align: center;
-	font-size: 20px;
-	position: absolute;
-	color:white;
-	margin: auto;
+.hotmv-pic .pic,
+.newmv-pic .pic {
+	overflow: hidden;
 }
-.big-post .movie-title{
-	width: 350px;
-	height: 50px;
-	line-height: 50px;
-	top: 170px;
+
+/*电影下半部分*/
+.hotmv-btm {
+	width: 1160px;	
+	height: 220px;
+	margin: 40px 20px;
 }
-.shang .movie-title{
-	width: 160px;
-	height: 40px;
-	line-height: 40px;
-	top: 180px;
+.hotmv-btm li:last-child {
+	margin: 0;
 }
-.xia .movie-title{
-	width: 160px;
-	height: 40px;
-	line-height: 40px;
+/*海报上的电影名(黑色阴影)*/
+.hotmv-btm .sml-post .movie-title{
 	top: 430px;
 }
-.zuo .movie-title{
-	width: 160px;
-	height: 40px;
-	line-height: 40px;
-	top:182px;
-}
-.you .movie-title{
-	width: 160px;
-	height: 40px;
-	line-height: 40px;
-	top:182px;
-	float: right;
-}
-/*电影（2,1），（2,2）*/
-.five .movie-title{
-	width: 160px;
-	height: 40px;
-	line-height: 40px;
-	top: 180px;
+/*小海报里的查看和购票按钮*/
+.hotmv-btm .mask-sml{
+	top:440px;
 }
 
 /*爱情分类电影*/
@@ -306,9 +249,12 @@
 	position: absolute;
 	color: white;
 }
+.lovemv .mask {
+	margin-left: 80px;
+}
 .lovemv .mask div {
 	background-color: white;
-	width: 80px;
+	width: 79px;
 	height: 40px;
 	line-height: 40px;
 	text-align: center;

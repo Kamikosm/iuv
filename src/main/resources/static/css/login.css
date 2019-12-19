@@ -1,3 +1,19 @@
+/*输入错误提示*/
+.login3 .login3-p {
+	position: absolute;
+    color: red;
+    font-size: 10px;
+    left: 115px;
+}
+.login3 .p1 {
+    top: 145px;
+}
+.login3 .p2 {
+    top: 225px;
+}
+.login3 .p3 {
+    top: 295px;
+}
 body{
 	margin: 0;
 	padding: 0;
@@ -73,7 +89,6 @@ em{
 	display: inline-block;
 	width: 420px;
 	height: 310px;
-	/*border: 1px solid greenyellow;*/
 	border-right: 1px solid #eee;;
 	margin-top: 10px;
 }
@@ -81,7 +96,7 @@ em{
     display: inline-block;
     width: 57px;
     height: 40px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 40px;
     text-align: right;
     margin-right: 13px;
@@ -114,29 +129,23 @@ em{
     border: 1px solid #e0e0e0;
     border-radius: 3px;
 }
-#s2{
-    display: inline-block;
-    margin: 0;
-    margin-left: 40px;
-    padding: 0;
-    width: 100px;
-    height: 40px;
-    font-size: 15px;
-    text-align: center;
-    line-height: 40px;
-    vertical-align: top;
-    border: 1px solid #ff6400;
-    border-radius: 3px;
-    background-color: #fafafa;
-    color: #ff6400;
-}
-/*#img1{
+#s2 {
 	display: inline-block;
-	width: 18px;
-	height: 18px;
-    vertical-align: middle;
-    margin-left: 10px;
-}*/
+	margin: 0;
+	margin-left: 30px;
+	padding: 0;
+	width: 110px;
+	height: 40px;
+	font-size: 13px;
+	text-align: center;
+	line-height: 40px;
+	vertical-align: top;
+	border: 1px solid #ff6400;
+	border-radius: 3px;
+	background-color: #fafafa;
+	color: #ff6400;
+}
+}
 .login3 input:nth-child(5) {
 	font-size: 18px;
 }

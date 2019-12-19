@@ -140,9 +140,9 @@ a {
 	cursor: pointer;
 }
 .menu-bar-denglu {
+	display: none;
 	width: 250px;
 	height: 250px;
-	display: none;
 	margin: 68px -180px;
 }
 .triangle {
@@ -170,6 +170,8 @@ a {
 }
 .menu-bar-tui img {
 	margin: 15px 90px;	
+	width: 70px;
+	height: 70px;
 }
 .menu-bar-tui .user-name {
 	display: block;

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<title>电影选座</title>
+		<title>iuv电影院-电影选座</title>
 		<link rel="stylesheet" href="css/ChooseSeat.css">
 		<link rel="stylesheet" href="css/login.css">
 		<link rel="stylesheet" href="css/register.css">
-		
-		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-		<script type="text/javascript" src="js/tanchuang.js"></script>
-		<script type="text/javascript" src="js/chooseSeat/ChooseSeat.js"></script>
-		
-		<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+
 		<script type="text/javascript" src="js/chooseSeat/sweetalert-dev.js"></script>
+		<script type="text/javascript" src="js/common/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/login/login.js"></script>
+		<script type="text/javascript" src="js/chooseSeat/ChooseSeat.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
 	</head>
 
 	<body>
@@ -52,41 +53,15 @@
 					</form>
 				</div>
 				<div class="menu-bar-user">
+					<!--未登录时-->
 					<div class="menu-bar-denglu">
 						<div class="triangle"></div>
 						<div class="menu-bar-tui">
 							<div class="tui-top">
-								<img src="img/biguser.png" />
+								<img src="img/touxiang.png" />
 								<p class="user-name">您未登录</p>
 								<div class="tuichu">
-									<a style="cursor: pointer;" class="menu-denglu">请登录</a>
-								</div>
-							</div>
-							<div class="tui-bottom">
-								<ul class="tui-bottom-ul1">
-									<li><img src="img/zhuye.png" /></li>
-									<li><img src="img/huiyuan.png" /></li>
-									<li><img src="img/help.png" /></li>
-									<li><img src="img/shezhi.png" /></li>
-								</ul>
-								<ul class="tui-bottom-ul2">
-									<li>主页</li>
-									<li>会员</li>
-									<li>帮助</li>
-									<li>设置</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="menu-bar-denglu">
-						<div class="triangle"></div>
-						<div class="menu-bar-tui">
-							<div class="tui-top">
-								<img src="img/biguser.png" />
-								<p class="user-name user_phone"></p>
-								<div class="tuichu">
-									<a style="cursor: pointer;" class="menu-tuichu">退出</a>
+									<a style="cursor: pointer" class="menu-denglu">请登录</a>
 								</div>
 							</div>
 							<div class="tui-bottom">
@@ -110,23 +85,6 @@
 		</div>
 
 		<div id="middle">
-			<div class="m1">
-				<div class="t t1">
-					<span>放映时间:</span>
-				</div>
-				<div class="t">
-					<span>11:40</span>
-				</div>
-				<div class="t">
-					<span>19:00</span>
-				</div>
-				<div class="t">
-					<span>21:15</span>
-				</div>
-				<div class="t">
-					<span>23:10</span>
-				</div>
-			</div>
 			<div class="m2">
 				<div id="hall">
 					<div class="seat-example">
@@ -193,15 +151,15 @@
 				<div id="message">
 					<div class="movie-info">
 						<div class="poster">
-							<img src="">
+							<img src="img/hb/10sml_pic.png">
 						</div>
 						<div class="content">
-							<p class="name"></p>
+							<p class="name">嫌疑人x的献身</p>
 							<div class="info-item">
-								<span>类型:</span> <span class="value type"></span>
+								<span>类型:</span> <span class="value type">爱情</span>
 							</div>
 							<div class="info-item">
-								<span>时长:</span> <span class="value time">分钟</span>
+								+<span>时长:</span> <span class="value time">112分钟</span>
 							</div>
 						</div>
 					</div>
@@ -210,16 +168,16 @@
 							<span>影院:</span> <span class="value">iVU影院</span>
 						</div>
 						<div class="info-item">
-							<span>影厅:</span> <span class="value">1号影厅</span>
+							<span>放映厅:</span> <span class="value">3号厅</span>
 						</div>
 						<div class="info-item">
-							<span>版本:</span> <span class="value session"></span>
+							<span>版本:</span> <span class="value session">中国大陆</span>
 						</div>
 						<div class="info-item">
-							<span>场次:</span> <span class="value screen">第1场次</span>
+							<span>放映时间:</span> <span class="value screen">12月18日 19:00</span>
 						</div>
 						<div class="info-item">
-							<span>票价:</span> <span class="value">￥<span class="money"></span>/张
+							<span>票价:</span> <span class="value">￥<span class="money">32</span>/张
 							</span>
 						</div>
 					</div>
@@ -240,13 +198,6 @@
 					</div>
 					<div class="confirm-order">
 						<div class="p">
-							<div class="p1">
-								<input class="i1" type="text" maxlength="11" placeholder="输入手机号" />
-							</div>
-							<div class="p2">
-								<input class="i2" type="text" placeholder="填写验证码" />
-								<div class="pp">获取验证码</div>
-							</div>
 							<div class="p3">
 								<button class="b">确认选座</button>
 							</div>
@@ -301,22 +252,26 @@
 			</div>
 			<div class="login3">
 				<form action="login" method="post">
-					<input type="hidden" name="url" value="chooseseat">
+					<input type="hidden" name="url" value="main">
 					<p>
-						<span id="s1">账号</span> <input class="loginname" type="text" name="name" id="name" placeholder="请输入手机号码" onkeyup="value=value.replace(/[^\d]/g,'')" maxlength=11 />
-						<!-- <br>手机号有误 -->
+						<span id="s1">账号</span>
+						<input class="loginname" type="text" name="name" id="name" placeholder="请输入手机号码" onkeyup="value=value.replace(/[^\d]/g,'')" maxlength=11 />
+						<p class="login3-p p1">您输入的手机号有误，请重新输入</p>
 					</p>
 					<p>
-						<span id="s1">密码</span> <input class="loginpwd" type="password" name="pwd" id="pwd" placeholder="请输入密码" />
-						<!-- <br>密码有误 -->
+						<span id="s1">密码</span>
+						<input class="loginpwd" type="password" name="pwd" id="pwd" placeholder="请输入密码" />
+						<p class="login3-p p2">您输入的密码有误，请重新输入</p>
 					</p>
 					<p>
-						<span id="s1">验证码</span> <input type="text" name="yzm" id="yzm" placeholder="验证码" /> <span id="s2" class="ss1" style="cursor: pointer;">获取验证码</span>
+						<span id="s1">验证码</span>
+						<input type="text" name="yzm" id="yzm" placeholder="验证码" /> <span id="s2" class="ss1" style="cursor: pointer;">获取验证码（60）</span>
 						<!--<span><img src="img/shuaxin.png" id="img1"/></span>-->
-						<!-- <br>验证码错误 -->
+						<p class="login3-p p3">验证码错误</p>
 					</p>
 					<p>
-						<input type="checkbox" name="" id="" value="" /> <label>记住我</label>
+						<input type="checkbox" name="" id="" value="" />
+						<label>记住我</label>
 						<a style="cursor: pointer;" id="a2">注册</a>
 						<a href="" id="a1">忘记密码？</a>
 					</p>
@@ -341,16 +296,21 @@
 			</div>
 			<div class="register3">
 				<form action="register" method="post">
-					<input type="hidden" name="url" value="chooseseat">
+					<input type="hidden" name="url" value="main">
 					<p>
-						<span id="s1">手机</span> <input class="registername" type="text" name="name" id="name" placeholder="请输入手机号码" onkeyup="value=value.replace(/[^\d]/g,'')" maxlength=11 />
+						<span id="s1">手机</span>
+						<input class="registername" type="text" name="name" id="name" placeholder="请输入手机号码" onkeyup="value=value.replace(/[^\d]/g,'')" maxlength=11 />
+						<p class="login3-p p4">请输入11位正确的手机号</p>
 					</p>
 					<p>
-						<span id="s1">密码</span> <input class="registerpwd" type="password" name="pwd" id="pwd" placeholder="请输入6~20位密码" />
+						<span id="s1">密码</span>
+						<input class="registerpwd" type="password" name="pwd" id="pwd" placeholder="请输入6~20位密码" />
+						<p class="login3-p p5">密码只支持数字、英文</p>
 					</p>
 					<p>
-						<span id="s1">验证码</span> <input type="text" name="yzm" id="yzm" placeholder="验证码" /> <span id="s2" class="ss2" style="cursor: pointer;">获取验证码</span>
-						<!--<span><img src="img/shuaxin.png" id="img1"/></span>-->
+						<span id="s1">验证码</span> <input type="text" name="yzm" id="yzm" placeholder="验证码" />
+						<span id="s2" class="ss2" style="cursor: pointer;">获取验证码（60）</span>
+						<p class="login3-p p6">验证码错误</p>
 					</p>
 					<p>
 						<input type="checkbox" checked="checked" name="" id="" value="" />
@@ -370,6 +330,7 @@
 					<li class="l3"></li>
 				</ul>
 			</div>
-		</div>		
+		</div>
 	</body>
+
 </html>

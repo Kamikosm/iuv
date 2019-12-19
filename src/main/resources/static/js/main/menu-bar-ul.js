@@ -1,4 +1,4 @@
-//导航条ul li悬停事件
+//导航条悬停事件
 function xuanting() {
     var xxx=document.getElementsByClassName("a1");
     for(i=0;i<xxx.length;i++)
