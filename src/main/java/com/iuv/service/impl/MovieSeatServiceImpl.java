@@ -35,6 +35,11 @@ public class MovieSeatServiceImpl implements MovieSeatService {
     public LittleMovieMsg getMovieMsg(Integer movieId) {
         return movieSeatDao.getMovieMsg(movieId);
     }
+
+    @Override
+    public MovieScene getScene(Integer sceneId) {
+        return movieSeatDao.getScene(sceneId);
+    }
 /**
  * 选座
  * 

@@ -1,14 +1,16 @@
 $(function() {
     var movie = new Vue({
-        el:'#message',
+        el:'.m2',
         data:{
-            movieMsg:{}
+            movieMsg:{},
+            sceneMsg:{}
         },
         methods:{
 
         }
     });
     AjaxMovieMsg(movie);
+    AjaxSceneMsg(movie);
 });
 
 function AjaxMovieMsg(movie) {
@@ -16,7 +18,17 @@ function AjaxMovieMsg(movie) {
     var params = {movieId:1};
     $.post(url,params,function (result) {
         movie.movieMsg = result.data;
-        console.log(movie.movieMsg)
+    });
+}
+
+function AjaxSceneMsg(movie) {
+    var url = "/ticket/getSceneMsg"
+    var params = {sceneId:2};
+    $.post(url,params,function (result) {
+        var date = result.data.sceneTime;
+        var time = new Date(date).toLocaleString();
+        result.data.sceneTime = time;
+        movie.sceneMsg = result.data;
     });
 }
 

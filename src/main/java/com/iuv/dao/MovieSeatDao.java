@@ -18,6 +18,8 @@ import com.iuv.pojo.movie.MovieScene;;
 public interface MovieSeatDao {
 	List<MovieScene> getScenes(Integer movieId);
 
+	MovieScene getScene(Integer sceneId);
+
     @Select("select seat_id from seat where scene_id=#{sceneId}")
     List<Integer> getSeats(Integer sceneId);
 

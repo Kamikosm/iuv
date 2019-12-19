@@ -18,4 +18,9 @@
   <select id="getMovieMsg" resultType="com.iuv.pojo.movie.LittleMovieMsg">
     select mv_name,type,mv_time,area,sml_pic,price from movie where id=#{movieId}
   </select>
+
+  <select id="getScene" resultType="com.iuv.pojo.movie.MovieScene">
+    select id,scene_time,hall from scene where id=#{sceneId}
+    order by scene_time
+  </select>
 </mapper>
