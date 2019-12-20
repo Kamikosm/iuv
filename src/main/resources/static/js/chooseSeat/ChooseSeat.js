@@ -14,12 +14,7 @@ $(function() {
     AjaxMovieMsg(movie);
     AjaxSceneMsg(movie);
     giveNum(movie);
-    someChangs();
 });
-
-function someChangs() {
-
-}
 
 function giveNum(movie) {
     $("#text span").each(function (index,val) {
@@ -32,15 +27,36 @@ function giveNum(movie) {
             if(flag){
                 $(val).attr("class","seat selected")
                 movie.nums.push(mun);
-                console.log(movie.nums)
             }else{
                 $(val).attr("class","seat selectable");
                 movie.nums.splice(movie.nums.indexOf(mun),1);
-                console.log(movie.nums)
             }
+            someChangs(movie);
         });
 
     })
+}
+
+function someChangs(movie) {
+    if(movie.nums.length!=0){
+        $(".no-ticket").attr("style","display: none");
+        $(".has-ticket").attr("style","display: block");
+        $(".ticket-container").empty();
+        for(var i = 0;i<movie.nums.length;i++){
+            var lie = movie.nums[i]%10;
+            var pai = 0;
+            if(lie!=0) pai = (movie.nums[i]-lie)/10+1;
+            if(lie==0){
+                pai = movie.nums[i]/10;
+                lie = 10;
+            }
+            var spa = "<span class='ticket'>"+pai+"排"+lie+"列"+"</span>"
+            $(".ticket-container").append(spa)
+        }
+    }else{
+        $(".no-ticket").attr("style","display: block");
+        $(".has-ticket").attr("style","display: none");
+    }
 }
 
 function AjaxMovieMsg(movie) {
