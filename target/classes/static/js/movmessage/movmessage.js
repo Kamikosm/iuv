@@ -6,12 +6,8 @@ $(function () {
 
     //初始化parent字段，添加评论时使用
     var parent = null;
-    $('.reply').click(function(){
-        parent = $('.reply .parent').val();
-        var root = $(this).parent().parent().prev();
-        root = $('.reply .root').val();
-        alert(parent);
-    })
+
+
 
 
 
@@ -40,8 +36,8 @@ $(function () {
                             "<p class='pinglun-p2'>等人</p>\n" +
                             "<p class='pinglun-p3 cursor'>共4条回复</p>\n" +
                             "<p class='pinglun-p4 cursor reply'>回复" +
-                            "<span class='parent'>"+list[i].id+"</span>" +
-                            "<span class='root'>"+list[i].root+"</span>" +
+                            "<span class='parent' style='display: none'>"+list[i].id+"</span>" +
+                            "<span class='root' style='display: none'>"+list[i].root+"</span>" +
                             "</p>\n" +
                             "<p class='pinglun-p5'>|</p><p class='pinglun-p6'>\n" +
                             "<img src='img/dianzan1.png' class='cursor' />" +
@@ -108,8 +104,16 @@ $(function () {
     });
 
 
+    $('.reply').click(function(){
+        alert("可可");
+        parent = $('.reply .parent').val();
+        var root = $('.reply .root').val();
+        alert(parent);
+    });
 
-
+    $('.cursor').click(function(){
+        alert("keke");
+    });
 
 
 
