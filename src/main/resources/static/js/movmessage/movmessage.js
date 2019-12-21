@@ -1,5 +1,22 @@
 $(function () {
 
+    //首页轮播图页面跳转电影详情页面
+    $(function() {
+        var lbName = sessionStorage.getItem("lbName");
+        var url = "lbMvMsg";
+        var params = {"lbName":lbName};
+
+        $.post(url,params,function(result){
+            $(".middle-left img").attr("src",result[0].bigPic);
+            $(".movie-text h3").html(result[0].mvName);
+            $(".movie-text .ellipsis1").html("类型："+result[0].type);
+            $(".movie-text .ellipsis2").html("时长："+result[0].mvTime);
+            $(".movie-text .ellipsis3").html("上映时间："+result[0].startTime);
+            $(".movie-score .index-left").html(result[0].score);
+            $(".movie-score .stonefont").html(result[0].sum);
+        });
+    });
+
 	//Ajax-评论相关	@author houke_zou
 
 	var getcomment = "user/getcomment";
@@ -81,19 +98,6 @@ $(function () {
 			}
 		}
 	});
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
