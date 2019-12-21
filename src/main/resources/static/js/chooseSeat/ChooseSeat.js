@@ -14,8 +14,22 @@ $(function() {
     AjaxMovieMsg(movie);
     AjaxSceneMsg(movie);
     giveNum(movie);
+    getSeats();
 });
-//keke
+
+function getSeats(){
+    var url = "/ticket/getSeats"
+    var params = {sceneId:3};            //需要动态获取场次id
+    $.post(url,params,function (result) {
+        var seats = result.data;
+        console.log(seats)
+        for (var i = 0; i < seats.length; i++) {
+            $("#text span").eq(seats[i]-1).attr("class","seat sold");
+            $("#text span").eq(seats[i]-1).off("click");
+        }
+    })
+}
+
 function giveNum(movie) {
     $("#text span").each(function (index,val) {
         $(val).attr("num",index+1);
@@ -39,6 +53,10 @@ function giveNum(movie) {
 
 function someChangs(movie) {
     if(movie.nums.length!=0){
+        if(movie.nums.length>=6){
+            swal("mdzz")
+
+        }
         $(".no-ticket").attr("style","display: none");
         $(".has-ticket").attr("style","display: block");
         $(".price")[0].innerText = movie.nums.length*movie.movieMsg.price;
@@ -55,18 +73,22 @@ function someChangs(movie) {
             $(".ticket-container").append(spa)
         }
         $(".b").css({
-            "background-color": rgb(255, 100, 0),
-            "cursor": pointer})
+            "background-color":"rgb(255, 100, 0)",
+            "cursor": "pointer"})
     }else{
         $(".no-ticket").attr("style","display: block");
         $(".has-ticket").attr("style","display: none");
         $(".price")[0].innerText = 0;
+        $(".b").css({
+            "background-color":"rgb(222, 222, 222)",
+            "cursor": "pointer"})
+        $(".b").off("click");
     }
 }
 
 function AjaxMovieMsg(movie) {
     var url = "/ticket/getMsg";
-    var params = {movieId:1};
+    var params = {movieId:1};        //需要动态获取电影id
     $.post(url,params,function (result) {
         movie.movieMsg = result.data;
     });
@@ -74,7 +96,7 @@ function AjaxMovieMsg(movie) {
 
 function AjaxSceneMsg(movie) {
     var url = "/ticket/getSceneMsg"
-    var params = {sceneId:2};
+    var params = {sceneId:2};       //需要动态获取场次id
     $.post(url,params,function (result) {
         var date = result.data.sceneTime;
         var time = new Date(date).toLocaleString();

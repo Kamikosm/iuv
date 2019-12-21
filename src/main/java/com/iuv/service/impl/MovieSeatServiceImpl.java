@@ -18,12 +18,12 @@ public class MovieSeatServiceImpl implements MovieSeatService {
 
     @Override
     public List<MovieScene> getScenes(Integer movieId) {
-        return null;
+        return movieSeatDao.getScenes(movieId);
     }
 
     @Override
     public List<Integer> getSeats(Integer sceneId) {
-        return null;
+        return movieSeatDao.getSeats(sceneId);
     }
 
     @Override
