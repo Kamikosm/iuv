@@ -16,5 +16,9 @@ public interface CommentDao {
 
     List<Comment> queryCommentListByMovieId(Integer id);
 
+    Integer insertCommentNoRoot(Comment comment);
 
+    Comment selectCommentByContent(String content);
+
+    void updateComment(Comment comment);
 }
