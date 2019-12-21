@@ -21,4 +21,6 @@ public interface MovieSeatService {
     int addSeats(Integer sceneId,Integer userId,Integer...seatIds);
 
     LittleMovieMsg getMovieMsg(Integer movieId);
+
+    MovieScene getScene(Integer SceneId);
 }

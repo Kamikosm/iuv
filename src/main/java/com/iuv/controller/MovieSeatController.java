@@ -19,4 +19,9 @@ public class MovieSeatController {
     public JsonResult getMovieMsg(Integer movieId){
         return new JsonResult(movieSeatService.getMovieMsg(movieId));
     }
+
+    @RequestMapping("getSceneMsg")
+    public JsonResult getSceneMsg(Integer sceneId){
+        return new JsonResult(movieSeatService.getScene(sceneId));
+    }
 }

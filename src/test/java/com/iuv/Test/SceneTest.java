@@ -22,8 +22,14 @@ public class SceneTest {
     private MovieSeatDao dao;
 
     @Test
-    public void getScene(){
+    public void getScenes(){
         List<MovieScene> scene = dao.getScenes(25);
+        System.out.println(scene);
+    }
+
+    @Test
+    public void getScene(){
+        MovieScene scene = dao.getScene(2);
         System.out.println(scene);
     }
 

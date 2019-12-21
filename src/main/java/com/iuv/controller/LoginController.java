@@ -7,6 +7,6 @@ import org.springframework.stereotype.Controller;
  * 
  * */
 @Controller
-public class Hello {
+public class LoginController {
 
 }
