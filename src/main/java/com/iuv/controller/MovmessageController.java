@@ -33,6 +33,7 @@ public class MovmessageController {
         return lbList;
     }
 
+    
     @ResponseBody
     @PostMapping("/user/getcomment")
     private AjaxData getcomment(HttpServletRequest request){

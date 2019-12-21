@@ -14,5 +14,8 @@ public interface MovClassDao {
 
     //导航条跳转分类电影
     List<Movie> findMVClass(@Param(value = "type")String type);
+   
+    //查看全部热映电影跳转电影详情
+    List<Movie> findHotAll();
 
 }
