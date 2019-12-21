@@ -104,15 +104,12 @@ $(function () {
     });
 
 
-    $('.reply').click(function(){
+
+    $('.reply').bind("click", function(){
         alert("可可");
         parent = $('.reply .parent').val();
         var root = $('.reply .root').val();
         alert(parent);
-    });
-
-    $('.cursor').click(function(){
-        alert("keke");
     });
 
 

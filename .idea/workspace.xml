@@ -1,30 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2aec0ac-203c-4bfd-9aaa-71daf3e0a188" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iuv/util/HttpServletRequestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/iuv/Test/comment/TestCommentService.java" afterDir="false" />
+    <list default="true" id="b2aec0ac-203c-4bfd-9aaa-71daf3e0a188" name="Default Changelist" comment="//添加评论">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iuv/pojo/vo/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iuv/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iuv/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iuv/pojo/vo/CommentVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iuv/pojo/vo/CommentVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iuv/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iuv/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iuv/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iuv/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iuv/util/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iuv/util/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/movmessage/movmessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/movmessage/movmessage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/movmessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/movmessage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/iuv/controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iuv/controller/CommentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/iuv/controller/MovieSeatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iuv/controller/MovieSeatController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/iuv/pojo/vo/CommentVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iuv/pojo/vo/CommentVo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/iuv/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/CommentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/iuv/service/MovieSeatService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/MovieSeatService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/iuv/service/impl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/impl/CommentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/iuv/service/impl/MovieSeatServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/impl/MovieSeatServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CommentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/chooseSeat/ChooseSeat.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/chooseSeat/ChooseSeat.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/js/movmessage/movmessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/movmessage/movmessage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/ChooseSeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/pages/ChooseSeat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/movmessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/pages/movmessage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +43,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1VBFrZhQdRCXOSmnWyP6wdneHP2" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -76,15 +59,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/iuv/util" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Git_repository" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.iuv.Test.user" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AAAA-IUV" />
       <recent name="D:\AAAA-IUV\src\main\java\com\iuv\util" />
     </key>
   </component>
@@ -210,7 +194,11 @@
       <updated>1576718780592</updated>
       <workItem from="1576718784010" duration="41096000" />
       <workItem from="1576808382019" duration="79000" />
-      <workItem from="1576891392231" duration="1621000" />
+      <workItem from="1576891392231" duration="3970000" />
+      <workItem from="1576895479001" duration="1213000" />
+      <workItem from="1576896792648" duration="136000" />
+      <workItem from="1576896950419" duration="42000" />
+      <workItem from="1576897007319" duration="388000" />
     </task>
     <task id="LOCAL-00001" summary="//1. 新创dto AjaxDate邹厚柯传递的ajax数据包装类&#10;//2. 新创pojo movie包下，Comment专用类&#10;//3. Controller新增方法getcomment&#10;//4. html页面和js代码变动">
       <created>1576738255623</created>
@@ -240,7 +228,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576751928447</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="//添加评论">
+      <created>1576893083056</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576893083056</updated>
+    </task>
+    <task id="LOCAL-00006" summary="//添加评论">
+      <created>1576894359826</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576894359826</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +282,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="//1. 新创dto AjaxDate邹厚柯传递的ajax数据包装类&#10;//2. 新创pojo movie包下，Comment专用类&#10;//3. Controller新增方法getcomment&#10;//4. html页面和js代码变动" />
     <MESSAGE value="//1. 测试方法的编写&#10;//2. CommentVo包装的创建&#10;//3. user表两个查找的操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="//1. 测试方法的编写&#10;//2. CommentVo包装的创建&#10;//3. user表两个查找的操作" />
+    <MESSAGE value="//添加评论" />
+    <option name="LAST_COMMIT_MESSAGE" value="//添加评论" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1576755783973">
@@ -291,10 +294,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="554" y="269" width="428" height="297" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1576748200671" />
-    <state x="382" y="0" key="CommitChangelistDialog2" timestamp="1576751921724">
+    <state x="382" y="0" key="CommitChangelistDialog2" timestamp="1576894356727">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="382" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576751921724" />
+    <state x="382" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576894356727" />
     <state width="248" height="442" key="Diff.GoToChangePopup" timestamp="1576739582625">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -303,42 +306,50 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="89" y="90" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1576758326202" />
+    <state x="549" y="152" key="FileChooserDialogImpl" timestamp="1576896228749">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="152" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1576896228749" />
+    <state x="181" y="275" width="958" height="269" key="Github.CreatePullRequestDialog" timestamp="1576897097009">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="181" y="275" width="958" height="269" key="Github.CreatePullRequestDialog/0.0.1536.824@0.0.1536.824" timestamp="1576897097009" />
     <state x="617" y="333" key="Github.Dialog.Accounts.Choose" timestamp="1576745808900">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="617" y="333" key="Github.Dialog.Accounts.Choose/0.0.1536.824@0.0.1536.824" timestamp="1576745808900" />
-    <state width="1489" height="106" key="GridCell.Tab.0.bottom" timestamp="1576892959937">
+    <state width="1489" height="106" key="GridCell.Tab.0.bottom" timestamp="1576894772142">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="106" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576892959937" />
-    <state width="1489" height="106" key="GridCell.Tab.0.center" timestamp="1576892959937">
+    <state width="1489" height="106" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576894772142" />
+    <state width="1489" height="106" key="GridCell.Tab.0.center" timestamp="1576894772142">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="106" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576892959937" />
-    <state width="1489" height="106" key="GridCell.Tab.0.left" timestamp="1576892959937">
+    <state width="1489" height="106" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576894772142" />
+    <state width="1489" height="106" key="GridCell.Tab.0.left" timestamp="1576894772141">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="106" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576892959937" />
-    <state width="1489" height="106" key="GridCell.Tab.0.right" timestamp="1576892959937">
+    <state width="1489" height="106" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576894772141" />
+    <state width="1489" height="106" key="GridCell.Tab.0.right" timestamp="1576894772142">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="106" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576892959937" />
-    <state width="1489" height="106" key="GridCell.Tab.1.bottom" timestamp="1576892959938">
+    <state width="1489" height="106" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576894772142" />
+    <state width="1489" height="106" key="GridCell.Tab.1.bottom" timestamp="1576894772143">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="106" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576892959938" />
-    <state width="1489" height="106" key="GridCell.Tab.1.center" timestamp="1576892959937">
+    <state width="1489" height="106" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576894772143" />
+    <state width="1489" height="106" key="GridCell.Tab.1.center" timestamp="1576894772142">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="106" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1576892959937" />
-    <state width="1489" height="106" key="GridCell.Tab.1.left" timestamp="1576892959937">
+    <state width="1489" height="106" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1576894772142" />
+    <state width="1489" height="106" key="GridCell.Tab.1.left" timestamp="1576894772142">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="106" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1576892959937" />
-    <state width="1489" height="106" key="GridCell.Tab.1.right" timestamp="1576892959937">
+    <state width="1489" height="106" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1576894772142" />
+    <state width="1489" height="106" key="GridCell.Tab.1.right" timestamp="1576894772143">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="106" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1576892959937" />
+    <state width="1489" height="106" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1576894772143" />
     <state width="1489" height="263" key="GridCell.Tab.2.bottom" timestamp="1576762850866">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -359,26 +370,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="603" y="121" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1576739604758" />
-    <state x="285" y="53" key="SettingsEditor" timestamp="1576718821737">
+    <state x="285" y="53" key="SettingsEditor" timestamp="1576896075450">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="285" y="53" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1576718821737" />
+    <state x="285" y="53" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1576896075450" />
     <state x="490" y="154" width="540" height="524" key="StructurePopup" timestamp="1576747778876">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="490" y="154" width="540" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1576747778876" />
-    <state x="361" y="144" key="Vcs.Push.Dialog.v2" timestamp="1576893031403">
+    <state x="361" y="144" key="Vcs.Push.Dialog.v2" timestamp="1576897252396">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="144" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576893031403" />
+    <state x="361" y="144" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576897252396" />
     <state x="636" y="121" width="780" height="604" key="find.popup" timestamp="1576757206494">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="636" y="121" width="780" height="604" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1576757206494" />
-    <state x="498" y="202" key="git4idea.merge.GitPullDialog" timestamp="1576758240189">
+    <state x="498" y="202" key="git4idea.merge.GitPullDialog" timestamp="1576893112694">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="498" y="202" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1576758240189" />
+    <state x="498" y="202" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1576893112694" />
+    <state x="580" y="305" key="git4idea.ui.GitResetDialog" timestamp="1576894099649">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="580" y="305" key="git4idea.ui.GitResetDialog/0.0.1536.824@0.0.1536.824" timestamp="1576894099649" />
     <state x="185" y="106" key="new project wizard" timestamp="1576808467310">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -408,19 +423,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/main/resources/static/js/movmessage/movmessage.js</url>
-          <line>117</line>
-          <properties lambdaOrdinal="-1" />
+          <line>118</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/main/resources/static/js/movmessage/movmessage.js</url>
-          <line>122</line>
-          <properties lambdaOrdinal="-1" />
+          <line>123</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/main/resources/static/js/movmessage/movmessage.js</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
