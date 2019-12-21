@@ -8,6 +8,9 @@ import com.iuv.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /*
@@ -55,16 +58,37 @@ public class CommentServiceImpl implements CommentService{
 
         CommentVo commentVo = new CommentVo();
         commentVo.setContent(comment.getComment());
-        commentVo.setDatetime(comment.getTime());
+
+        Date time = comment.getTime();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String datetime = sdf.format(time);
+        commentVo.setDatetime(datetime);
+
         Integer id = comment.getId();
         commentVo.setId(id);
         Integer parentId = comment.getParentId();
-        String name = userDao.queryUserById(parentId).getName();
-        commentVo.setParent(parentId);
-        commentVo.setParentname(name);
+        if(parentId!=null){
+            commentVo.setParent(parentId);
+            String name = userDao.queryUserById(parentId).getName();
+            commentVo.setParentname(name);
+        }
         commentVo.setRoot(comment.getRootId());
         commentVo.setUsername(userDao.queryUserById(id).getName());
 
         return commentVo;
+    }
+
+    @Override
+    public List<CommentVo> getCommentListByMovieId(Integer movieId) {
+
+        List<Comment> movieComments = getMovieComments(movieId);
+        List<CommentVo> commentVoList = new ArrayList<>();
+
+        for (Comment comment: movieComments){
+            CommentVo commentVo = convertCommentToCommentVo(comment);
+            commentVoList.add(commentVo);
+        }
+
+        return commentVoList;
     }
 }

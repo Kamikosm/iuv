@@ -24,7 +24,7 @@ public class CommentVo {
     private String parentname;
     private Integer root;
     private String content;
-    private Date datetime;
+    private String datetime;
 
 
 }

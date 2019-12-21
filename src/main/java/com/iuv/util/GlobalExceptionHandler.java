@@ -12,7 +12,7 @@ public class GlobalExceptionHandler {
 
 	@ExceptionHandler(RuntimeException.class)
 	@ResponseBody
-	public JsonResult doHandleRuntimeException(RuntimeException e ) {
+	public JsonResult doHandleRuntimeException(RuntimeException e) {
 		System.out.println("赵文启真智障也");
 		e.printStackTrace();
 		return new JsonResult(e);

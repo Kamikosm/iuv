@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/login.css">
 		<link rel="stylesheet" href="css/register.css">
 
+		<script type="text/javascript" src="js/vue/vue.js"></script>
 		<script type="text/javascript" src="js/chooseSeat/sweetalert-dev.js"></script>
 		<script type="text/javascript" src="js/common/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="js/login/login.js"></script>
@@ -151,15 +152,15 @@
 				<div id="message">
 					<div class="movie-info">
 						<div class="poster">
-							<img src="img/hb/10sml_pic.png">
+							<img :src="movieMsg.smlPic">
 						</div>
 						<div class="content">
-							<p class="name">嫌疑人x的献身</p>
+							<p class="name">{{movieMsg.mvName}}</p>
 							<div class="info-item">
-								<span>类型:</span> <span class="value type">爱情</span>
+								<span>类型:</span> <span class="value type">{{movieMsg.type}}</span>
 							</div>
 							<div class="info-item">
-								+<span>时长:</span> <span class="value time">112分钟</span>
+								+<span>时长:</span> <span class="value time">{{movieMsg.mvTime}}</span>
 							</div>
 						</div>
 					</div>
@@ -171,13 +172,13 @@
 							<span>放映厅:</span> <span class="value">3号厅</span>
 						</div>
 						<div class="info-item">
-							<span>版本:</span> <span class="value session">中国大陆</span>
+							<span>版本:</span> <span class="value session">{{movieMsg.area}}</span>
 						</div>
 						<div class="info-item">
 							<span>放映时间:</span> <span class="value screen">12月18日 19:00</span>
 						</div>
 						<div class="info-item">
-							<span>票价:</span> <span class="value">￥<span class="money">32</span>/张
+							<span>票价:</span> <span class="value">￥<span class="money">{{movieMsg.price}}</span>/张
 							</span>
 						</div>
 					</div>

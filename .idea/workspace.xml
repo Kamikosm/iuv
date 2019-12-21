@@ -2,407 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2aec0ac-203c-4bfd-9aaa-71daf3e0a188" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/iuv_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/iuv_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_50.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alipay_sdk_alipay_sdk_java_4_8_10_ALL.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_core_4_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_10_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_1_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_62.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_3_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_12_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_12_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_12_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_12_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_12_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_12_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_12_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_12_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_12_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_12_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_12_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iuv.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iuv/pojo/vo/CommentVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/iuv/Test/user/TestUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/IuvApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/controller/CommentController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/controller/Hello.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/controller/MainController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/controller/MovclassController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/controller/MovieSeatController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/controller/MovmessageController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/controller/PayController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/controller/pageController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/dao/CommentDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/dao/MainDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/dao/MovClassDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/dao/MovieDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/dao/MovieSeatDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/dao/MovmessageDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/dao/OrderDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/dao/TestDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/dao/UserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/pojo/dto/AjaxData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/pojo/movie/Comment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/pojo/movie/JsonResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/pojo/movie/LittleMovieMsg.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/pojo/movie/Lunbo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/pojo/movie/Movie.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/pojo/movie/MovieScene.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/pojo/order/Order.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/pojo/user/Register.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/pojo/user/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/CommentService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/MainService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/MovClassService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/MovieSeatService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/MovieService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/MovmessageService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/OrderService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/impl/CommentServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/impl/MainServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/impl/MovClassServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/impl/MovieSeatServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/impl/MovieServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/impl/MovmessageServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/impl/OrderServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/util/GlobalExceptionHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/util/SendSms.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/iuv/util/ServiceException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapper/CommentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapper/MovieSeatMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapper/main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapper/movclass.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapper/movie.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapper/movmessage.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapper/order.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapper/user.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/ChooseSeat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/head.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/hotmv.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/loginmain.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/movclass.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/movmessage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/myticket.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/paopao.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/search.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/sweetalert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/beijing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/biguser.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/chooseSeat1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/chooseSeat2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/dianzan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/dianzan1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/fuchou.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/10big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/10sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/11big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/11sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/12big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/12sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/13big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/13sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/14big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/14sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/15big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/15sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/16big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/16sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/17big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/17sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/18big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/18sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/19big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/19sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/1big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/1sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/20big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/20sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/21big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/21sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/22big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/22sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/23big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/23sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/24big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/24sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/25big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/25sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/26big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/26sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/27big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/27sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/28big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/28sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/29big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/29sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/2big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/2sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/30big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/30sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/31big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/31sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/32big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/32sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/33big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/33sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/34big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/34sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/35big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/35sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/36big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/36sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/37big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/37sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/38big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/38sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/39big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/39sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/3big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/3sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/40big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/40sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/4big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/4sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/5big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/5sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/6big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/6sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/7big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/7sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/8big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/8sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/9big_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/hb/9sml_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/help.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/huiyuan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jizhang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/10heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/11heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/12heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/13heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/14heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/15heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/16heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/17heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/18heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/19heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/1heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/20heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/21heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/22heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/23heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/24heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/25heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/26heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/27heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/28heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/29heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/2heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/30heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/31heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/32heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/33heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/34heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/35heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/36heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/37heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/38heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/39heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/3heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/40heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/4heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/5heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/6heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/7heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/8heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/jz/9heng_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/lb/lb_pic1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/lb/lb_pic2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/lb/lb_pic3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/lb/lb_pic4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/lb/lb_pic5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/lb/lb_pic6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/lb/lb_pic7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/lb/lb_pic8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/logo1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/logo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/one.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/paopao/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/paopao/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/paopao/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/paopao/12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/paopao/13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/paopao/14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/paopao/15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/paopao/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/paopao/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/paopao/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/paopao/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/paopao/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/paopao/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/paopao/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/paopao/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/paopao/bac.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/pkq.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/search1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/search2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/search3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/seat01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/seat02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/seat03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/shezhi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/shuaxin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/star_hollow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/star_solid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/touxiang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/touxiang1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/yes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/zhuxian.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/zhuye.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/img/zuguo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/chooseSeat/ChooseSeat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/chooseSeat/sweetalert-dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/common/TweenMax.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/common/imagesloaded.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/common/jquery-1.8.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/common/paopao.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/login/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/main/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/main/menu-bac.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/main/menu-bar-ul.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/movclass/movclass.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/movmessage/movmessage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/myticket/myticket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/pages/ChooseSeat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/pages/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/pages/movclass.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/pages/movmessage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/pages/movmessage/comment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/pages/myticket.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/pages/registerlose.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/pages/registersuccess.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/pages/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.iuv.IuvApplicationTests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.iuv.Test.MybatisTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.iuv.Test.SceneTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.iuv.Test.comment.TestCommentDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.iuv.IuvApplicationTests.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.iuv.Test.MybatisTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.iuv.Test.SceneTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.iuv.Test.comment.TestCommentDao.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/iuv/IuvApplicationTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/iuv/Test/MybatisTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/iuv/Test/SceneTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/iuv/Test/comment/TestCommentDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iuv/util/HttpServletRequestUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/iuv/Test/comment/TestCommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/iuv/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iuv/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iuv/controller/MovmessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iuv/controller/MovmessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iuv/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iuv/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iuv/pojo/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iuv/pojo/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iuv/pojo/vo/CommentVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iuv/pojo/vo/CommentVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/iuv/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iuv/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iuv/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iuv/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/iuv/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iuv/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iuv/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iuv/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/user.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iuv/util/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iuv/util/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/movmessage/movmessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/movmessage/movmessage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/movmessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/movmessage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iuv/controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iuv/controller/CommentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iuv/controller/MovieSeatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iuv/controller/MovieSeatController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iuv/pojo/vo/CommentVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iuv/pojo/vo/CommentVo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iuv/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/CommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iuv/service/MovieSeatService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/MovieSeatService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iuv/service/impl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/impl/CommentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iuv/service/impl/MovieSeatServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iuv/service/impl/MovieSeatServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CommentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/chooseSeat/ChooseSeat.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/chooseSeat/ChooseSeat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/movmessage/movmessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/movmessage/movmessage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/ChooseSeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/pages/ChooseSeat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/movmessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/pages/movmessage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -454,6 +76,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/iuv/util" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
@@ -461,24 +84,11 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.iuv.Test.user" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AAAA-IUV\src\main\java\com\iuv\util" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestUserDao.queryUserByUserName">
-    <configuration name="TestCommentDao.insertComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="iuv" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.iuv.Test.comment.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.iuv.Test.comment" />
-      <option name="MAIN_CLASS_NAME" value="com.iuv.Test.comment.TestCommentDao" />
-      <option name="METHOD_NAME" value="insertComment" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.IuvApplication">
     <configuration name="TestCommentDao.queryCommentById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="iuv" />
       <extension name="coverage">
@@ -506,6 +116,22 @@
       <option name="PACKAGE_NAME" value="com.iuv.Test.comment" />
       <option name="MAIN_CLASS_NAME" value="com.iuv.Test.comment.TestCommentDao" />
       <option name="METHOD_NAME" value="queryCommentListByMovieId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCommentService.getCommentListByMovieId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="iuv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.iuv.Test.comment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.iuv.Test.comment" />
+      <option name="MAIN_CLASS_NAME" value="com.iuv.Test.comment.TestCommentService" />
+      <option name="METHOD_NAME" value="getCommentListByMovieId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -552,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestCommentService.getCommentListByMovieId" />
         <item itemvalue="JUnit.TestUserDao.queryUserByUserName" />
         <item itemvalue="JUnit.TestUserDao.queryUserById" />
         <item itemvalue="JUnit.TestCommentDao.queryCommentListByMovieId" />
         <item itemvalue="JUnit.TestCommentDao.queryCommentById" />
-        <item itemvalue="JUnit.TestCommentDao.insertComment" />
       </list>
     </recent_temporary>
   </component>
@@ -582,7 +208,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576718780592</updated>
-      <workItem from="1576718784010" duration="30564000" />
+      <workItem from="1576718784010" duration="41096000" />
+      <workItem from="1576808382019" duration="79000" />
+      <workItem from="1576891392231" duration="1621000" />
     </task>
     <task id="LOCAL-00001" summary="//1. 新创dto AjaxDate邹厚柯传递的ajax数据包装类&#10;//2. 新创pojo movie包下，Comment专用类&#10;//3. Controller新增方法getcomment&#10;//4. html页面和js代码变动">
       <created>1576738255623</created>
@@ -605,89 +233,128 @@
       <option name="project" value="LOCAL" />
       <updated>1576745694370</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="//1. 测试方法的编写&#10;//2. CommentVo包装的创建&#10;//3. user表两个查找的操作">
+      <created>1576751928447</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576751928447</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="//1. 新创dto AjaxDate邹厚柯传递的ajax数据包装类&#10;//2. 新创pojo movie包下，Comment专用类&#10;//3. Controller新增方法getcomment&#10;//4. html页面和js代码变动" />
-    <option name="LAST_COMMIT_MESSAGE" value="//1. 新创dto AjaxDate邹厚柯传递的ajax数据包装类&#10;//2. 新创pojo movie包下，Comment专用类&#10;//3. Controller新增方法getcomment&#10;//4. html页面和js代码变动" />
+    <MESSAGE value="//1. 测试方法的编写&#10;//2. CommentVo包装的创建&#10;//3. user表两个查找的操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="//1. 测试方法的编写&#10;//2. CommentVo包装的创建&#10;//3. user表两个查找的操作" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1576750060786">
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1576755783973">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1576750060786" />
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1576755783973" />
     <state x="554" y="269" width="428" height="297" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1576748200671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="554" y="269" width="428" height="297" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1576748200671" />
-    <state x="382" y="0" key="CommitChangelistDialog2" timestamp="1576745691062">
+    <state x="382" y="0" key="CommitChangelistDialog2" timestamp="1576751921724">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="382" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576745691062" />
+    <state x="382" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576751921724" />
     <state width="248" height="442" key="Diff.GoToChangePopup" timestamp="1576739582625">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="248" height="442" key="Diff.GoToChangePopup/0.0.1536.824@0.0.1536.824" timestamp="1576739582625" />
-    <state x="89" y="90" width="1350" height="638" key="DiffContextDialog" timestamp="1576739671555">
+    <state x="89" y="90" width="1350" height="638" key="DiffContextDialog" timestamp="1576758326202">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="89" y="90" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1576739671555" />
+    <state x="89" y="90" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1576758326202" />
     <state x="617" y="333" key="Github.Dialog.Accounts.Choose" timestamp="1576745808900">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="617" y="333" key="Github.Dialog.Accounts.Choose/0.0.1536.824@0.0.1536.824" timestamp="1576745808900" />
-    <state width="1489" height="155" key="GridCell.Tab.0.bottom" timestamp="1576748448391">
+    <state width="1489" height="106" key="GridCell.Tab.0.bottom" timestamp="1576892959937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="155" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576748448391" />
-    <state width="1489" height="155" key="GridCell.Tab.0.center" timestamp="1576748448391">
+    <state width="1489" height="106" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576892959937" />
+    <state width="1489" height="106" key="GridCell.Tab.0.center" timestamp="1576892959937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="155" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576748448391" />
-    <state width="1489" height="155" key="GridCell.Tab.0.left" timestamp="1576748448391">
+    <state width="1489" height="106" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576892959937" />
+    <state width="1489" height="106" key="GridCell.Tab.0.left" timestamp="1576892959937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="155" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576748448391" />
-    <state width="1489" height="155" key="GridCell.Tab.0.right" timestamp="1576748448391">
+    <state width="1489" height="106" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576892959937" />
+    <state width="1489" height="106" key="GridCell.Tab.0.right" timestamp="1576892959937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="155" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576748448391" />
-    <state width="1489" height="111" key="GridCell.Tab.1.bottom" timestamp="1576743440374">
+    <state width="1489" height="106" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576892959937" />
+    <state width="1489" height="106" key="GridCell.Tab.1.bottom" timestamp="1576892959938">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="111" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576743440374" />
-    <state width="1489" height="111" key="GridCell.Tab.1.center" timestamp="1576743440374">
+    <state width="1489" height="106" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576892959938" />
+    <state width="1489" height="106" key="GridCell.Tab.1.center" timestamp="1576892959937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="111" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1576743440374" />
-    <state width="1489" height="111" key="GridCell.Tab.1.left" timestamp="1576743440374">
+    <state width="1489" height="106" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1576892959937" />
+    <state width="1489" height="106" key="GridCell.Tab.1.left" timestamp="1576892959937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="111" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1576743440374" />
-    <state width="1489" height="111" key="GridCell.Tab.1.right" timestamp="1576743440374">
+    <state width="1489" height="106" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1576892959937" />
+    <state width="1489" height="106" key="GridCell.Tab.1.right" timestamp="1576892959937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="111" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1576743440374" />
-    <state width="1489" height="44" key="GridCell.Tab.2.bottom" timestamp="1576736445208">
+    <state width="1489" height="106" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1576892959937" />
+    <state width="1489" height="263" key="GridCell.Tab.2.bottom" timestamp="1576762850866">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="44" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576736445208" />
-    <state width="1489" height="44" key="GridCell.Tab.2.center" timestamp="1576736445208">
+    <state width="1489" height="263" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576762850866" />
+    <state width="1489" height="263" key="GridCell.Tab.2.center" timestamp="1576762850866">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="44" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1576736445208" />
-    <state width="1489" height="44" key="GridCell.Tab.2.left" timestamp="1576736445208">
+    <state width="1489" height="263" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1576762850866" />
+    <state width="1489" height="263" key="GridCell.Tab.2.left" timestamp="1576762850866">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="44" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1576736445208" />
-    <state width="1489" height="44" key="GridCell.Tab.2.right" timestamp="1576736445208">
+    <state width="1489" height="263" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1576762850866" />
+    <state width="1489" height="263" key="GridCell.Tab.2.right" timestamp="1576762850866">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1489" height="44" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1576736445208" />
+    <state width="1489" height="263" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1576762850866" />
     <state x="603" y="121" key="RollbackChangesDialog" timestamp="1576739604758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -700,22 +367,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="490" y="154" width="540" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1576747778876" />
-    <state x="361" y="144" key="Vcs.Push.Dialog.v2" timestamp="1576745797859">
+    <state x="361" y="144" key="Vcs.Push.Dialog.v2" timestamp="1576893031403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="144" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576745797859" />
-    <state x="636" y="121" width="780" height="604" key="find.popup" timestamp="1576730226270">
+    <state x="361" y="144" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576893031403" />
+    <state x="636" y="121" width="780" height="604" key="find.popup" timestamp="1576757206494">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="636" y="121" width="780" height="604" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1576730226270" />
-    <state x="498" y="202" key="git4idea.merge.GitPullDialog" timestamp="1576739756971">
+    <state x="636" y="121" width="780" height="604" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1576757206494" />
+    <state x="498" y="202" key="git4idea.merge.GitPullDialog" timestamp="1576758240189">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="498" y="202" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1576739756971" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1576748829943">
+    <state x="498" y="202" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1576758240189" />
+    <state x="185" y="106" key="new project wizard" timestamp="1576808467310">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1576748829943" />
+    <state x="185" y="106" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1576808467310" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1576892266957">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1576892266957" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -724,6 +395,33 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/iuv/controller/MovmessageController.java</url>
           <line>23</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/iuv/service/impl/CommentServiceImpl.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/iuv/service/impl/CommentServiceImpl.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/movmessage/movmessage.js</url>
+          <line>117</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/movmessage/movmessage.js</url>
+          <line>122</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/movmessage/movmessage.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

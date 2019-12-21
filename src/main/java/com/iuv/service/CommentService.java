@@ -18,7 +18,7 @@ public interface CommentService {
 
 	Comment getCommentById(Integer id);
 
-	List<Comment> getMovieComments(Integer id);
+	List<Comment> getMovieComments(Integer MovieId);
 
 
 	/*
@@ -27,5 +27,11 @@ public interface CommentService {
 	* */
 	CommentVo convertCommentToCommentVo(Comment comment);
 
+
+	/*
+	 * 通过MovieId直接获得与之相关的评论包装类列表
+	 * @Autowired Houke_zou
+	 * */
+	List<CommentVo> getCommentListByMovieId(Integer movieId);
 
 }

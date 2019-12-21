@@ -7,7 +7,7 @@
         <id column="id" property="id"></id>
         <result column="user_id" property="userId" />
         <result column="movie_id" property="movieId" />
-        <result column="create_timecreate_time" property="time" />
+        <result column="create_time" property="time" />
         <result column="graded" property="graded" />
         <result column="likes" property="likes" />
         <result column="com_content" property="comment" />
