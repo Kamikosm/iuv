@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.*;
 
 /**
- * 电影详情
+ * 电影详情-
  */
 @Controller
 public class MovmessageController {
