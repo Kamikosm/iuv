@@ -54,6 +54,9 @@ function someChangs(movie) {
             var spa = "<span class='ticket'>"+pai+"排"+lie+"列"+"</span>"
             $(".ticket-container").append(spa)
         }
+        $(".b").css({
+            "background-color": rgb(255, 100, 0),
+            "cursor": pointer})
     }else{
         $(".no-ticket").attr("style","display: block");
         $(".has-ticket").attr("style","display: none");
