@@ -41,6 +41,7 @@ function someChangs(movie) {
     if(movie.nums.length!=0){
         $(".no-ticket").attr("style","display: none");
         $(".has-ticket").attr("style","display: block");
+        $(".price").innerHTML = movie.nums.length*movie.movieMsg.price;
         $(".ticket-container").empty();
         for(var i = 0;i<movie.nums.length;i++){
             var lie = movie.nums[i]%10;
