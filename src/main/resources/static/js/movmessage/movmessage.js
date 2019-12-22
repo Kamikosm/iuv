@@ -108,7 +108,6 @@ $(function () {
 
     //发布评论
     $('.commentbt').click(function(){
-
         var formData = new FormData();
         formData.append("parent",parent);
         formData.append("content",content);

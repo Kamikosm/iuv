@@ -32,9 +32,14 @@ public class CommentController {
     @PostMapping("/user/addcomment")
     private AjaxData addcomment(HttpServletRequest request){
         AjaxData data = new AjaxData();
+
         String content = HttpServletRequestUtil.getString(request,"content");
         Integer parent = HttpServletRequestUtil.getInt(request,"parent");
         Integer root = HttpServletRequestUtil.getInt(request,"root");
+
+        System.out.println(root);
+        System.out.println(parent);
+        System.out.println(content);
 
         HttpSession session=request.getSession();
         session.setAttribute("userId",1);
