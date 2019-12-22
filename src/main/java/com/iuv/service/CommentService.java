@@ -14,7 +14,21 @@ import java.util.List;
 
 public interface CommentService {
 
+	/*
+	*   Author:         Houke_zou
+	*   Email:          houke_zou@163.com
+	*   CreateTime:     2019/12/21  14:00
+	*   Desc:           添加二级及以下评论
+	*/
 	Integer addComment(Comment comment);
+
+	/*
+	*   Author:         Houke_zou
+	*   Email:          houke_zou@163.com
+	*   CreateTime:     2019/12/21  14:00
+	*   Desc:           添加一级评论
+	*/
+	Integer addCommentWithoutRoot(Comment comment);
 
 	Comment getCommentById(Integer id);
 
@@ -33,5 +47,6 @@ public interface CommentService {
 	 * @Autowired Houke_zou
 	 * */
 	List<CommentVo> getCommentListByMovieId(Integer movieId);
+
 
 }

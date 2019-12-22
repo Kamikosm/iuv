@@ -36,8 +36,21 @@ public class CommentServiceImpl implements CommentService{
     }
 
     @Override
+    public Integer addCommentWithoutRoot(Comment comment) {
+        Integer rows = commentDao.insertCommentNoRoot(comment);
+        String content = comment.getComment();
+        Comment com = commentDao.selectCommentByContent(content);
+        Integer id = com.getId();
+        comment.setRootId(id);
+        comment.setId(id);
+        commentDao.updateComment(comment);
+        return rows;
+    }
+
+    @Override
     public Comment getCommentById(Integer id) {
-        return commentDao.queryCommentById(id);
+        Comment comment = commentDao.queryCommentById(id);
+        return comment;
     }
 
     @Override
@@ -67,13 +80,14 @@ public class CommentServiceImpl implements CommentService{
         Integer id = comment.getId();
         commentVo.setId(id);
         Integer parentId = comment.getParentId();
-        if(parentId!=null){
+        if(parentId!=0){
             commentVo.setParent(parentId);
             String name = userDao.queryUserById(parentId).getName();
             commentVo.setParentname(name);
         }
         commentVo.setRoot(comment.getRootId());
-        commentVo.setUsername(userDao.queryUserById(id).getName());
+        Integer userId = comment.getUserId();
+        commentVo.setUsername(userDao.queryUserById(userId).getName());
 
         return commentVo;
     }

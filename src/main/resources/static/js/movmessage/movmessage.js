@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(function () {
 
 	$(".lzl-div1-1 .lzl-div-p2").click(function(){

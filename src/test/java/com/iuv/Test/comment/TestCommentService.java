@@ -32,4 +32,21 @@ public class TestCommentService {
         System.out.println("测试结束了");
     }
 
+    @Test
+    public void addRootId() {
+        System.out.println("测试开始了");
+        Comment comment = new Comment();
+        comment.setUserId(5);
+        comment.setComment("可可");
+        comment.setGraded(6.1);
+        comment.setLikes(200);
+        comment.setMovieId(3);
+        comment.setParentId(1);
+        commentService.addCommentWithoutRoot(comment);
+
+        System.out.println("测试结束了");
+    }
+
+
+
 }
