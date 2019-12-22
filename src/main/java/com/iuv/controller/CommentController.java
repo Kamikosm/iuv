@@ -72,10 +72,6 @@ public class CommentController {
             return data;
         }
 
-
-
-
-
     }
 
     @ResponseBody
