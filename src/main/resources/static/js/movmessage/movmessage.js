@@ -9,31 +9,25 @@ $(function () {
         var url = "lbMvMsg";
         var params = {"lbName":lbName};
 
-        $.post(url,params,function(result){
-            MovMsg(result);
-        });
-    });
+		$.post(url,params,function(result){
+			MovMsg(result);
+		});
+	}
 
-    //首页电影跳转电影详情
-    $(function() {
-        if(lbName==null){
-            var mvName = sessionStorage.getItem("mvName");
-            var url = "MvMsg";
-            var params = {"mvName":mvName};
-            $.post(url,params,function(result){
-                MovMsg(result);
-                console.log(result)
-            });
-        }
-    });
+	//首页电影跳转电影详情
+	function mvOMsg() {
+		var mvName = sessionStorage.getItem("mvName");
+		var url = "MvMsg";
+		var params = {"mvName":mvName};
 
-
-
+		$.post(url,params,function(result){
+			MovMsg(result);
+		});
+	}
 
 	//Ajax-评论相关	@author houke_zou
 	var getcomment = "user/getcomment";
 	var addcomment = "user/addcomment";
-
 
 
 	//获取评论
@@ -179,47 +173,47 @@ $(function () {
             else return obj;
         }
 
-        var myDate = new Date();
-        var year = myDate.getFullYear();
-        var mon = myDate.getMonth() + 1;
-        var date = myDate.getDate();
-        var h = myDate.getHours();
-        var m = myDate.getMinutes();
-        var riqi = BuZero(year) + "年" + BuZero(mon) + "月" + BuZero(date) + "日";
-        var shijian = BuZero(h) + ":" + BuZero(m);
-        $(".comTime").html(riqi + " " + shijian);
-    })
+		var myDate = new Date();
+		var year = myDate.getFullYear();
+		var mon = myDate.getMonth() + 1;
+		var date = myDate.getDate();
+		var h = myDate.getHours();
+		var m = myDate.getMinutes();
+		var riqi = BuZero(year) + "年" + BuZero(mon) + "月" + BuZero(date) + "日";
+		var shijian = BuZero(h) + ":" + BuZero(m);
+		$(".comTime").html(riqi + " " + shijian);
+	})
 });
 
 Date.prototype.format = function (fmt) {
-    var o = {
-        "M+": this.getMonth() + 1, //月份
-        "d+": this.getDate(), //日
-        "h+": this.getHours(), //小时
-        "m+": this.getMinutes(), //分
-        "s+": this.getSeconds(), //秒
-        "q+": Math.floor((this.getMonth() + 3) / 3), //季度
-        "S": this.getMilliseconds() //毫秒
-    };
-    if (/(y+)/.test(fmt)) {
-        fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
-    }
-    for (var k in o) {
-        if (new RegExp("(" + k + ")").test(fmt)) {
-            fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
-        }
-    }
-    return fmt;
+	var o = {
+			"M+": this.getMonth() + 1, //月份
+			"d+": this.getDate(), //日
+			"h+": this.getHours(), //小时
+			"m+": this.getMinutes(), //分
+			"s+": this.getSeconds(), //秒
+			"q+": Math.floor((this.getMonth() + 3) / 3), //季度
+			"S": this.getMilliseconds() //毫秒
+	};
+	if (/(y+)/.test(fmt)) {
+		fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+	}
+	for (var k in o) {
+		if (new RegExp("(" + k + ")").test(fmt)) {
+			fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+		}
+	}
+	return fmt;
 }
 
 
 //电影详情
 function MovMsg(cmnResult) {
-    $(".middle-left img").attr("src",cmnResult[0].bigPic);
-    $(".movie-text h3").html(cmnResult[0].mvName);
-    $(".movie-text .ellipsis1").html("类型："+cmnResult[0].type);
-    $(".movie-text .ellipsis2").html("时长："+cmnResult[0].mvTime);
-    $(".movie-text .ellipsis3").html("上映时间："+cmnResult[0].startTime);
-    $(".movie-score .index-left").html(cmnResult[0].score);
-    $(".movie-score .stonefont").html(cmnResult[0].sum);
+	$(".middle-left img").attr("src",cmnResult[0].bigPic);
+	$(".movie-text h3").html(cmnResult[0].mvName);
+	$(".movie-text .ellipsis1").html("类型："+cmnResult[0].type);
+	$(".movie-text .ellipsis2").html("时长："+cmnResult[0].mvTime);
+	$(".movie-text .ellipsis3").html("上映时间："+cmnResult[0].startTime);
+	$(".movie-score .index-left").html(cmnResult[0].score);
+	$(".movie-score .stonefont").html(cmnResult[0].sum);
 }

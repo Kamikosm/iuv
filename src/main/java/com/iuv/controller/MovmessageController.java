@@ -1,8 +1,5 @@
 package com.iuv.controller;
 
-
-
-
 import com.iuv.pojo.dto.AjaxData;
 import com.iuv.pojo.movie.Comment;
 import com.iuv.pojo.movie.Movie;
@@ -14,10 +11,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.sound.midi.Soundbank;
+
 import java.util.*;
 
 /**
- * 电影详情-
+ * 电影详情
  */
 @Controller
 public class MovmessageController {
@@ -28,18 +27,16 @@ public class MovmessageController {
     //首页轮播图跳转电影详情
     @RequestMapping("lbMvMsg")
     @ResponseBody
-    public List<Movie> lbMvMsg(String lbName) {
-        List<Movie> lbList = movmessageService.findLbMsg(lbName);
+    public List<Movie> lbMvMsg(String mvName) {
+        List<Movie> lbList = movmessageService.findLbMsg(mvName);
         return lbList;
     }
-
+    
     //首页电影跳转电影详情
     @RequestMapping("MvMsg")
     @ResponseBody
     public List<Movie> MvMsg(String mvName) {
-        System.out.println(mvName);
-        List<Movie> mvList = movmessageService.findLbMsg(mvName);
-        System.out.println(mvList);
+        List<Movie> mvList = movmessageService.findMvMsg(mvName);
         return mvList;
     }
 

@@ -4,7 +4,8 @@ $(function(){
 	$(".menu-rank-ul li").click(function() {
 
 		var lbName = $(this).find("p:first").html();
-		sessionStorage.setItem("lbName",lbName);
+		sessionStorage.setItem("mvName",lbName);
+		sessionStorage.setItem("numkey","1");
 		window.location.href = "movmessage";
 	});
 
@@ -64,8 +65,8 @@ $(function(){
 	$(".look").click(function() {
 
 		var mvName = $(this).parent().parent().find(".movie-title").html();
-		alert(mvName)
 		sessionStorage.setItem("mvName",mvName);
+		sessionStorage.setItem("numkey","2");
 		window.location.href = "movmessage";
 	});
 

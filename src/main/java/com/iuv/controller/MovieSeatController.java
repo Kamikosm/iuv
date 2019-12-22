@@ -1,3 +1,4 @@
+
 package com.iuv.controller;
 
 import com.iuv.pojo.movie.JsonResult;
@@ -34,4 +35,5 @@ public class MovieSeatController {
     public JsonResult getSeats(Integer sceneId){
         return new JsonResult(movieSeatService.getSeats(sceneId));
     }
+
 }
