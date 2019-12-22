@@ -31,9 +31,33 @@ $(function(){
 		window.location.href = "movclass";
 	});
 	
-	//查看全部热映电影跳转电影详情
-	$(".hot-all").click(function() {
+	//查看全部热映电影跳转电影分类
+	$(".hot-all a").click(function() {
 		
+		sessionStorage.setItem("numkey","3");
+		window.location.href = "movclass";
+	});
+	
+	//查看全部热映电影跳转电影分类
+	$(".new-all a").click(function() {
+		
+		sessionStorage.setItem("numkey","3");
+		window.location.href = "movclass";
+	});
+	
+	//查看全部爱情电影跳转电影分类
+	$(".love-all a").click(function() {
+
+		var mvType = "爱情";
+		sessionStorage.setItem("type",mvType);
+		window.location.href = "movclass";
+	});
+	
+	//查看全部喜剧电影跳转电影分类
+	$(".xiju-all a").click(function() {
+
+		var mvType = "喜剧";
+		sessionStorage.setItem("type",mvType);
 		window.location.href = "movclass";
 	});
 

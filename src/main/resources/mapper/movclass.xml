@@ -6,14 +6,20 @@
 
 	<!-- 跳转分类电影 -->
 	<select id="findMVClass" resultType="com.iuv.pojo.movie.Movie">
-		select id,mv_name mvName,score,sml_pic smlPic
+		select id,type,mv_name mvName,score,sml_pic smlPic
 		from movie where type=#{type}
 	</select>
-	<!-- 查看全部热映电影跳转电影详情 -->
+	<!-- 查看全部热映电影跳转电影分类 -->
 	<select id="findHotAll" resultType="com.iuv.pojo.movie.Movie">
-		 select id,mv_name mvName,score,sml_pic smlPic
+		 select id,type,mv_name mvName,score,sml_pic smlPic
 		 from movie 
 		 order by score desc,id asc;
+	</select>
+	<!-- 查看全部即将上映电影跳转电影分类 -->
+	<select id="findTimeAll" resultType="com.iuv.pojo.movie.Movie">
+		 select id,type,mv_name mvName,score,sml_pic smlPic
+		 from movie 
+		 order by start_time desc,id asc;
 	</select>
 
 </mapper>

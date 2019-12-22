@@ -24,11 +24,18 @@ public class MovClassServiceImpl implements MovClassService {
 		return findMovies;
 	}
 
-    //查看全部热映电影跳转电影详情
+	//查看全部热映电影跳转电影分类
 	@Override
 	public List<Movie> findHotAll() {
 		List<Movie> hotAll = movClassDao.findHotAll(); 
 		return hotAll;
+	}
+
+	//查看全部即将上映电影跳转电影分类
+	@Override
+	public List<Movie> findTimeAll() {
+		List<Movie> timeAll = movClassDao.findTimeAll(); 
+		return timeAll;
 	}
 
 }

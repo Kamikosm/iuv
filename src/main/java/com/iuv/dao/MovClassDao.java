@@ -12,10 +12,13 @@ import com.iuv.pojo.movie.Movie;
 @Mapper
 public interface MovClassDao {
 
-    //导航条跳转分类电影
+    //导航条跳转电影分类
     List<Movie> findMVClass(@Param(value = "type")String type);
    
-    //查看全部热映电影跳转电影详情
+    //查看全部热映电影跳转电影分类
     List<Movie> findHotAll();
+    
+    //查看全部即将上映电影跳转电影分类
+    List<Movie> findTimeAll();
 
 }

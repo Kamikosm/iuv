@@ -12,6 +12,9 @@ body {
 	height: 2450px;
 	z-index: 3;	   
 }
+.cursor {
+	cursor: pointer;
+}
 /*菜单栏*/
 .menu {
 	width: 100%;

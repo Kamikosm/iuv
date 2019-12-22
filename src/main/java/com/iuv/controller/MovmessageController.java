@@ -30,6 +30,7 @@ public class MovmessageController {
     @RequestMapping("MvMsg")
     @ResponseBody
     public List<Movie> MvMsg(String mvName) {
+    	System.out.println(mvName);
         List<Movie> mvList = movmessageService.findMvMsg(mvName);
         return mvList;
     }

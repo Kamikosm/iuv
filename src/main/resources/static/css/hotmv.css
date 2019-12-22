@@ -29,7 +29,8 @@
 }
 .hotmv .hot-all a,
 .newmv .new-all a,
-.lovemv .love-all a{
+.lovemv .love-all a,
+.lovemv .xiju-all a {
 	width: 100px;
 	height:20px;
 	margin-top: 20px;
@@ -99,6 +100,7 @@
 .hotmv .mask,
 .newmv .mask,
 .lovemv .mask {	
+	width: 161px;
 	height: 50px;
 	line-height: 40px;
 	text-align: center;
@@ -249,9 +251,6 @@
 	font-size: 20px;
 	position: absolute;
 	color: white;
-}
-.lovemv .mask {
-	margin-left: 80px;
 }
 .lovemv .mask div {
 	background-color: white;

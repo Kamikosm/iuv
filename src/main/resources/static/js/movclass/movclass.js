@@ -1,54 +1,62 @@
-$(
-		//首页导航条页面跳转电影分类页面
-		function() {
-			var type1 = sessionStorage.getItem("type");
-			var url1 = "mainMvClass";
-			var params1 = {"type":type1};
+$(function() {
+	
+	var numkey = sessionStorage.getItem("numkey");
 
-			$.post(url1,params1,function(result){
-				for(var i=0; i<result.length; i++){
-					$(".movclass_div2").html(function(j,search){
-						return search+
-						"<div class='movclass_div2_div1'>"+
-						"<a href=''>" +
-						"<img src="+result[i].smlPic+"></img>" +
-						"</a>"+
-						"<div class='movclass_div2_yel'>" +
-						"<p class='movclass_div2_div1_p1'>"+
-						"<a href=''>"+result[i].mvName+"</a>"+
-						"</p>"+
-						"<p class='movclass_div2_div1_p2'>"+result[i].score+"</p>"+
-						"</div>"+
-						"</div>"
-					});
-				}
+	if(numkey == "3") {
+		//查看全部热映电影跳转电影详情
+		$.ajax({
+			url:'hotMvMsg',
+			type:'post',
+			dataType:'json',
+			success:function(data){
+				console.log(data);
+				msgDiv(data);
+			}
+		});
+
+		//查看全部即将上映电影跳转电影详情
+		$.ajax({
+			url:'timeMvMsg',
+			type:'post',
+			dataType:'json',
+			success:function(data){
+				console.log(data);
+				msgDiv(data);
+			}
+		});
+		
+		sessionStorage.setItem("numkey","0");
+	} 
+	
+	var type1 = sessionStorage.getItem("type");
+	var url1 = "mainMvClass";
+	var params1 = {"type":type1};
+
+	//导航条分类跳转电影分类
+	$.post(url1,params1,function(result){
+		console.log(result);
+		msgDiv(result);
+	});
+
+
+	function msgDiv(cmnresult) {
+		for(var i=0; i<cmnresult.length; i++){
+
+			$(".movclass_div2").html(function(j,search){
+				var score = (cmnresult[i].score).toFixed(1);
+				return search+
+				"<div class='movclass_div2_div1'>"+
+				"<a href=''>" +
+				"<img src="+cmnresult[i].smlPic+"></img>" +
+				"</a>"+
+				"<div class='movclass_div2_yel'>" +
+				"<p class='movclass_div2_div1_p1'>"+
+				"<a href=''>"+cmnresult[i].mvName+"</a>"+
+				"</p>"+
+				"<p class='movclass_div2_div1_p2'>"+score+"</p>"+
+				"</div>"+
+				"</div>"
 			});
-
-			//查看全部热映电影跳转电影详情
-			$.ajax({
-				url:'hotMvMsg',
-				type:'post',
-				dataType:'json',
-				success:function(data){
-					console.log(data[0].id);
-					for(var i=0; i<data.length; i++){
-						$(".movclass_div2").html(function(j,search){
-							return search+
-							"<div class='movclass_div2_div1'>"+
-							"<a href=''>" +
-							"<img src="+data[i].smlPic+"></img>" +
-							"</a>"+
-							"<div class='movclass_div2_yel'>" +
-							"<p class='movclass_div2_div1_p1'>"+
-							"<a href=''>"+data[i].mvName+"</a>"+
-							"</p>"+
-							"<p class='movclass_div2_div1_p2'>"+data[i].score+"</p>"+
-							"</div>"+
-							"</div>"
-						});
-					}
-				}
-			});
-
 		}
-);
+	}
+});

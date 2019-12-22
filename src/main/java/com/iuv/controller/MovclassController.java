@@ -19,20 +19,28 @@ public class MovclassController {
 	@Autowired
 	private MovClassService movClassService;
 
-	//导航条跳转分类电影
+	//导航条跳转电影分类
 	@RequestMapping("mainMvClass")
 	@ResponseBody
 	public List<Movie> mainMvClass(String type) {
 		List<Movie> list = movClassService.findMVClass(type);
 		return list;
 	}
-	
-	//查看全部热映电影跳转电影详情
-    @RequestMapping("hotMvMsg")
-    @ResponseBody
-    public List<Movie> hotMvMsg() {
-    	List<Movie> hotList = movClassService.findHotAll();
-    	return hotList;
-    }
-	
+
+	//查看全部热映电影跳转电影分类
+	@RequestMapping("hotMvMsg")
+	@ResponseBody
+	public List<Movie> hotMvMsg() {
+		List<Movie> hotList = movClassService.findHotAll();
+		return hotList;
+	}
+
+	//查看全部即将上映电影跳转电影分类
+	@RequestMapping("timeMvMsg")
+	@ResponseBody
+	public List<Movie> timeMvMsg() {
+		List<Movie> timeList = movClassService.findTimeAll();
+		return timeList;
+	}
+
 }
