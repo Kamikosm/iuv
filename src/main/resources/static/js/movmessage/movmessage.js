@@ -43,7 +43,6 @@ $(function () {
     var parent = 0;
     var root = 0;
 
-
     //获取评论
     $.ajax({
         url:getcomment,
