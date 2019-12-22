@@ -154,13 +154,6 @@ $(function () {
 
 
 
-
-
-
-
-
-
-
     //遮罩层获取滚动条高度
     $(function () {
         var height1 = $(document).height();
