@@ -35,27 +35,6 @@ $(function () {
     }
 
 
-    //首页轮播图页面跳转电影详情页面
-    $(function() {
-        var lbName = sessionStorage.getItem("lbName");
-        var url = "lbMvMsg";
-        var params = {"lbName":lbName};
-
-        $.post(url,params,function(result){
-            MovMsg(result);
-        });
-    }
-
-    //首页电影跳转电影详情
-    function mvOMsg() {
-        var mvName = sessionStorage.getItem("mvName");
-        var url = "MvMsg";
-        var params = {"mvName":mvName};
-
-        $.post(url,params,function(result){
-            MovMsg(result);
-        });
-    }
 
     //Ajax-评论相关	@author houke_zou
     var getcomment = "user/getcomment";
