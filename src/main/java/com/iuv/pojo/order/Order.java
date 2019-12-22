@@ -15,6 +15,6 @@ public class Order {
 	private String movieImg;
 	private String seatId;
 	private Integer hall;
-	private Date createTime;
+	private Date orderTime;
 	private Date sceneTime;
 }

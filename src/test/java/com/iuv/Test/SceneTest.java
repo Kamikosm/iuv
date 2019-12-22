@@ -59,7 +59,10 @@ public class SceneTest {
 
     @Test
     public void getOrder(){
-        List<Order> orders = orderDao.findOrders(1);
+        List<Order> orders = orderDao.findOrders(7);
+        for (Order order : orders) {
+            System.out.println(order);
+        }
         System.out.println(orders);
     }
 
@@ -71,7 +74,7 @@ public class SceneTest {
         or.setMovieImg("img/hb/2sml_pic.png");
         or.setPrice(50.0);
         or.setSceneTime(new Date());
-        or.setCreateTime(new Date());
+        or.setOrderTime(new Date());
         or.setUserId(5);
         or.setSeatId("1,3,5");
         int row = orderDao.insertOrder(or);

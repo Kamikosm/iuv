@@ -38,9 +38,9 @@ function insertOrder(movie) {
     var movieImg = movie.movieMsg.smlPic;
     var seatId = sessionStorage.getItem("seats");     //从前面网页获取座位信息
     var hall = movie.sceneMsg.hall;
-    var createTime = new Date();
+    var orderTime = new Date();
     var sceneTime = new Date(movie.sceneMsg.sceneTime);
-    var params = {"mvName":mvName,"userId":userId,"price":price,"movieImg":movieImg,"seatId":seatId,"hall":hall,"createTime":createTime,"sceneTime":sceneTime}
+    var params = {"mvName":mvName,"userId":userId,"price":price,"movieImg":movieImg,"seatId":seatId,"hall":hall,"orderTime":orderTime,"sceneTime":sceneTime}
     $.post(url,params,function () {
         getSeats();
         swal("购票成功","请提前15分钟入座!","success");

@@ -5,6 +5,6 @@
 <mapper namespace="com.iuv.dao.OrderDao">
 	<insert id="insertOrder" parameterType="com.iuv.pojo.order.Order">
 		insert into userorder(id,mv_name,user_id,price,order_time,seat_id,hall,scene_time,movie_img) values(
-		null,#{mvName},#{userId},#{price},#{createTime},#{seatId},#{hall},#{sceneTime},#{movieImg})
+		null,#{mvName},#{userId},#{price},#{orderTime},#{seatId},#{hall},#{sceneTime},#{movieImg})
 	</insert>
 </mapper>
