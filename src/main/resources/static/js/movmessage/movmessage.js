@@ -1,28 +1,34 @@
 $(function () {
+	
+	var numkey = sessionStorage.getItem("numkey");
+	alert(numkey)
+	if(numkey == 1) {
+		lbOMsg();
+	} else if (numkey == 2) {
+		mvOMsg();
+	}
 
 	//首页轮播图页面跳转电影详情页面
-	$(function() {
+	function lbOMsg() {
 		var lbName = sessionStorage.getItem("lbName");
 		var url = "lbMvMsg";
 		var params = {"lbName":lbName};
-
+		
 		$.post(url,params,function(result){
 			MovMsg(result);
 		});
-	});
+	}
 
 	//首页电影跳转电影详情
-	$(function() {
+	function mvOMsg() {
 		var mvName = sessionStorage.getItem("mvName");
-		alert(mvName)
 		var url = "MvMsg";
 		var params = {"mvName":mvName};
 
 		$.post(url,params,function(result){
-			console.log(result)
 			MovMsg(result);
 		});
-	});
+	}
 
 //	Ajax-评论相关	@author houke_zou
 
@@ -38,7 +44,6 @@ $(function () {
 		success:function(data){
 			if(data.success){
 				var list = data.objectList;
-				alert("德玛西亚");
 				for(var i = 0 ; i < list.length; i++){
 
 					if(list[i].parent==null){
@@ -101,7 +106,7 @@ $(function () {
 
 
 			}else{
-				alert("错误");
+
 			}
 		}
 	});
