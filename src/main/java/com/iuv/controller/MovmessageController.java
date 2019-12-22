@@ -27,8 +27,8 @@ public class MovmessageController {
     //首页轮播图跳转电影详情
     @RequestMapping("lbMvMsg")
     @ResponseBody
-    public List<Movie> lbMvMsg(String lbName) {
-        List<Movie> lbList = movmessageService.findLbMsg(lbName);
+    public List<Movie> lbMvMsg(String mvName) {
+        List<Movie> lbList = movmessageService.findLbMsg(mvName);
         return lbList;
     }
     
@@ -36,7 +36,7 @@ public class MovmessageController {
     @RequestMapping("MvMsg")
     @ResponseBody
     public List<Movie> MvMsg(String mvName) {
-        List<Movie> mvList = movmessageService.findLbMsg(mvName);
+        List<Movie> mvList = movmessageService.findMvMsg(mvName);
         return mvList;
     }
 

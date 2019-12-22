@@ -4,7 +4,7 @@ $(function(){
 	$(".menu-rank-ul li").click(function() {
 
 		var lbName = $(this).find("p:first").html();
-		sessionStorage.setItem("lbName",lbName);
+		sessionStorage.setItem("mvName",lbName);
 		sessionStorage.setItem("numkey","1");
 		window.location.href = "movmessage";
 	});

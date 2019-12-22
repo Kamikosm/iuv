@@ -44,9 +44,6 @@ public class CommentController {
 
         List<CommentVo> commentList = commentService.getCommentListByMovieId(movieId);
 
-
-
-
 //        List commentList = new ArrayList<>();
 //        Comment comment_1 = new Comment(1,"keke",null,1,"可可",new Date());
 //        Comment comment_2 = new Comment(2,"dede",1,1,"可可-1",new Date());
