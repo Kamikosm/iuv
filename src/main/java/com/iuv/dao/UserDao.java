@@ -1,6 +1,5 @@
 package com.iuv.dao;
 
-import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
@@ -11,4 +10,11 @@ public interface UserDao {
     User queryUserById(Integer id);
 
     User queryUserByUserName(String username);
+    
+    //用户注册
+    public void register(User user);
+    
+    //用户登录
+    public User login(User user);
+    
 }

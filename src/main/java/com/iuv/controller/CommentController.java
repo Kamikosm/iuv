@@ -37,11 +37,13 @@ public class CommentController {
         Integer parent = HttpServletRequestUtil.getInt(request,"parent");
         Integer root = HttpServletRequestUtil.getInt(request,"root");
 
+        HttpSession session=request.getSession();
+        session.setAttribute("movieId",1);
+
         System.out.println(root);
         System.out.println(parent);
         System.out.println(content);
 
-        HttpSession session=request.getSession();
         session.setAttribute("userId",1);
         Integer userId = (Integer) session.getAttribute("userId");
         Integer movieId = (Integer) session.getAttribute("movieId");

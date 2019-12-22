@@ -1,7 +1,8 @@
 package com.iuv.pojo.user;
 
-public class User {
+import java.util.Date;
 
+public class User {
 
 	private Integer id;
 	private String name;
@@ -10,9 +11,8 @@ public class User {
 	private String city;
 	private String message;
 	private String sex;
-	private String photo;
-	private String nickname;
-
+	private String headPhoto; //头像
+	private Date birthday;
 
 
 	public Integer getId() {
@@ -57,21 +57,21 @@ public class User {
 	public void setSex(String sex) {
 		this.sex = sex;
 	}
-	public String getPhoto() {
-		return photo;
+	public String getHeadPhoto() {
+		return headPhoto;
 	}
-	public void setPhoto(String photo) {
-		this.photo = photo;
+	public void setHeadPhoto(String headPhoto) {
+		this.headPhoto = headPhoto;
+	}
+	public Date getBirthday() {
+		return birthday;
+	}
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
 	}
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", phone=" + phone + ", password=" + password + ", city=" + city
-				+ ", message=" + message + ", sex=" + sex + ", photo=" + photo + ", nickname=" + nickname + "]";
-	}
-	public String getNickname() {
-		return nickname;
-	}
-	public void setNickname(String nickname) {
-		this.nickname = nickname;
+				+ ", message=" + message + ", sex=" + sex + ", headPhoto=" + headPhoto + ", birthday=" + birthday + "]";
 	}
 }
