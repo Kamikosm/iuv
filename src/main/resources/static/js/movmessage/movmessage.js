@@ -97,12 +97,18 @@ $(function () {
     });
 
 
+    $('.commentbt').click(function () {
+
+
+    })
+
+    var content = $('#textArea').val();
+    var parent = $(this).parent().parent().find("span:first");
+    var root = 0;
 
     //发布评论
     $('.commentbt').click(function(){
-        var content = $('#textArea').val();
-        var parent = 0;
-        var root = 0;
+
         var formData = new FormData();
         formData.append("parent",parent);
         formData.append("content",content);
