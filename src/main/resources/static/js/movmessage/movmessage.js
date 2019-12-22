@@ -7,16 +7,22 @@ $(function () {
         var params = {"lbName":lbName};
 
         $.post(url,params,function(result){
-            $(".middle-left img").attr("src",result[0].bigPic);
-            $(".movie-text h3").html(result[0].mvName);
-            $(".movie-text .ellipsis1").html("类型："+result[0].type);
-            $(".movie-text .ellipsis2").html("时长："+result[0].mvTime);
-            $(".movie-text .ellipsis3").html("上映时间："+result[0].startTime);
-            $(".movie-score .index-left").html(result[0].score);
-            $(".movie-score .stonefont").html(result[0].sum);
+            MovMsg(result);
         });
     });
 
+    //首页电影跳转电影详情
+    $(function() {
+        if(lbName==null){
+            var mvName = sessionStorage.getItem("mvName");
+            var url = "MvMsg";
+            var params = {"mvName":mvName};
+            $.post(url,params,function(result){
+                MovMsg(result);
+                console.log(result)
+            });
+        }
+    });
 
 
 
@@ -80,7 +86,7 @@ $(function () {
                         if(id_1 == id_2){
                             $(id_1).find(".lzl-div").append(commentLzl);
                         }else{
-                            $(id_2).after(commentLzl);
+                            $(id_1).find(".lzl-div").append(commentLzl);
                         }
                     }
                 }
@@ -165,4 +171,16 @@ Date.prototype.format = function (fmt) {
         }
     }
     return fmt;
+}
+
+
+//电影详情
+function MovMsg(cmnResult) {
+    $(".middle-left img").attr("src",cmnResult[0].bigPic);
+    $(".movie-text h3").html(cmnResult[0].mvName);
+    $(".movie-text .ellipsis1").html("类型："+cmnResult[0].type);
+    $(".movie-text .ellipsis2").html("时长："+cmnResult[0].mvTime);
+    $(".movie-text .ellipsis3").html("上映时间："+cmnResult[0].startTime);
+    $(".movie-score .index-left").html(cmnResult[0].score);
+    $(".movie-score .stonefont").html(cmnResult[0].sum);
 }
