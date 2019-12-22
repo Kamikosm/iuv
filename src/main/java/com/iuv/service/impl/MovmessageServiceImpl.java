@@ -25,4 +25,11 @@ public class MovmessageServiceImpl implements MovmessageService {
         return lbList;
     }
 
+    //首页电影跳转电影详情
+	@Override
+	public List<Movie> findMvMsg(String mainMvName) {
+		List<Movie> mvList = movmessageDao.findMvMsg(mainMvName);
+		return mvList;
+	}
+
 }

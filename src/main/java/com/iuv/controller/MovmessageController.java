@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.sound.midi.Soundbank;
+
 import java.util.*;
 
 /**
@@ -29,8 +31,19 @@ public class MovmessageController {
     @RequestMapping("lbMvMsg")
     @ResponseBody
     public List<Movie> lbMvMsg(String lbName) {
+    	System.out.println(lbName);
         List<Movie> lbList = movmessageService.findLbMsg(lbName);
         return lbList;
+    }
+    
+    //首页电影跳转电影详情
+    @RequestMapping("MvMsg")
+    @ResponseBody
+    public List<Movie> MvMsg(String mainMvName) {
+    	System.out.println(mainMvName);
+        List<Movie> mvList = movmessageService.findLbMsg(mainMvName);
+        System.out.println(mvList);
+        return mvList;
     }
 
     

@@ -8,8 +8,13 @@
 	<select id="findLbMsg" resultType="com.iuv.pojo.movie.Movie">
 		select id,mv_name mvName,type,mv_time mvTime,start_time startTime,message,score,sum,big_pic bigPic 
 		from movie 
-		where mv_Name=#{mvName}
+		where mv_Name=#{lbName}
+	</select>
+	<!-- 首页电影跳转电影详情 -->
+	<select id="findMvMsg" resultType="com.iuv.pojo.movie.Movie">
+		select id,mv_name mvName,type,mv_time mvTime,start_time startTime,message,score,sum,big_pic bigPic 
+		from movie 
+		where mv_Name=#{mainMvName}
 	</select>
 	
-
 </mapper>

@@ -16,6 +16,9 @@ import com.iuv.pojo.movie.Movie;
 public interface MovmessageDao {
 
     //首页轮播图跳转电影详情
-    List<Movie> findLbMsg(@Param(value = "mvName")String mvName);
+    List<Movie> findLbMsg(@Param(value = "lbName")String mvName);
+    
+    //首页电影跳转电影详情
+    List<Movie> findMvMsg(@Param(value = "mainMvName")String mvName);
 
 }

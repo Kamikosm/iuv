@@ -8,14 +8,6 @@ $(function(){
 		window.location.href = "movmessage";
 	});
 
-	//导航条跳转分类电影
-	$(".menu-bar-ul li").click(function() {
-
-		var mvType = $(this).find("a").html();
-		sessionStorage.setItem("type",mvType);
-		window.location.href = "movclass";
-	});
-
 	//轮播图
 	$.ajax({
 		url:'mainLunbo',
@@ -28,6 +20,20 @@ $(function(){
 				$(el).find("p:last").html(data[index].mvMsg);
 			});
 		}
+	});
+	
+	//导航条跳转分类电影
+	$(".menu-bar-ul li").click(function() {
+
+		var mvType = $(this).find("a").html();
+		sessionStorage.setItem("type",mvType);
+		window.location.href = "movclass";
+	});
+	
+	//查看全部热映电影跳转电影详情
+	$(".hot-all").click(function(){
+		
+		window.location.href = "movclass";
 	});
 
 	//热映电影
@@ -52,6 +58,15 @@ $(function(){
 //			$(tr[i]).find("img").attr("src",data[i].smlPic);
 //			}
 		}
+	});
+	
+	//首页电影跳转电影详情
+	$(".look").click(function() {
+
+		var mvName = $(this).parent().parent().find(".movie-title").html();
+		alert(mvName)
+		sessionStorage.setItem("mvName",mvName);
+		window.location.href = "movmessage";
 	});
 
 	//即将上映
