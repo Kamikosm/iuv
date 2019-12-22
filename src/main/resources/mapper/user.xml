@@ -16,32 +16,35 @@
 
 
 	<select id="queryUserById" resultMap="User">
-        SELECT
+		SELECT
 		*
 		FROM
 		user
 		WHERE
-		id = #{id}
-    </select>
+		id =
+		#{id}
+	</select>
 
 	<select id="queryUserByUserName" resultMap="User">
-        SELECT
+		SELECT
 		*
 		FROM
 		user
 		WHERE
 		name = #{name}
-    </select>
+	</select>
 
+	<!-- 用户注册 -->
+	<update id="register">
+		insert into user (phone,password)
+		values
+		(#{phone},#{password})
+	</update>
 
-
-<!--	<update id="register" >-->
-<!--		insert into user (phone,password) values (#{phone},#{password})-->
-<!--	</update>-->
-
-<!--	<select id="login" resultType="com.iuv.pojo.user.User">-->
-<!--		select * from user where phone=#{phone} and password=#{password}-->
-<!--	</select>-->
+	<!-- 用户登录 -->
+	<select id="login" resultType="com.iuv.pojo.user.User">
+		select * from user where phone=#{phone} and password=#{password}
+	</select>
 
 
 

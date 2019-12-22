@@ -1,17 +1,11 @@
 package com.iuv.controller;
 
-import com.iuv.pojo.dto.AjaxData;
-import com.iuv.pojo.movie.Comment;
 import com.iuv.pojo.movie.Movie;
 import com.iuv.service.MovmessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.sound.midi.Soundbank;
 
 import java.util.*;
 

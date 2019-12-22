@@ -32,7 +32,7 @@ $(function(){
 	});
 	
 	//查看全部热映电影跳转电影详情
-	$(".hot-all").click(function(){
+	$(".hot-all").click(function() {
 		
 		window.location.href = "movclass";
 	});

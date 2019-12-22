@@ -1,8 +1,5 @@
 package com.iuv.service;
 
-import java.util.List;
-
-import com.iuv.pojo.movie.Comment;
 import com.iuv.pojo.user.User;
 
 public interface UserService {
@@ -16,5 +13,11 @@ public interface UserService {
 	 * 	@Author Houke_zou
 	 */
 	User getUserByUserName(String username);
+	
+	//用户注册
+    public void register(User user);
+    
+    //用户登录
+    public User login(User user);
 
 }
