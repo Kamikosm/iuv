@@ -61,10 +61,7 @@
 	margin-left: 20px;
 	float: left;
 }
-.hotmv-pic-big img {
-	width: 360px;
-	height: 220px;
-}
+
 /*小海报*/
 .hotmv-pic-sma,
 .newmv-pic-sma {
@@ -173,8 +170,7 @@
 .newmv .buy:hover {
 	background: #FF6400;
 }
-.hotmv img,
-.newmv img {
+.hotmv img, .newmv img {
 	width:100%;
 	height: 220px;
 	transition: transform 0.4s;
@@ -204,6 +200,11 @@
 	width: 1160px;	
 	height: 220px;
 	margin: 40px 20px;
+}
+
+.hotmv-btm img {
+	width: 160px;
+	height: 220px;
 }
 .hotmv-btm li:last-child {
 	margin: 0;
@@ -288,4 +289,3 @@
 .lovemv .buy:hover a {
 	color: white;
 }
-

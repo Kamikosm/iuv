@@ -33,4 +33,14 @@ public class MovmessageController {
         return lbList;
     }
 
+    //首页电影跳转电影详情
+    @RequestMapping("MvMsg")
+    @ResponseBody
+    public List<Movie> MvMsg(String mvName) {
+        System.out.println(mvName);
+        List<Movie> mvList = movmessageService.findLbMsg(mvName);
+        System.out.println(mvList);
+        return mvList;
+    }
+
 }

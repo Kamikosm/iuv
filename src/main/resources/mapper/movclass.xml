@@ -9,5 +9,11 @@
 		select id,mv_name mvName,score,sml_pic smlPic
 		from movie where type=#{type}
 	</select>
+	<!-- 查看全部热映电影跳转电影详情 -->
+	<select id="findHotAll" resultType="com.iuv.pojo.movie.Movie">
+		 select id,mv_name mvName,score,sml_pic smlPic
+		 from movie 
+		 order by score desc,id asc;
+	</select>
 
 </mapper>

@@ -27,4 +27,12 @@ public class MovclassController {
 		return list;
 	}
 	
+	//查看全部热映电影跳转电影详情
+    @RequestMapping("hotMvMsg")
+    @ResponseBody
+    public List<Movie> hotMvMsg() {
+    	List<Movie> hotList = movClassService.findHotAll();
+    	return hotList;
+    }
+	
 }

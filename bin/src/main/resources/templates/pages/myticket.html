@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>iuv电影院-我的订单</title>
+		<link rel="stylesheet" type="text/css" href="css/myticket.css" />
+		<link rel="stylesheet" type="text/css" href="css/head.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+
+		<script type="text/javascript" src="js/common/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/myticket/myticket.js"></script>
+		<script type="text/javascript" src="js/login/login.js"></script>
+	</head>
+
+	<body>
+		<div class="cover"></div>
+		<div class="head1">
+			<div class="head2">
+				<a id="search_a1" href=""></a>
+				<div class="head3">
+					<ul class="search_u1">
+						<li class="search_l1">
+							<a class="search_a2" href="main">首页</a>
+						</li>
+						<li class="search_l1">
+							<a class="search_a2" href="movclass1?classname=爱情">爱情</a>
+						</li>
+						<li class="search_l1">
+							<a class="search_a2" href="movclass1?classname=喜剧">喜剧</a>
+						</li>
+						<li class="search_l1">
+							<a class="search_a2" href="">动作</a>
+						</li>
+						<li class="search_l1">
+							<a class="search_a2" href="">科幻</a>
+						</li>
+						<li class="search_l1">
+							<a class="search_a2" href="">恐怖</a>
+						</li>
+						<li class="search_l1">
+							<a class="search_a2" href="">动画</a>
+						</li>
+					</ul>
+				</div>
+				<div class="head4">
+					<form action="search" method="post">
+						<input type="text" name="searchname" id="" placeholder="找影视剧、影人、影院" />
+						<input type="submit" value="" />
+					</form>
+				</div>
+				<div class="menu-bar-user">
+					<!--未登录时-->
+					<div class="menu-bar-denglu">
+						<div class="triangle"></div>
+						<div class="menu-bar-tui">
+							<div class="tui-top">
+								<img src="img/touxiang.png" />
+								<p class="user-name">您未登录</p>
+								<div class="tuichu">
+									<a style="cursor: pointer" class="menu-denglu">请登录</a>
+								</div>
+							</div>
+							<div class="tui-bottom">
+								<ul class="tui-bottom-ul1">
+									<li><img src="img/zhuye.png" /></li>
+									<li><img src="img/huiyuan.png" /></li>
+									<li><img src="img/help.png" /></li>
+									<li><img src="img/shezhi.png" /></li>
+								</ul>
+								<ul class="tui-bottom-ul2">
+									<li>主页</li>
+									<li>会员</li>
+									<li>帮助</li>
+									<li>设置</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--登录页面-->
+				<div class="login1">
+					<a class="xx" href=""><em>关闭</em></a>
+					<div class="login2">
+						<ul class="tab">
+							<li class="current">账号登录</li>
+							<li class="loginnas">邮箱登录</li>
+						</ul>
+					</div>
+					<div class="login3">
+						<form action="login" method="post">
+							<input type="hidden" name="url" value="main">
+							<p>
+								<span id="s1">账号</span>
+								<input class="loginname" type="text" name="name" id="name" placeholder="请输入手机号码" onkeyup="value=value.replace(/[^\d]/g,'')" maxlength=11 />
+								<p class="login3-p p1">您输入的手机号有误，请重新输入</p>
+							</p>
+							<p>
+								<span id="s1">密码</span>
+								<input class="loginpwd" type="password" name="pwd" id="pwd" placeholder="请输入密码" />
+								<p class="login3-p p2">您输入的密码有误，请重新输入</p>
+							</p>
+							<p>
+								<span id="s1">验证码</span>
+								<input type="text" name="yzm" id="yzm" placeholder="验证码" /> <span id="s2" class="ss1" style="cursor: pointer;">获取验证码（60）</span>
+								<!--<span><img src="img/shuaxin.png" id="img1"/></span>-->
+								<p class="login3-p p3">验证码错误</p>
+							</p>
+							<p>
+								<input type="checkbox" name="" id="" value="" />
+								<label>记住我</label>
+								<a style="cursor: pointer;" id="a2">注册</a>
+								<a href="" id="a1">忘记密码？</a>
+							</p>
+							<input type="submit" value="登录" />
+						</form>
+					</div>
+
+					<div class="login4">
+						<ul>
+							<li class="login4-li li1"></li>
+							<li class="login4-li li2"></li>
+							<li class="login4-li li3"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="register1">
+					<a class="xx" style="cursor: pointer;"><em>关闭</em></a>
+					<div class="register2">
+						<ul class="tab">
+							<li class="current">注册</li>
+						</ul>
+					</div>
+					<div class="register3">
+						<form action="register" method="post">
+							<input type="hidden" name="url" value="main">
+							<p>
+								<span id="s1">手机</span>
+								<input class="registername" type="text" name="name" id="name" placeholder="请输入手机号码" onkeyup="value=value.replace(/[^\d]/g,'')" maxlength=11 />
+								<p class="login3-p p4">请输入11位正确的手机号</p>
+							</p>
+							<p>
+								<span id="s1">密码</span>
+								<input class="registerpwd" type="password" name="pwd" id="pwd" placeholder="请输入6~20位密码" />
+								<p class="login3-p p5">密码只支持数字、英文</p>
+							</p>
+							<p>
+								<span id="s1">验证码</span> <input type="text" name="yzm" id="yzm" placeholder="验证码" />
+								<span id="s2" class="ss2" style="cursor: pointer;">获取验证码（60）</span>
+								<p class="login3-p p6">验证码错误</p>
+							</p>
+							<p>
+								<input type="checkbox" checked="checked" name="" id="" value="" />
+								<span class="s1">我已阅读<a href="" class="a1">影院用户协议</a>及<a
+						href="" class="a1">版权声明</a></span>
+							</p>
+							<input type="submit" value="注册" />
+							<p>
+								<a id="aa1" style="cursor: pointer;">返回账号登录</a>
+							</p>
+						</form>
+					</div>
+					<div class="register4">
+						<ul>
+							<li class="l1"></li>
+							<li class="l2"></li>
+							<li class="l3"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="user-profile-nav">
+				<img src="img/touxiang1.png" style="margin-top: 20px;" />
+				<h1>13087345445</h1>
+				<ul class="user-profile-ul">
+					<li class="orders acctive cursor">
+						<a href="">我的订单</a>
+					</li>
+					<li class="profile cursor">
+						<a href="">基本信息</a>
+					</li>
+				</ul>
+			</div>
+			<div class="orders-controller">
+				<div class="profile-title">我的订单</div>
+				<!--订单-->
+				<div class="profile-context">
+					<div class="order-header"><span class="order-date">2019-10-22</span> <span class="order-id">iuv订单号:21018737997</span></div>
+					<div class="order-body">
+						<div class="poster"><img src="img/pkq.jpg"></div>
+						<div class="order-content">
+							<div class="movie-name">&lt;废柴老爸&gt;</div>
+							<div class="cinema-name">iuv电影院(长沙店)</div>
+							<div class="hall-ticket"><span>1排6座</span> <span>1排7座</span> <span></span> <span></span> <span></span> <span></span> </div>
+							<div class="show-time">2019-10-22 00:58:22</div>
+						</div>
+						<div class="order-price">¥56</div>
+						<div class="order-status">已完成</div>
+						<div class="actions">
+							<div>
+								<a class="order-detail" href="" data-act="orders-datail-cick" data-bid="#">查看详情</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="profile-context">
+					<div class="order-header"><span class="order-date">2019-10-22</span> <span class="order-id">iuv订单号:21018737997</span></div>
+					<div class="order-body">
+						<div class="poster"><img src="img/pkq.jpg"></div>
+						<div class="order-content">
+							<div class="movie-name">&lt;废柴老爸&gt;</div>
+							<div class="cinema-name">iuv电影院(长沙店)</div>
+							<div class="hall-ticket"><span>1排6座</span> <span>1排7座</span> <span></span> <span></span> <span></span> <span></span> </div>
+							<div class="show-time">2019-10-22 00:58:22</div>
+						</div>
+						<div class="order-price">¥56</div>
+						<div class="order-status">已完成</div>
+						<div class="actions">
+							<div>
+								<a class="order-detail" href="" data-act="orders-datail-cick" data-bid="#">查看详情</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="profile-context">
+					<div class="order-header"><span class="order-date">2019-10-22</span> <span class="order-id">iuv订单号:21018737997</span></div>
+					<div class="order-body">
+						<div class="poster"><img src="img/pkq.jpg"></div>
+						<div class="order-content">
+							<div class="movie-name">&lt;废柴老爸&gt;</div>
+							<div class="cinema-name">iuv电影院(长沙店)</div>
+							<div class="hall-ticket"><span>1排6座</span> <span>1排7座</span> <span></span> <span></span> <span></span> <span></span> </div>
+							<div class="show-time">2019-10-22 00:58:22</div>
+						</div>
+						<div class="order-price">¥56</div>
+						<div class="order-status">已完成</div>
+						<div class="actions">
+							<div>
+								<a class="order-detail" href="" data-act="orders-datail-cick" data-bid="#">查看详情</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

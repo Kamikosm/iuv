@@ -1,13 +1,13 @@
 package com.iuv.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.iuv.dao.MovmessageDao;
 import com.iuv.pojo.movie.Movie;
 import com.iuv.service.MovmessageService;
-import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 /**
  * 电影详情
@@ -25,5 +25,11 @@ public class MovmessageServiceImpl implements MovmessageService {
         return lbList;
     }
 
-}
+    //首页电影跳转电影详情
+	@Override
+	public List<Movie> findMvMsg(String mainMvName) {
+		List<Movie> mvList = movmessageDao.findMvMsg(mainMvName);
+		return mvList;
+	}
 
+}

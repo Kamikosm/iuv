@@ -23,6 +23,25 @@
     (null, now(), #{comment}, #{movieId}, #{userId}, #{parentId}, #{rootId})
     </insert>
 
+    <insert id="insertCommentNoRoot">
+    INSERT INTO comment
+    (id,create_time,com_content,movie_id,user_id,parent_id)
+    VALUES
+    (null, now(), #{comment}, #{movieId}, #{userId}, #{parentId})
+    </insert>
+
+
+    <update id="updateComment" parameterType="com.iuv.pojo.movie.Comment">
+        update comment
+        <set>
+            <if test="rootId!=null">root_id=#{id},</if>
+        </set>
+        where id = #{id}
+    </update>
+
+
+
+
 
     <select id="queryCommentById" resultMap="Comment">
         SELECT
@@ -42,11 +61,21 @@
 		movie_id = #{id}
     </select>
 
+    <select id="selectCommentByContent" resultMap="Comment">
+        SELECT
+		*
+		FROM
+		comment
+		WHERE
+		com_content = #{content}
+    </select>
 
 
 
 
-<!--  <select id="selectAll" resultType="Comment">-->
+
+
+    <!--  <select id="selectAll" resultType="Comment">-->
 <!--  	select time,comment,(select phone from user where id=user_id) name from comment where movie_id=#{movieId} order by time desc-->
 <!--  </select>-->
 
