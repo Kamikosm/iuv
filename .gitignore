@@ -15,6 +15,7 @@ target/
 
 ### IntelliJ IDEA ###
 .idea
+.mvn
 *.iws
 *.iml
 *.ipr
@@ -29,3 +30,22 @@ build/
 
 ### VS Code ###
 .vscode/
+!/.gitignore
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+target/generated-sources/
+target/generated-test-sources/

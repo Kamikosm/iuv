@@ -1,6 +1,8 @@
 package com.iuv.pojo.user;
 
 public class User {
+
+
 	private Integer id;
 	private String name;
 	private String phone;
@@ -10,6 +12,9 @@ public class User {
 	private String sex;
 	private String photo;
 	private String nickname;
+
+
+
 	public Integer getId() {
 		return id;
 	}

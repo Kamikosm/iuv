@@ -10,8 +10,17 @@ import com.iuv.pojo.user.User;
 import com.iuv.service.UserService;
 @Service
 public class UserServiceImpl implements UserService {
-/**
- * 用户
- * 
- * */
+
+    @Autowired
+    private UserDao userDao;
+
+    @Override
+    public User getUserByUserId(Integer id) {
+        return userDao.queryUserById(id);
+    }
+
+    @Override
+    public User getUserByUserName(String username) {
+        return userDao.queryUserByUserName(username);
+    }
 }

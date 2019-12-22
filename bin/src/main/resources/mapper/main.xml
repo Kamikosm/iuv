@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.iuv.dao.MainDao">
+
+	<!-- 轮播图 -->
+	<select id="findLunbo" resultType="com.iuv.pojo.movie.Lunbo">
+		select mv_name mvName,mv_msg mvMsg
+		from lunbo
+		order by lunbo.id asc ;
+	</select>
+	<!-- 热映电影 -->
+	<select id="findHotMv" resultType="com.iuv.pojo.movie.Movie">
+		 select id,mv_name mvName,sml_pic smlPic,heng_pic hengPic
+		 from movie order by score desc,id asc limit 11;
+	</select>
+	<!-- 即将上映 -->
+	<select id="findNewMv" resultType="com.iuv.pojo.movie.Movie">
+		 select id,mv_name mvName,sml_pic smlPic,heng_pic hengPic
+		 from movie order by id desc limit 11;
+	</select>
+	<!-- 爱情电影 -->
+	<select id="findLoveMv" resultType="com.iuv.pojo.movie.Movie">
+		 select id,mv_name mvName,sml_pic smlPic
+		 from movie where type="爱情"  order by rand() limit 6;
+	</select>
+	<!-- 喜剧电影 -->
+	<select id="findXijuMv" resultType="com.iuv.pojo.movie.Movie">
+		 select id,mv_name mvName,sml_pic smlPic
+		 from movie where type="喜剧"  order by rand() limit 6;
+	</select>
+
+</mapper>

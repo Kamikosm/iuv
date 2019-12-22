@@ -3,6 +3,7 @@ package com.iuv.dao;
 import com.iuv.pojo.movie.Comment;
 import org.apache.ibatis.annotations.Mapper;
 
+import java.lang.reflect.Array;
 import java.util.List;
 
 @Mapper
