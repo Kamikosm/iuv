@@ -61,10 +61,7 @@
 	margin-left: 20px;
 	float: left;
 }
-.hotmv-pic-big img {
-	width: 360px;
-	height: 220px;
-}
+
 /*小海报*/
 .hotmv-pic-sma,
 .newmv-pic-sma {
@@ -205,6 +202,10 @@
 	height: 220px;
 	margin: 40px 20px;
 }
+.hotmv-btm img {
+	width: 160px;
+	height: 220px;
+}
 .hotmv-btm li:last-child {
 	margin: 0;
 }
@@ -288,4 +289,3 @@
 .lovemv .buy:hover a {
 	color: white;
 }
-
