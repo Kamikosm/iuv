@@ -4,6 +4,7 @@ package com.iuv.service.impl;
 import com.iuv.dao.MovieSeatDao;
 import com.iuv.pojo.movie.LittleMovieMsg;
 import com.iuv.pojo.movie.MovieScene;
+import com.iuv.util.ServiceException;
 import org.springframework.stereotype.Service;
 
 import com.iuv.service.MovieSeatService;
@@ -27,8 +28,10 @@ public class MovieSeatServiceImpl implements MovieSeatService {
     }
 
     @Override
-    public int addSeats(Integer sceneId, Integer userId, Integer...seatIds) {
-        return 0;
+    public int addSeats(Integer sceneId, Integer userId, Integer[]seatIds) {
+        int rows = movieSeatDao.addSeats(sceneId, userId, seatIds);
+        if(rows==0) throw new ServiceException("插入座位失败!");
+        return rows;
     }
 
     @Override

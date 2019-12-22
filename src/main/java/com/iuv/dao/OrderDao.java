@@ -1,17 +1,19 @@
 package com.iuv.dao;
 
+import com.iuv.pojo.order.Order;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
+
 import java.util.List;
 
-
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-
-import com.iuv.pojo.order.Order;
 /**
  * 订单
  * 
  * */
 @Mapper
 public interface OrderDao {
+    @Select("select * from userorder where user_id=#{userId}")
+    List<Order> findOrders(Integer userId);
 
+    int insertOrder(Order order);
 }

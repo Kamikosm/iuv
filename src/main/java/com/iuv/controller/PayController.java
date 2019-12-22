@@ -28,7 +28,7 @@ public class PayController {
 	private final String SIGN_TYPE = "RSA2";
 	private final String GATEWAY_URL = "https://openapi.alipaydev.com/gateway.do";
 	private final String NOTIFY_URL = "http://localhost/notifyUrl";
-	private final String RETURN_URL = "http://localhost/myticket";
+	private final String RETURN_URL = "http://localhost/seat-temp";
 
 	
 	

@@ -5,12 +5,15 @@ import com.iuv.pojo.movie.JsonResult;
 import com.iuv.service.MovieSeatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Arrays;
 
 /**
  *此类为座位
  * */
-@RequestMapping("ticket")
+@RequestMapping("/ticket/")
 @RestController
 public class MovieSeatController {
     @Autowired
@@ -36,4 +39,8 @@ public class MovieSeatController {
         return new JsonResult(movieSeatService.getSeats(sceneId));
     }
 
+    @RequestMapping("addSeats")
+    public JsonResult addSeats(Integer sceneId, Integer userId, @RequestParam("seatIds") Integer[] seatIds){
+        return new JsonResult(movieSeatService.addSeats(sceneId,userId,seatIds));
+    }
 }

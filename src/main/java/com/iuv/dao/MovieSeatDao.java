@@ -23,7 +23,7 @@ public interface MovieSeatDao {
     @Select("select seat_id from seat where scene_id=#{sceneId}")
     List<Integer> getSeats(Integer sceneId);
 
-    int addSeats(Integer sceneId,Integer userId,@Param("seatIds") Integer...seatIds);
+    int addSeats(Integer sceneId,Integer userId,@Param("seatIds") Integer[]seatIds);
 
     LittleMovieMsg getMovieMsg(Integer movieId);
 }

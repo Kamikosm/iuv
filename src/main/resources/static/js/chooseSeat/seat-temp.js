@@ -14,15 +14,48 @@ $(function() {
     AjaxMovieMsg(movie);
     AjaxSceneMsg(movie);
     giveNum(movie);
-    getSeats();
 });
+
+function insertSeats(movie) {
+    var url = "ticket/addSeats";
+    var sceneId = 3;                        //需要动态获取场次id
+    var userId = 7;                       //需要动态获取用户id
+    var seatIds = sessionStorage.getItem("seats");   //从前面网页获取座位信息
+    var params = {"sceneId":sceneId,"userId":userId,"seatIds":seatIds};
+    $.post(url,params,function (result) {
+        if(result.state==1){
+            insertOrder(movie);
+        }
+    })
+    getSeats();
+}
+
+function insertOrder(movie) {
+    var url = "order/insertOrder";
+    var mvName = movie.movieMsg.mvName;
+    var userId = 7;                      //需要动态获取用户id
+    var price = sessionStorage.getItem("price"); //从前面网页获取price
+    var movieImg = movie.movieMsg.smlPic;
+    var seatId = sessionStorage.getItem("seats");     //从前面网页获取座位信息
+    var hall = movie.sceneMsg.hall;
+    var createTime = new Date();
+    var sceneTime = new Date(movie.sceneMsg.sceneTime);
+    var params = {"mvName":mvName,"userId":userId,"price":price,"movieImg":movieImg,"seatId":seatId,"hall":hall,"createTime":createTime,"sceneTime":sceneTime}
+    $.post(url,params,function () {
+        getSeats();
+        swal("购票成功","请提前15分钟入座!","success");
+        $(".sa-success").attr("style","display:block")
+        $(".confirm").click(function(){
+            location.href = "/myticket";
+        })
+    })
+}
 
 function getSeats(){
     var url = "/ticket/getSeats"
     var params = {sceneId:3};            //需要动态获取场次id
     $.post(url,params,function (result) {
         var seats = result.data;
-        console.log(seats)
         for (var i = 0; i < seats.length; i++) {
             $("#text span").eq(seats[i]-1).attr("class","seat sold");
             $("#text span").eq(seats[i]-1).off("click");
@@ -104,12 +137,14 @@ function AjaxMovieMsg(movie) {
 
 function AjaxSceneMsg(movie) {
     var url = "/ticket/getSceneMsg"
-    var params = {sceneId:2};       //需要动态获取场次id
+    var params = {sceneId:3};       //需要动态获取场次id
     $.post(url,params,function (result) {
         var date = result.data.sceneTime;
-        var time = new Date(date).toLocaleString();
+        var time = new Date(date);
+        result.data.localtime =time.toLocaleString()
         result.data.sceneTime = time;
         movie.sceneMsg = result.data;
+        insertSeats(movie);
     });
 }
 

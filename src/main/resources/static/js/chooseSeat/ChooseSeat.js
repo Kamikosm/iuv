@@ -22,7 +22,6 @@ function getSeats(){
     var params = {sceneId:3};            //需要动态获取场次id
     $.post(url,params,function (result) {
         var seats = result.data;
-        console.log(seats)
         for (var i = 0; i < seats.length; i++) {
             $("#text span").eq(seats[i]-1).attr("class","seat sold");
             $("#text span").eq(seats[i]-1).off("click");
@@ -46,6 +45,8 @@ function giveNum(movie) {
                 movie.nums.splice(movie.nums.indexOf(mun),1);
             }
             someChangs(movie);
+            sessionStorage.setItem("seats",movie.nums.join(","));
+            sessionStorage.setItem("price",movie.nums.length*movie.movieMsg.price+"");
         });
 
     });
@@ -104,7 +105,7 @@ function AjaxMovieMsg(movie) {
 
 function AjaxSceneMsg(movie) {
     var url = "/ticket/getSceneMsg"
-    var params = {sceneId:2};       //需要动态获取场次id
+    var params = {sceneId:3};       //需要动态获取场次id
     $.post(url,params,function (result) {
         var date = result.data.sceneTime;
         var time = new Date(date).toLocaleString();

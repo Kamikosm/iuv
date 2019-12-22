@@ -18,7 +18,7 @@ public interface MovieSeatService {
 
     List<Integer> getSeats(Integer sceneId);
 
-    int addSeats(Integer sceneId,Integer userId,Integer...seatIds);
+    int addSeats(Integer sceneId,Integer userId,Integer[]seatIds);
 
     LittleMovieMsg getMovieMsg(Integer movieId);
 
