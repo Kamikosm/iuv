@@ -34,4 +34,5 @@ public class MovieSeatController {
     public JsonResult getSeats(Integer sceneId){
         return new JsonResult(movieSeatService.getSeats(sceneId));
     }
+
 }

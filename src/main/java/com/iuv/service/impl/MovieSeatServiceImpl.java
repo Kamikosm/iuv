@@ -27,7 +27,7 @@ public class MovieSeatServiceImpl implements MovieSeatService {
     }
 
     @Override
-    public int addSeats(Integer sceneId, Integer userId, Integer... seatIds) {
+    public int addSeats(Integer sceneId, Integer userId, Integer...seatIds) {
         return 0;
     }
 
@@ -40,8 +40,4 @@ public class MovieSeatServiceImpl implements MovieSeatService {
     public MovieScene getScene(Integer sceneId) {
         return movieSeatDao.getScene(sceneId);
     }
-/**
- * 选座
- * 
- * */
 }
