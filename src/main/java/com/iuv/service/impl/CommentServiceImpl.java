@@ -3,6 +3,7 @@ package com.iuv.service.impl;
 import com.iuv.dao.CommentDao;
 import com.iuv.dao.UserDao;
 import com.iuv.pojo.movie.Comment;
+import com.iuv.pojo.user.User;
 import com.iuv.pojo.vo.CommentVo;
 import com.iuv.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -81,8 +82,12 @@ public class CommentServiceImpl implements CommentService{
         commentVo.setId(id);
         Integer parentId = comment.getParentId();
         if(parentId!=0){
+            System.out.println(parentId);
             commentVo.setParent(parentId);
-            String name = userDao.queryUserById(parentId).getName();
+            Comment comment1 = commentDao.queryCommentById(parentId);
+            Integer ParentUserId = comment1.getUserId();
+            User ParentUser = userDao.queryUserById(parentId);
+            String name = ParentUser.getName();
             commentVo.setParentname(name);
         }
         commentVo.setRoot(comment.getRootId());

@@ -34,114 +34,121 @@ $(function () {
 	var addcomment = "user/addcomment";
 
 	var parent = 0;
+	var root = 0;
 
 	//获取评论
-	$.ajax({
-		url:getcomment,
-		type:'POST',
-		contentType:false,
-		processData:false,
-		cache:false,
-		async:false,
-		dataType:"json",
-		success:function(data){
+    $.ajax({
+        url:getcomment,
+        type:'POST',
+        contentType:false,
+        processData:false,
+        cache:false,
+        async:false,
+        dataType:"json",
+        success:function(data){
+            if(data.success){
+                var list = data.objectList;
+                for(var i = 0 ; i < list.length; i++){
+                    if(list[i].parent==null){
+                        var unitComment1 =  "<div id="+list[i].id+" class='comment1'>" +
+                            "<div class='cursor'><img/>" +
+                            "</div><p class='comUser cursor'>"+list[i].username+"</p>" +
+                            "<p class='comTime'>"+list[i].datetime+"</p>" +
+                            "<div class='pinglun'>"+list[i].content+"</div>" +
+                            "<div class='pinglun-p'>" +
+                            "<p class='pinglun-p1 cursor'>13087345445</p>\n" +
+                            "<p class='pinglun-p2'>等人</p>\n" +
+                            "<p class='pinglun-p3 cursor'>共4条回复</p>\n" +
+                            "<p class='pinglun-p4 cursor reply-2'>回复" +
+                            "<span class='parent' style='display: none'>"+list[i].id+"</span>" +
+                            "<span class='root' style='display: none'>"+list[i].root+"</span>" +
+                            "</p>\n" +
+                            "<p class='pinglun-p5'>|</p><p class='pinglun-p6'>\n" +
+                            "<img src='img/dianzan1.png' class='cursor' />" +
+                            "<div class='pinglun-p-div'>189</div>" +
+                            "</p></div><div class='lzl-div'></div></div>";
 
-			var list = data.objectList;
-			for(var i = 0 ; i < list.length; i++){
-				if(list[i].parent==null){
-					var unitComment1 =  "<div id="+list[i].id+" class='comment1'>" +
-					"<div class='cursor'><img/>" +
-					"</div><p class='comUser cursor'>"+list[i].username+"</p>" +
-					"<p class='comTime'>"+list[i].datetime+"</p>" +
-					"<div class='pinglun'>"+list[i].content+"</div>" +
-					"<div class='pinglun-p'>" +
-					"<p class='pinglun-p1 cursor'>13087345445</p>\n" +
-					"<p class='pinglun-p2'>等人</p>\n" +
-					"<p class='pinglun-p3 cursor'>共4条回复</p>\n" +
-					"<p class='pinglun-p4 cursor reply'>回复" +
-					"<span class='parent' style='display: none'>"+list[i].id+"</span>" +
-					"<span class='root' style='display: none'>"+list[i].root+"</span>" +
-					"</p>\n" +
-					"<p class='pinglun-p5'>|</p><p class='pinglun-p6'>\n" +
-					"<img src='img/dianzan1.png' class='cursor' />" +
-					"<div class='pinglun-p-div'>189</div>" +
-					"</p></div><div class='lzl-div'></div></div>";
+                        $(".comment-lzl").append(unitComment1);
+                    }else{
 
-					$(".comment-lzl").append(unitComment1);
-				}else{
-					var id_1 = '#' +list[i].root;
-					var id_2 = '#' + list[i].parent;
-					var commentLzl ="<div id="+list[i].id+" class='lzl-div1'>" +
-					"<span class='cursor'>"+list[i].username+"</span>" +
-					"<span>:</span><span>回复</span>" +
-					"<span class='cursor'>"+list[i].parentname+"</span>" +
-					"<span>:</span><span>"+list[i].content+"</span>" +
-					"<ul class='lzl-div1-1'>" +
-					"<li class='lzl-time'>"+list[i].datetime+"</li>" +
-					"<li class='lzl-div-p2 cursor reply'>回复</li>" +
-					"<li class='lzl-div-p3'>|</li>" +
-					"<li class='lzl-div-p4'>" +
-					"<img src='img/dianzan.png' class='cursor' />" +
-					"<li class='lzl-p4-div'>24</li>" +
-					"</li></ul></div>";
+                        var id_1 = '#' +list[i].root;
+                        var id_2 = '#' + list[i].parent;
+                        var commentLzl ="<div id="+list[i].id+" class='lzl-div1'>" +
+                            "<span class='cursor'>"+list[i].username+"</span>" +
+                            "<span>:</span><span>回复</span>" +
+                            "<span class='cursor'>"+list[i].parentname+"</span>" +
+                            "<span>:</span><span>"+list[i].content+"</span>" +
+                            "<ul class='lzl-div1-1'>" +
+                            "<li class='lzl-time'>"+list[i].datetime+"</li>" +
+                            "<li class='lzl-div-p2 cursor reply-3' id ='"+list[i].root+"'>回复" +
+                            "<span id = 'root-id' style='display: none'>"+list[i].root+"</span>" +
+                            "</li>" +
+                            "<li class='lzl-div-p3'>|</li>" +
+                            "<li class='lzl-div-p4'>" +
+                            "<img src='img/dianzan.png' class='cursor' />" +
+                            "<li class='lzl-p4-div'>24</li>" +
+                            "</li></ul></div>";
 
-					if(id_1 == id_2){
-						$(id_1).find(".lzl-div").append(commentLzl);
-					}else{
-						$(id_1).find(".lzl-div").append(commentLzl);
-					}
-				}
-			}
-		}
-	});
+                        if(id_1 == id_2){
+                            $(id_1).find(".lzl-div").append(commentLzl);
+                        }else{
+                            $(id_1).find(".lzl-div").append(commentLzl);
+                        }
+                    }
+                }
+            }else{
+                alert("错误");
+            }
+        }
+    });
 
 
-//	$('.commentbt').click(function () {
 
 
-//	})
+    //发布评论
+    $('.commentbt').click(function(){
+        var content = $('#textArea').val();
+        var formData = new FormData();
+        formData.append("parent",parent);
+        formData.append("content",content);
+        formData.append("root",root);
+        $.ajax({
+            url:addcomment,
+            type:'POST',
+            data: formData,
+            contentType:false,
+            processData:false,
+            cache:false,
+            async:false,
+            dataType:"json",
+            success:function(data){
+                if(data.success){
+                    alert("评论成功");
+                    window.location.href="http://localhost/movmessage";
+                }else{
+                    alert("评论失败！")
+                }
+            }
+        });
 
-//	var content = $('#textArea').val();
-//	var parent = $(this).parent().parent().find("span:first");
-//	var root = 0;
+    });
 
-	$(".lzl-div-p2").click(function(){
-		var parent = $(this).parent().parent().attr("id");
-		alert(parent)
-	});
-	$(".pinglun-p4").click(function(){
-		var root = $(this).parent().parent().attr("id");
-		alert(root)
-	});
 
-	var parent = 0;
-	var root = 0;
-	//发布评论
-	$('.commentbt').click(function(){
-		var content = $('#textArea').val();
-		var formData = new FormData();
-		formData.append("parent",parent);
-		formData.append("content",content);
-		formData.append("root",root);
-		$.ajax({
-			url:addcomment,
-			type:'POST',
-			data: formData,
-			contentType:false,
-			processData:false,
-			cache:false,
-			dataType:"json",
-			success:function(data){
-				if(data.success){
-					alert("评论成功");
-					window.location.href="http://localhost/movmessage";
-				}else{
-					alert("评论失败！")
-				}
-			}
-		});
+    $(".reply-2").click(function(){
+        parent = $(this).parent().parent().prev().attr("id");
+        debugger;
+        root = 0;
+        debugger;
+    });
 
-	});
+    $(".reply-3").click(function(){
+        parent = $(this).parent().parent().prev().attr("id");
+        debugger;
+        root = $(this).attr("id");
+        debugger;
+
+    });
+
 
 
 
