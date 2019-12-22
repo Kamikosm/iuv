@@ -1,5 +1,8 @@
 $(function () {
 
+    var parent = 0;
+    var root = 0;
+
     //首页轮播图页面跳转电影详情页面
     $(function() {
         var lbName = sessionStorage.getItem("lbName");
@@ -31,7 +34,7 @@ $(function () {
 	var getcomment = "user/getcomment";
 	var addcomment = "user/addcomment";
 
-	var parent = 0;
+
 
 	//获取评论
     $.ajax({
@@ -40,6 +43,7 @@ $(function () {
         contentType:false,
         processData:false,
         cache:false,
+        async:false,
         dataType:"json",
         success:function(data){
             if(data.success){
@@ -55,7 +59,7 @@ $(function () {
                             "<p class='pinglun-p1 cursor'>13087345445</p>\n" +
                             "<p class='pinglun-p2'>等人</p>\n" +
                             "<p class='pinglun-p3 cursor'>共4条回复</p>\n" +
-                            "<p class='pinglun-p4 cursor reply'>回复" +
+                            "<p class='pinglun-p4 cursor reply-2'>回复" +
                             "<span class='parent' style='display: none'>"+list[i].id+"</span>" +
                             "<span class='root' style='display: none'>"+list[i].root+"</span>" +
                             "</p>\n" +
@@ -76,7 +80,9 @@ $(function () {
                             "<span>:</span><span>"+list[i].content+"</span>" +
                             "<ul class='lzl-div1-1'>" +
                             "<li class='lzl-time'>"+list[i].datetime+"</li>" +
-                            "<li class='lzl-div-p2 cursor reply'>回复</li>" +
+                            "<li class='lzl-div-p2 cursor reply-3' id ='"+list[i].root+"'>回复" +
+                            "<span id = 'root-id' style='display: none'>"+list[i].root+"</span>" +
+                            "</li>" +
                             "<li class='lzl-div-p3'>|</li>" +
                             "<li class='lzl-div-p4'>" +
                             "<img src='img/dianzan.png' class='cursor' />" +
@@ -97,17 +103,11 @@ $(function () {
     });
 
 
-    $('.commentbt').click(function () {
 
-
-    })
-
-    var content = $('#textArea').val();
-    var parent = $(this).parent().parent().find("span:first");
-    var root = 0;
 
     //发布评论
     $('.commentbt').click(function(){
+        var content = $('#textArea').val();
         var formData = new FormData();
         formData.append("parent",parent);
         formData.append("content",content);
@@ -119,6 +119,7 @@ $(function () {
             contentType:false,
             processData:false,
             cache:false,
+            async:false,
             dataType:"json",
             success:function(data){
                 if(data.success){
@@ -131,6 +132,39 @@ $(function () {
         });
 
     });
+
+
+    $(".reply-2").click(function(){
+        parent = $(this).parent().parent().prev().attr("id");
+        debugger;
+        root = 0;
+        debugger;
+    });
+
+    $(".reply-3").click(function(){
+        parent = $(this).parent().parent().prev().attr("id");
+        debugger;
+        root = $(this).attr("id");
+        debugger;
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     //遮罩层获取滚动条高度
