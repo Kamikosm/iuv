@@ -19,7 +19,7 @@ $(function() {
 
 function getSeats(){
     var url = "/ticket/getSeats"
-    var params = {sceneId:3};            //需要动态获取场次id
+    var params = {sceneId:sessionStorage.getItem("sceneId")};            //需要动态获取场次id
     $.post(url,params,function (result) {
         var seats = result.data;
         for (var i = 0; i < seats.length; i++) {
@@ -97,7 +97,7 @@ function someChangs(movie) {
 
 function AjaxMovieMsg(movie) {
     var url = "/ticket/getMsg";
-    var params = {movieId:1};        //需要动态获取电影id
+    var params = {movieId:sessionStorage.getItem("movieId")};        //需要动态获取电影id
     $.post(url,params,function (result) {
         movie.movieMsg = result.data;
     });
@@ -105,7 +105,7 @@ function AjaxMovieMsg(movie) {
 
 function AjaxSceneMsg(movie) {
     var url = "/ticket/getSceneMsg"
-    var params = {sceneId:3};       //需要动态获取场次id
+    var params = {sceneId:sessionStorage.getItem("sceneId")};       //需要动态获取场次id
     $.post(url,params,function (result) {
         var date = result.data.sceneTime;
         var time = new Date(date).toLocaleString();
