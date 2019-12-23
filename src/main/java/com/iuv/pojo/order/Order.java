@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.Date;
 /**
  * 订单
- * */
+ */
 @Data
 public class Order {
 	private Integer id;

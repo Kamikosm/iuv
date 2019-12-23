@@ -4,17 +4,33 @@
 		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.iuv.dao.MovmessageDao">
 
-	<!-- 首页轮播图跳转电影详情 -->
+	<!-- 首页轮播图跳转电影详情评论 -->
 	<select id="findLbMsg" resultType="com.iuv.pojo.movie.Movie">
-		select id,mv_name mvName,type,mv_time mvTime,start_time startTime,message,score,sum,big_pic bigPic 
-		from movie 
+		select id,mv_name mvName,type,mv_time mvTime,start_time startTime,message,score,sum,big_pic bigPic
+		from movie
 		where mv_Name=#{lbName}
 	</select>
-	<!-- 首页电影跳转电影详情 -->
+	<!-- 首页电影跳转电影详情评论 -->
 	<select id="findMvMsg" resultType="com.iuv.pojo.movie.Movie">
-		select id,mv_name mvName,type,mv_time mvTime,start_time startTime,message,score,sum,big_pic bigPic 
-		from movie 
+		select id,mv_name mvName,type,mv_time mvTime,start_time startTime,message,price,score,sum,big_pic bigPic
+		from movie
 		where mv_Name=#{mainMvName}
 	</select>
-	
+	<!-- 首页电影跳转电影详情选座 -->
+	<select id="findMsgSeat" resultType="com.iuv.pojo.movie.MovieScene">
+		select scene.scene_time sceneTime
+		from scene left join movie
+		on scene.movie_id=movie.id
+		where movie.mv_name=#{msgSeatName}
+		order by scene.scene_time asc
+	</select>
+	<!-- 根据年月查询电影场次 -->
+	<select id="findYearDay" resultType="com.iuv.pojo.movie.MovieScene">
+		SELECT scene.id id,scene.scene_time sceneTime,hall 
+		from scene left join movie
+		on scene.movie_id=movie.id
+		WHERE month(scene_time)=#{movYear} and day(scene_time)=#{movDay} and movie.mv_name=#{msgSeatName}
+		order by scene.scene_time desc
+	</select>
+
 </mapper>

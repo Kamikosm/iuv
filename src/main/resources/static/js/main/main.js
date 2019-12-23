@@ -38,10 +38,10 @@ $(function(){
 		window.location.href = "movclass";
 	});
 	
-	//查看全部热映电影跳转电影分类
+	//查看全部即将上映电影跳转电影分类
 	$(".new-all a").click(function() {
 		
-		sessionStorage.setItem("numkey","3");
+		sessionStorage.setItem("numkey","5");
 		window.location.href = "movclass";
 	});
 	
@@ -85,12 +85,21 @@ $(function(){
 		}
 	});
 	
-	//首页电影跳转电影详情
+	//首页电影跳转电影详情评论
 	$(".look").click(function() {
 
 		var mvName = $(this).parent().parent().find(".movie-title").html();
 		sessionStorage.setItem("mvName",mvName);
 		sessionStorage.setItem("numkey","2");
+		window.location.href = "movmessage";
+	});
+	
+	//首页电影跳转电影详情选场次
+	$(".buy").click(function() {
+
+		var mvName = $(this).parent().parent().find(".movie-title").html();
+		sessionStorage.setItem("mvName",mvName);
+		sessionStorage.setItem("numkey","4");
 		window.location.href = "movmessage";
 	});
 

@@ -1,12 +1,16 @@
 package com.iuv.Test;
 
 import com.iuv.dao.MovieSeatDao;
+import com.iuv.dao.MovmessageDao;
 import com.iuv.dao.OrderDao;
 import com.iuv.pojo.movie.LittleMovieMsg;
 import com.iuv.pojo.movie.MovieScene;
 import com.iuv.pojo.order.Order;
+import com.iuv.service.MovmessageService;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -25,6 +29,8 @@ public class SceneTest {
     private MovieSeatDao dao;
     @Resource
     private OrderDao orderDao;
+    @Autowired
+    private MovmessageDao movmessageDao;
 
     @Test
     public void getScenes(){

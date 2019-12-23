@@ -1,5 +1,5 @@
 $(function() {
-	
+
 	var numkey = sessionStorage.getItem("numkey");
 
 	if(numkey == "3") {
@@ -9,25 +9,23 @@ $(function() {
 			type:'post',
 			dataType:'json',
 			success:function(data){
-				console.log(data);
 				msgDiv(data);
 			}
 		});
-
+		sessionStorage.setItem("numkey","0");
+	} else if(numkey == "5") {
 		//查看全部即将上映电影跳转电影详情
 		$.ajax({
 			url:'timeMvMsg',
 			type:'post',
 			dataType:'json',
 			success:function(data){
-				console.log(data);
 				msgDiv(data);
 			}
 		});
-		
 		sessionStorage.setItem("numkey","0");
 	} 
-	
+
 	var type1 = sessionStorage.getItem("type");
 	var url1 = "mainMvClass";
 	var params1 = {"type":type1};

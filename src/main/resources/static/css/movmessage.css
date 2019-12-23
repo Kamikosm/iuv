@@ -11,6 +11,9 @@ body{
 	width: 100%;
 	z-index: 999;	   
 }
+.cursor {
+	cursor: pointer;
+}
 div{
 	display: block;
 }
@@ -473,10 +476,10 @@ ul,li {
 	margin-left: 0;
 	margin-right: 30px;
 }
-.btm-tab-title>a:first-child {
+/* .btm-tab-title>a:nth-child(1) {
 	font-weight: bold;
 	color: rgb(50,50,50);
-}
+} */
 .btm-tab-title>a:hover {
 	font-weight: bold;
 	color: rgb(50,50,50);
