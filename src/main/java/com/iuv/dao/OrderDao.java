@@ -12,7 +12,7 @@ import java.util.List;
  * */
 @Mapper
 public interface OrderDao {
-    @Select("select * from userorder where user_id=#{userId} order by order_time")
+    @Select("select * from userorder where user_id=#{userId} order by order_time desc")
     List<Order> findOrders(Integer userId);
 
     int insertOrder(Order order);
