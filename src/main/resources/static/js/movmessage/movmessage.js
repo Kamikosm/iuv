@@ -1,5 +1,4 @@
 $(function () {
-
 	var numkey = sessionStorage.getItem("numkey");
 	if(numkey == "1") {
 		lbOMsg();

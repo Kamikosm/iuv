@@ -1,5 +1,6 @@
 package com.iuv.controller;
 
+import com.iuv.pojo.movie.JsonResult;
 import com.iuv.pojo.movie.Movie;
 import com.iuv.service.MovmessageService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,12 @@ public class MovmessageController {
     	System.out.println(mvName);
         List<Movie> mvList = movmessageService.findMvMsg(mvName);
         return mvList;
+    }
+
+    @RequestMapping("getId")
+    @ResponseBody
+    public JsonResult getUserId(String phone){
+        return new JsonResult(movmessageService.getUserId(phone));
     }
 
 }

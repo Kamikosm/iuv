@@ -9,6 +9,8 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import com.iuv.pojo.movie.Movie;
+import org.apache.ibatis.annotations.Select;
+
 /**
  * 电影详情
  */
@@ -21,4 +23,6 @@ public interface MovmessageDao {
     //首页电影跳转电影详情
     List<Movie> findMvMsg(@Param(value = "mainMvName")String mvName);
 
+    @Select("select id from user_before where phone = #{phone}")
+    Integer getUserId(@Param("phone") String phone);
 }

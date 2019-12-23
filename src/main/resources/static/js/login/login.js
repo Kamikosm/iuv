@@ -13,16 +13,23 @@ $(function() {
 			success:function(data){
 
 				if(!data.test)
-					$(".menu-bar-denglu").css('display','block'); 
+					$(".menu-bar-denglu").css('display','block');
 				else {
 					$(".menu-bar-denglu").css('display','block');
 					$(".menu-bar-user").css("background-image","url(img/touxiang1.png)");
 					$(".tui-top img").attr("src","img/touxiang1.png");
 					$(".user-name").text(data.phone);
 					$(".menu-denglu").html("退出登录");
+
+					var url = "getId";
+					var params = {"phone":data.phone};
+					$.post(url,params,function (result) {
+						console.log(result.data)
+						sessionStorage.setItem("userId",result.data);
+					})
 				}
 			}
-		}); 	
+		});
 	});
 
 	//鼠标离开头像隐藏请登录弹窗
@@ -55,60 +62,107 @@ $(function() {
 		}
 	});
 
-	//登录页面点击“获取验证码”事件
-	$(".ss1").click(function(){
+	function loginr(){
 
 		var name = $(".loginname").val();
-		var passkey = $(".loginpwd").val();
-
 		if(name == null || name == "" || name.length!=11) {
 
 			$(".p1").css("display","block");
 			$(".loginname").css("border","1px solid #FF6400");
-		} else if(passkey == null || passkey == "") {
-			
-			$(".p2").css("display","block");
-			$(".loginpwd").css("border","1px solid #FF6400");
-		} else {
+		}else {
 			$.ajax({
 				url:'hello2',
 				type:'post',
 				data:{'name':name},
 				dataType:'text',
 				success:function(data) {
-
+					$(".ss1").css({
+						"color":"#e0e0e0",
+						"border": "1px solid #e0e0e0"
+					})
+					$(".ss1").off("click")
+					var time = 60;
+					var timer = setInterval(function () {
+						if(time>0){
+							time --;
+							console.log(time)
+							$(".ss1")[0].innerText = "获取验证码("+time+")";
+							sessionStorage.setItem("time",time);
+						}else{
+							sessionStorage.setItem("time","-1");
+							clearInterval(timer)
+							$(".ss1")[0].innerText = "获取验证码";
+							$(".ss1").css({
+								"color":"#ff6400",
+								"border": "1px solid #ff6400"
+							})
+							$(".ss1").on("click",loginr)
+						}
+					},1000);
 				}
 			});
 		}
-		
-	});
-	
-	//注册页面点击“获取验证码”事件
-	$(".ss2").click(function(){
+	}
 
-		var name = $(".registername").val();
-		var passkey = $(".registerpwd").val();
+	function registerr(){
 
-		if(name == null || name == "" || name.length!=11){
+		var name = $(".registername" +
+			"").val();
+		if(name == null || name == "" || name.length!=11) {
 
 			$(".p4").css("display","block");
-			$(".loginname").css("border","1px solid #FF6400");
-		} else if(passkey == null || passkey == "") {
-
-			$(".p5").css("display","block");
-			$(".loginpwd").css("border","1px solid #FF6400");
-		} else {
+			$(".registername").css("border","1px solid #FF6400");
+		}else {
 			$.ajax({
 				url:'hello2',
 				type:'post',
 				data:{'name':name},
 				dataType:'text',
 				success:function(data) {
-
+					$(".ss2").css({
+						"color":"#e0e0e0",
+						"border": "1px solid #e0e0e0"
+					})
+					$(".ss2").off("click")
+					var time = 60;
+					var timer = setInterval(function () {
+						if(time>0){
+							time --;
+							console.log(time)
+							$(".ss2")[0].innerText = "获取验证码("+time+")";
+							sessionStorage.setItem("time",time);
+						}else{
+							sessionStorage.setItem("time","-1");
+							clearInterval(timer)
+							$(".ss2")[0].innerText = "获取验证码";
+							$(".ss2").css({
+								"color":"#ff6400",
+								"border": "1px solid #ff6400"
+							})
+							$(".ss2").on("click",loginr)
+						}
+					},1000);
 				}
 			});
 		}
+	}
+	//登录页面点击“获取验证码”事件
+	$(".ss1").on("click",loginr);
+	
+	//注册页面点击“获取验证码”事件
+	$(".ss2").on("click",registerr);
+
+
+
+	$(".loginname").focus(function () {
+		$(".p1").css("display","none");
+		$(".loginname").css("border","1px solid #e0e0e0");
 	});
+
+	$(".registername").focus(function () {
+		$(".p4").css("display","none");
+		$(".registername").css("border","1px solid #e0e0e0");
+	})
 
 	//鼠标点击“注册”跳转注册弹窗事件
 	$("#a2").click(function() {

@@ -32,4 +32,8 @@ public class MovmessageServiceImpl implements MovmessageService {
 		return mvList;
 	}
 
+    @Override
+    public Integer getUserId(String phone) {
+        return movmessageDao.getUserId(phone);
+    }
 }

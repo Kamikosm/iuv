@@ -1,6 +1,7 @@
 package com.iuv.Test;
 
 import com.iuv.dao.MovieSeatDao;
+import com.iuv.dao.MovmessageDao;
 import com.iuv.dao.OrderDao;
 import com.iuv.pojo.movie.LittleMovieMsg;
 import com.iuv.pojo.movie.MovieScene;
@@ -25,7 +26,8 @@ public class SceneTest {
     private MovieSeatDao dao;
     @Resource
     private OrderDao orderDao;
-
+    @Resource
+    private MovmessageDao movmessageDao;
     @Test
     public void getScenes(){
         List<MovieScene> scene = dao.getScenes(25);
@@ -79,5 +81,11 @@ public class SceneTest {
         or.setSeatId("1,3,5");
         int row = orderDao.insertOrder(or);
         System.out.println("row="+row);
+    }
+
+    @Test
+    public void getUserId(){
+        Integer userId = movmessageDao.getUserId("13207498715");
+        System.out.println(userId);
     }
 }

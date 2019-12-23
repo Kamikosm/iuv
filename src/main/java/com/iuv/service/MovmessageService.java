@@ -14,5 +14,7 @@ public interface MovmessageService {
 	
 	//首页电影跳转电影详情
 	List<Movie> findMvMsg(String mainMvName);
+
+	Integer getUserId(String phone);
 	
 }
