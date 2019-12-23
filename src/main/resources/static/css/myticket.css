@@ -104,6 +104,9 @@
     margin-right: 11px;
     font-size: 0;
 }
+.poster img{
+    width: 80px;
+}
 .order-body>div {
     display: inline-block;
     vertical-align: top;
