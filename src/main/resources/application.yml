@@ -27,4 +27,4 @@ mybatis:
 #lOG
 logging:
   level:
-         com.cy: DEBUG
+    com.cy: DEBUG

@@ -42,7 +42,7 @@ public class TestCommentService {
         comment.setLikes(200);
         comment.setMovieId(3);
         comment.setParentId(1);
-        commentService.addCommentWithoutRoot(comment);
+        //commentService.addCommentWithoutRoot(comment);
 
         System.out.println("测试结束了");
     }

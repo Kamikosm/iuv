@@ -21,7 +21,7 @@ public interface MovmessageService {
 
 	//首页电影跳转电影详情选座
 	List<Movie> findMsgSeat(String msgSeatName);
-	
+
 	//根据年月查询电影场次
     List<MovieScene> findYearDay(@Param(value = "msgSeatName")String mvSeat,
     		String movYear,String movDay);

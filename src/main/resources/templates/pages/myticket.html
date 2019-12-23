@@ -13,6 +13,7 @@
 		<script type="text/javascript" src="js/myticket/myticket.js"></script>
 		<script type="text/javascript" src="js/login/login.js"></script>
 		<script type="text/javascript" src="js/vue/vue.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/waifu.css"/>
 	</head>
 
 	<body>
@@ -80,99 +81,8 @@
 						</div>
 					</div>
 				</div>
-				<!--登录页面-->
-				<div class="login1">
-					<a class="xx" href=""><em>关闭</em></a>
-					<div class="login2">
-						<ul class="tab">
-							<li class="current">账号登录</li>
-							<li class="loginnas">邮箱登录</li>
-						</ul>
-					</div>
-					<div class="login3">
-						<form action="login" method="post">
-							<input type="hidden" name="url" value="main">
-							<p>
-								<span id="s1">账号</span>
-								<input class="loginname" type="text" name="name" id="name" placeholder="请输入手机号码" onkeyup="value=value.replace(/[^\d]/g,'')" maxlength=11 />
-								<p class="login3-p p1">您输入的手机号有误，请重新输入</p>
-							</p>
-							<p>
-								<span id="s1">密码</span>
-								<input class="loginpwd" type="password" name="pwd" id="pwd" placeholder="请输入密码" />
-								<p class="login3-p p2">您输入的密码有误，请重新输入</p>
-							</p>
-							<p>
-								<span id="s1">验证码</span>
-								<input type="text" name="yzm" id="yzm" placeholder="验证码" /> <span id="s2" class="ss1" style="cursor: pointer;">获取验证码（60）</span>
-								<!--<span><img src="img/shuaxin.png" id="img1"/></span>-->
-								<p class="login3-p p3">验证码错误</p>
-							</p>
-							<p>
-								<input type="checkbox" name="" id="" value="" />
-								<label>记住我</label>
-								<a style="cursor: pointer;" id="a2">注册</a>
-								<a href="" id="a1">忘记密码？</a>
-							</p>
-							<input type="submit" value="登录" />
-						</form>
-					</div>
-
-					<div class="login4">
-						<ul>
-							<li class="login4-li li1"></li>
-							<li class="login4-li li2"></li>
-							<li class="login4-li li3"></li>
-						</ul>
-					</div>
-				</div>
-				<div class="register1">
-					<a class="xx" style="cursor: pointer;"><em>关闭</em></a>
-					<div class="register2">
-						<ul class="tab">
-							<li class="current">注册</li>
-						</ul>
-					</div>
-					<div class="register3">
-						<form action="register" method="post">
-							<input type="hidden" name="url" value="main">
-							<p>
-								<span id="s1">手机</span>
-								<input class="registername" type="text" name="name" id="name" placeholder="请输入手机号码" onkeyup="value=value.replace(/[^\d]/g,'')" maxlength=11 />
-								<p class="login3-p p4">请输入11位正确的手机号</p>
-							</p>
-							<p>
-								<span id="s1">密码</span>
-								<input class="registerpwd" type="password" name="pwd" id="pwd" placeholder="请输入6~20位密码" />
-								<p class="login3-p p5">密码只支持数字、英文</p>
-							</p>
-							<p>
-								<span id="s1">验证码</span> <input type="text" name="yzm" id="yzm" placeholder="验证码" />
-								<span id="s2" class="ss2" style="cursor: pointer;">获取验证码（60）</span>
-								<p class="login3-p p6">验证码错误</p>
-							</p>
-							<p>
-								<input type="checkbox" checked="checked" name="" id="" value="" />
-								<span class="s1">我已阅读<a href="" class="a1">影院用户协议</a>及<a
-						href="" class="a1">版权声明</a></span>
-							</p>
-							<input type="submit" value="注册" />
-							<p>
-								<a id="aa1" style="cursor: pointer;">返回账号登录</a>
-							</p>
-						</form>
-					</div>
-					<div class="register4">
-						<ul>
-							<li class="l1"></li>
-							<li class="l2"></li>
-							<li class="l3"></li>
-						</ul>
-					</div>
-				</div>
 			</div>
 		</div>
-
 		<div class="content">
 			<div class="user-profile-nav">
 				<img src="img/touxiang1.png" style="margin-top: 20px;" />
@@ -211,6 +121,21 @@
 
 			</div>
 		</div>
+		<div class="waifu">
+			<div class="waifu-tips"></div>
+			<canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+			<div class="waifu-tool">
+				<span class="fui-home"></span>
+				<span class="fui-chat"></span>
+				<span class="fui-eye"></span>
+				<span class="fui-user"></span>
+				<span class="fui-photo"></span>
+				<span class="fui-info-circle"></span>
+				<span class="fui-cross"></span>
+			</div>
+		</div>
 	</body>
-
+	<script src="assets/waifu-tips.js"></script>
+	<script src="assets/live2d.js"></script>
+	<script type="text/javascript">initModel("assets/")</script>
 </html>

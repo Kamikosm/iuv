@@ -58,5 +58,4 @@ public class MovmessageController {
     public JsonResult getUserId(String phone){
         return new JsonResult(movmessageService.getUserId(phone));
     }
-
 }

@@ -1,5 +1,4 @@
 $(function () {
-
 	var numkey = sessionStorage.getItem("numkey");
 	if(numkey == "1") {
 		lbOMsg();  //首页轮播图页面跳转电影详情页面
@@ -12,18 +11,34 @@ $(function () {
 		numkey == "0";
 	}
 
-//	$("")
-	
+//	遮罩层获取滚动条高度
+	$(function () {
+		var height1 = $(document).height();
+		$(".cover").css({"height": height1+200+ 'px'});
+	})
+
 	//首页轮播图页面跳转电影详情页面
 	function lbOMsg() {
 		var lbName = sessionStorage.getItem("mvName");
 		var url = "lbMvMsg";
 		var params = {"mvName":lbName};
 
+		$(".btm-tab-title>a:nth-child(1)").css({
+			"font-weight": "bold",
+			"color": "rgb(50,50,50)"
+		});
+		
 		$.post(url,params,function(result){
 			MovMsg(result);
+			sessionStorage.setItem("movieId",result[0].id);
+//			console.log(result[0].id);
 		});
 	}
+	
+	$(".sceneId").click(function(){
+		var sceneId = $(".sceneId").text();
+		console.log(sceneId)
+	});
 
 	//首页电影跳转电影详情选座
 	function mvOSeat() {
@@ -50,10 +65,10 @@ $(function () {
 					var weekArray = new Array("周日", "周一", "周二", "周三", "周四", "周五", "周六");
 					var week = weekArray[date.getDay()];
 					var mvMsgSeat = "<span class='cursor'>"+week+" "+month+"月"+day+"号"+"</span>";
-					
+
 					//动态添加放映月日
 					$(".seeTime").find("span:first").after(mvMsgSeat);
-					
+
 				} else {
 					var date11 = new Date(result[i-1].sceneTime);
 					var day11 = date11.getDate();
@@ -63,7 +78,7 @@ $(function () {
 					var weekArray = new Array("周日", "周一", "周二", "周三", "周四", "周五", "周六");
 					var week = weekArray[date.getDay()];
 					var mvMsgSeat = "<span class='cursor'>"+week+" "+month+"月"+day+"号"+"</span>";
-					
+
 					if(day == day11) {
 						continue;
 					}
@@ -76,6 +91,8 @@ $(function () {
 			//页面上半部分电影信息呈现
 			$.post(url2,params,function(result){
 				MovMsg(result);
+				sessionStorage.setItem("movieId",result[0].id);
+//				console.log(result[0].id);
 			});
 			//对月日按钮做点击事件
 			$(".seeTime span").click(function(){
@@ -87,14 +104,14 @@ $(function () {
 				var getDay = scTime.substring(scTime.indexOf("月")+1, scTime.indexOf("号"));
 
 				$(".mvContent").remove();
-				
+
 				$.ajax({
 					url:'msgYearDay',
 					type:'post',
 					dataType:'json',
 					data:{"mvName":mvName,"movYear":getMonth,"movDay":getDay},
 					success:function(result){
-						console.log(result)
+
 						for(var i=0; i<result.length; i++) {
 
 							var date = new Date(result[i].sceneTime);
@@ -112,27 +129,30 @@ $(function () {
 							var mvMsgScene = "<div class='mvContent'>"+
 							"<span>"+hour+":"+minute+"</span>"+
 							"<span>"+result[i].hall+"号厅</span>"+
-							"<span>￥39.0</span>"+
+							"<span></span><p class='sceneId'>"+result[i].id+"</p>"+
 							"<span class='cursor'>选座购票</span></div>";
-							
+
 							$(".startTime").after(mvMsgScene);
-							
+							console.log(result[i].id)
 						}
+						
+						//页面上半部分电影信息呈现
+						$.post(url2,params,function(result){
+							mvPrice(result);
+						});
 					}
 				});
 			});
-			mvPrice(result);
 		});
 	}
 
 	function mvPrice(result){
 		//填写售价
 		$(".mvContent").each(function(index,el){
-
 			$(".mvContent").eq(index).find("span").eq(2).html("￥"+result[0].price+".0");
 		});
 	}
-	
+
 	//首页电影跳转电影详情评论
 	function mvOMsg() {
 		var mvName = sessionStorage.getItem("mvName");
@@ -149,7 +169,10 @@ $(function () {
 		//电影基本信息呈现
 		$.post(url,params,function(result){
 			MovMsg(result);
+			sessionStorage.setItem("movieId",result[0].id);
+//			console.log(result[0].id);
 		});
+
 		$(".btm-tab-title>a:nth-child(1)").css({
 			"font-weight": "bold",
 			"color": "rgb(50,50,50)"
@@ -258,13 +281,6 @@ $(function () {
 		});
 
 	}
-
-
-//	遮罩层获取滚动条高度
-	$(function () {
-		var height1 = $(document).height();
-		$(".cover").css({height: height1 + 'px'});
-	})
 
 //	电影详情
 	function MovMsg(cmnResult) {

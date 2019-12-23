@@ -14,13 +14,13 @@
 <script type="text/javascript" src="js/main/main.js"></script>
 <script type="text/javascript" src="js/login/login.js"></script>
 
-<link rel="stylesheet"
-	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 <link rel="stylesheet" type="text/css" href="css/main.css" />
 <link rel="stylesheet" type="text/css" href="css/loginmain.css" />
 <link rel="stylesheet" type="text/css" href="css/hotmv.css" />
 <link rel="stylesheet" type="text/css" href="css/register.css" />
+<link rel="stylesheet" type="text/css" href="assets/waifu.css"/>
 
 </head>
 
@@ -578,9 +578,9 @@
 				<p class="login3-p p2">请输入密码</p>
 				</p>
 				<p>
-					<span id="s1">验证码</span> <input type="text" name="yzm" id="yzm"
-						placeholder="验证码" /> <span id="s2" class="ss1"
-						style="cursor: pointer;">获取验证码（60）</span>
+					<span id="s1">验证码</span>
+					<input type="text" name="yzm" id="yzm" placeholder="验证码" />
+					<span id="s2" class="ss1" style="cursor: pointer;">获取验证码</span>
 					<!--<span><img src="img/shuaxin.png" id="img1"/></span>-->
 				<p class="login3-p p3">验证码错误</p>
 				</p>
@@ -624,7 +624,7 @@
 				<p>
 					<span id="s1">验证码</span> <input type="text" name="yzm" id="yzm"
 						placeholder="验证码" /> <span id="s2" class="ss2"
-						style="cursor: pointer;">获取验证码（60）</span>
+						style="cursor: pointer;">获取验证码</span>
 				<p class="login3-p p6">验证码错误</p>
 				</p>
 				<p>
@@ -646,6 +646,21 @@
 			</ul>
 		</div>
 	</div>
+	<div class="waifu">
+		<div class="waifu-tips"></div>
+		<canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+		<div class="waifu-tool">
+			<span class="fui-home"></span>
+			<span class="fui-chat"></span>
+			<span class="fui-eye"></span>
+			<span class="fui-user"></span>
+			<span class="fui-photo"></span>
+			<span class="fui-info-circle"></span>
+			<span class="fui-cross"></span>
+		</div>
+	</div>
 </body>
-
+<script src="assets/waifu-tips.js"></script>
+<script src="assets/live2d.js"></script>
+<script type="text/javascript">initModel("assets/")</script>
 </html>

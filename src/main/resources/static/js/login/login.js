@@ -1,6 +1,21 @@
 
 $(function() {
 
+	//加载初始化头像(ajax处理)
+	$.ajax({
+		url:'userHello',
+		type:'post', 
+		dataType:'json',
+		success:function(data){
+			if(!data.test)
+				$(".menu-bar-user").css("background-image","url(img/touxiang.png)");
+			else
+			{
+				$(".menu-bar-user").css("background-image","url(img/touxiang1.png)");
+			}
+		}
+	});
+	
 	//触碰头像显示弹窗请登录
 	$(".menu-bar-user").mouseenter(function() {
 
@@ -78,7 +93,7 @@ $(function() {
 				dataType:'text',
 				success:function(data) {
 					$(".ss1").css({
-						"color":"#e0e0e0",
+						"color":"grey",
 						"border": "1px solid #e0e0e0"
 					})
 					$(".ss1").off("click")
@@ -108,7 +123,7 @@ $(function() {
 	function registerr(){
 
 		var name = $(".registername" +
-			"").val();
+		"").val();
 		if(name == null || name == "" || name.length!=11) {
 
 			$(".p4").css("display","block");
@@ -121,7 +136,7 @@ $(function() {
 				dataType:'text',
 				success:function(data) {
 					$(".ss2").css({
-						"color":"#e0e0e0",
+						"color":"grey",
 						"border": "1px solid #e0e0e0"
 					})
 					$(".ss2").off("click")
@@ -149,7 +164,7 @@ $(function() {
 	}
 	//登录页面点击“获取验证码”事件
 	$(".ss1").on("click",loginr);
-	
+
 	//注册页面点击“获取验证码”事件
 	$(".ss2").on("click",registerr);
 
@@ -185,4 +200,4 @@ $(function() {
 		$(".login1").fadeOut(1);
 		$(".register1").fadeOut(1);
 	});
-
+});
