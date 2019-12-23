@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
 import com.iuv.pojo.movie.Movie;
 /**
@@ -29,4 +30,6 @@ public interface MovmessageDao {
     List<MovieScene> findYearDay(@Param(value = "msgSeatName")String mvSeat,
     			String movYear,String movDay);
     
+    @Select("select id from user_before where phone = #{phone}")
+    Integer getUserId(@Param("phone") String phone);
 }

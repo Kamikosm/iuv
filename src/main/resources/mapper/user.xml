@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
@@ -19,7 +20,7 @@
 		SELECT
 		*
 		FROM
-		user
+		user_before
 		WHERE
 		id =
 		#{id}
@@ -29,25 +30,24 @@
 		SELECT
 		*
 		FROM
-		user
+		user_before
 		WHERE
 		name = #{name}
 	</select>
 
 	<!-- 用户注册 -->
 	<update id="register">
-		insert into user (phone,password)
+		insert into user_before (phone,password)
 		values
 		(#{phone},#{password})
 	</update>
 
 	<!-- 用户登录 -->
 	<select id="login" resultType="com.iuv.pojo.user.User">
-		select * from user where phone=#{phone} and password=#{password}
+		select * from user_before where phone=#{phone} and password=#{password}
 	</select>
 
 
 
 
 
-</mapper>

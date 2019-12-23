@@ -1,5 +1,6 @@
 package com.iuv.controller;
 
+import com.iuv.pojo.movie.JsonResult;
 import com.iuv.pojo.movie.Movie;
 import com.iuv.pojo.movie.MovieScene;
 import com.iuv.service.MovmessageService;
@@ -51,5 +52,11 @@ public class MovmessageController {
 		List<MovieScene> mvScenes = movmessageService.findYearDay(mvName,movYear, movDay);
 		return mvScenes;
 	}
+    
+    @RequestMapping("getId")
+    @ResponseBody
+    public JsonResult getUserId(String phone){
+        return new JsonResult(movmessageService.getUserId(phone));
+    }
 
 }

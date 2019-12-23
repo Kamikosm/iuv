@@ -18,27 +18,27 @@ import com.iuv.service.MovmessageService;
 @Service
 public class MovmessageServiceImpl implements MovmessageService {
 
-    @Autowired
-    private MovmessageDao movmessageDao;
+	@Autowired
+	private MovmessageDao movmessageDao;
 
-    //首页轮播图跳转电影详情
-    @Override
-    public List<Movie> findLbMsg(String lbName) {
-        List<Movie> lbList = movmessageDao.findLbMsg(lbName);
-        return lbList;
-    }
+	//首页轮播图跳转电影详情
+	@Override
+	public List<Movie> findLbMsg(String lbName) {
+		List<Movie> lbList = movmessageDao.findLbMsg(lbName);
+		return lbList;
+	}
 
-    //首页电影跳转电影详情评论
+	//首页电影跳转电影详情评论
 	@Override
 	public List<Movie> findMvMsg(String mainMvName) {
 		List<Movie> mvList = movmessageDao.findMvMsg(mainMvName);
 		return mvList;
 	}
-	
+
 	//首页电影跳转电影详情选座
 	@Override
 	public List<Movie> findMsgSeat(String msgSeatName) {
-		
+
 		List<Movie> movieScenes = movmessageDao.findMsgSeat(msgSeatName);
 		return movieScenes;
 	}
@@ -50,4 +50,8 @@ public class MovmessageServiceImpl implements MovmessageService {
 		return movieScenes;
 	}
 
+	@Override
+	public Integer getUserId(String phone) {
+		return movmessageDao.getUserId(phone);
+	}
 }

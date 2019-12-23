@@ -22,7 +22,7 @@
 		from scene left join movie
 		on scene.movie_id=movie.id
 		where movie.mv_name=#{msgSeatName}
-		order by scene.scene_time asc
+		order by scene.scene_time desc
 	</select>
 	<!-- 根据年月查询电影场次 -->
 	<select id="findYearDay" resultType="com.iuv.pojo.movie.MovieScene">

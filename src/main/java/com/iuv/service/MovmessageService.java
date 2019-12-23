@@ -26,4 +26,5 @@ public interface MovmessageService {
     List<MovieScene> findYearDay(@Param(value = "msgSeatName")String mvSeat,
     		String movYear,String movDay);
 
+    Integer getUserId(String phone);
 }

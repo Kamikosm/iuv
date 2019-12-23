@@ -1,3 +1,4 @@
+
 package com.iuv.controller;
 
 import java.util.HashMap;
@@ -40,7 +41,7 @@ public class LoginController {
 			map.put("phone", session.getAttribute("phone"));
 		}
 		return map;
-	} 
+	}
 
 	//退出登录状态
 	@RequestMapping("hello1")
@@ -67,7 +68,6 @@ public class LoginController {
 
 	//登录处理
 	@RequestMapping("login")
-	@ResponseBody
 	public String login(String url,HttpServletRequest request,Register login) {
 
 		if(url == null) return "redirect:main";
@@ -91,34 +91,33 @@ public class LoginController {
 
 	//注册处理
 	@RequestMapping("register")
-	@ResponseBody
 	public String register(HttpServletRequest request,String url,Register register) {
-		
+
 		if(url==null) return "redirect:main";
 		User user = new User();
-		
+
 		user.setPhone(register.getName());
 		user.setPassword(register.getPwd());
 		request.getSession().setAttribute("url", url);
 		//验证码判断
 		if(register.getYzm().equals(request.getSession().getAttribute("yzm"))) {
 			userService.register(user);
-		} else { 
-			return "regislose";
+		} else {
+			return "registerlose";
 		}
-		return "regissuccess";	
+		return "main";
 	}
-	
+
 	//注册失败处理
 	@RequestMapping("regislose")
 	public String regislose(HttpServletRequest request){
 		return "redirect:"+(String) request.getSession().getAttribute("url");
 	}
-	
+
 	//注册成功处理
 	@RequestMapping("regissuccess")
 	public String regissuccess(HttpServletRequest request){
 		return "redirect:"+(String) request.getSession().getAttribute("url");
 	}
-	
+
 }
