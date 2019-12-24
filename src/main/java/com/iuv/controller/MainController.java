@@ -62,4 +62,12 @@ public class MainController {
 		return mainXijuMv;
 	}
 	
+	/**搜索引擎*/
+	@RequestMapping("autoComplete")
+	@ResponseBody
+	public List<Movie> autoComplete() {
+		List<Movie> autoComplete = mainService.autoComplete();
+		return autoComplete;
+	}
+	
 }

@@ -29,7 +29,7 @@ public class TestUserDao {
     @Test
     public void queryUserById() {
         System.out.println("测试开始了");
-        User user = userDao.queryUserById(1);
+        User user = userDao.queryUserById(2);
         System.out.println(user);
         System.out.println("测试结束了");
     }

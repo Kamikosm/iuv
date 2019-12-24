@@ -9,6 +9,9 @@ import com.iuv.pojo.movie.Movie;
  * 首页
  */
 public interface MainService {
+	
+	/**所有的电影名*/
+	List<Movie> autoComplete();
 
 	//轮播图
 	List<Lunbo> findLunbo();

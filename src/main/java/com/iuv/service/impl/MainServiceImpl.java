@@ -53,5 +53,12 @@ public class MainServiceImpl implements MainService {
 		List<Movie> findMovies = mainDao.findXijuMv();
 		return findMovies;
 	}
+	
+	/**所有的电影名*/
+	@Override
+	public List<Movie> autoComplete() {
+		List<Movie> autoComplete = mainDao.autoComplete();
+		return autoComplete;
+	}
 
 }

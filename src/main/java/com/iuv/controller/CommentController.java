@@ -32,7 +32,7 @@ public class CommentController {
     @PostMapping("/user/addcomment")
     private AjaxData addcomment(HttpServletRequest request){
         AjaxData data = new AjaxData();
-
+        System.out.println("评论过程已经开始");
         String content = HttpServletRequestUtil.getString(request,"content");
         Integer parent = HttpServletRequestUtil.getInt(request,"parent");
         Integer root = HttpServletRequestUtil.getInt(request,"root");

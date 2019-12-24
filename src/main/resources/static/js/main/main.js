@@ -1,5 +1,23 @@
 $(function(){
 
+	//搜索引擎
+	$(function() {
+		var availableTags = [];
+		$.ajax({
+			url:'autoComplete',
+			type:'post',
+			dataType:'json',
+			success:function(data){
+				for(var i = 0; i < data.length; i++){
+					availableTags[availableTags.length] = data[i].mvName;
+				}
+			}
+		});
+		$("#autocomplete").autocomplete({
+			source: availableTags
+		});
+	});
+
 	//首页轮播图页面跳转电影详情页面
 	$(".menu-rank-ul li").click(function() {
 
@@ -22,7 +40,7 @@ $(function(){
 			});
 		}
 	});
-	
+
 	//导航条跳转分类电影
 	$(".menu-bar-ul li").click(function() {
 
@@ -30,21 +48,21 @@ $(function(){
 		sessionStorage.setItem("type",mvType);
 		window.location.href = "movclass";
 	});
-	
+
 	//查看全部热映电影跳转电影分类
 	$(".hot-all a").click(function() {
-		
+
 		sessionStorage.setItem("numkey","3");
 		window.location.href = "movclass";
 	});
-	
+
 	//查看全部即将上映电影跳转电影分类
 	$(".new-all a").click(function() {
-		
+
 		sessionStorage.setItem("numkey","5");
 		window.location.href = "movclass";
 	});
-	
+
 	//查看全部爱情电影跳转电影分类
 	$(".love-all a").click(function() {
 
@@ -52,7 +70,7 @@ $(function(){
 		sessionStorage.setItem("type",mvType);
 		window.location.href = "movclass";
 	});
-	
+
 	//查看全部喜剧电影跳转电影分类
 	$(".xiju-all a").click(function() {
 
@@ -84,7 +102,7 @@ $(function(){
 //			}
 		}
 	});
-	
+
 	//首页电影跳转电影详情评论
 	$(".look").click(function() {
 
@@ -93,7 +111,7 @@ $(function(){
 		sessionStorage.setItem("numkey","2");
 		window.location.href = "movmessage";
 	});
-	
+
 	//首页电影跳转电影详情选场次
 	$(".buy").click(function() {
 

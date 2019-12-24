@@ -35,8 +35,7 @@ $(function() {
 		console.log(result);
 		msgDiv(result);
 	});
-
-
+	
 	function msgDiv(cmnresult) {
 		for(var i=0; i<cmnresult.length; i++){
 
@@ -49,7 +48,7 @@ $(function() {
 				"</a>"+
 				"<div class='movclass_div2_yel'>" +
 				"<p class='movclass_div2_div1_p1'>"+
-				"<a href=''>"+cmnresult[i].mvName+"</a>"+
+				"<a>"+cmnresult[i].mvName+"</a>"+
 				"</p>"+
 				"<p class='movclass_div2_div1_p2'>"+score+"</p>"+
 				"</div>"+

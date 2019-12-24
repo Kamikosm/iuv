@@ -1,13 +1,18 @@
 $(function () {
+	
+	var parent = 0;
+	var root = 0;
+	
 	var numkey = sessionStorage.getItem("numkey");
 	if(numkey == "1") {
 		lbOMsg();  //首页轮播图页面跳转电影详情页面
 		numkey == "0";
 	} else if (numkey == "2") {
-		mvOMsg();  //首页电影跳转电影详情选座
+		mvOMsg();  //首页电影跳转电影详情评论
 		numkey == "0";
 	} else if (numkey == "4") {
 		mvOSeat();  //首页电影跳转电影详情选座
+		
 		numkey == "0";
 	}
 
@@ -16,7 +21,7 @@ $(function () {
 		var height1 = $(document).height();
 		$(".cover").css({"height": height1+200+ 'px'});
 	})
-
+	
 	//首页轮播图页面跳转电影详情页面
 	function lbOMsg() {
 		var lbName = sessionStorage.getItem("mvName");
@@ -35,11 +40,6 @@ $(function () {
 		});
 	}
 	
-	$(".sceneId").click(function(){
-		var sceneId = $(".sceneId").text();
-		console.log(sceneId)
-	});
-
 	//首页电影跳转电影详情选座
 	function mvOSeat() {
 		var mvName = sessionStorage.getItem("mvName");
@@ -133,8 +133,13 @@ $(function () {
 							"<span class='cursor'>选座购票</span></div>";
 
 							$(".startTime").after(mvMsgScene);
-							console.log(result[i].id)
 						}
+						
+						$(".mvContent span").click(function(){
+							var sceneId = $(this).parent().find("p").text();
+							sessionStorage.setItem("sceneId",sceneId);
+							window.location.href = "ChooseSeat";
+						});
 						
 						//页面上半部分电影信息呈现
 						$.post(url2,params,function(result){
@@ -162,9 +167,6 @@ $(function () {
 		//Ajax-评论相关	@author houke_zou
 		var getcomment = "user/getcomment";
 		var addcomment = "user/addcomment";
-
-		var parent = 0;
-		var root = 0;
 
 		//电影基本信息呈现
 		$.post(url,params,function(result){
@@ -276,7 +278,7 @@ $(function () {
 		});
 
 		$(".reply-3").click(function(){
-			parent = $(this).parent().parent().prev().attr("id");
+			parent = $(this).attr("id");
 			root = $(this).attr("id");
 		});
 

@@ -82,7 +82,7 @@ public class CommentServiceImpl implements CommentService{
         commentVo.setId(id);
         Integer parentId = comment.getParentId();
         if(parentId!=0){
-            System.out.println(parentId);
+            System.out.println("父评论是："+parentId);
             commentVo.setParent(parentId);
             Comment comment1 = commentDao.queryCommentById(parentId);
             Integer ParentUserId = comment1.getUserId();
@@ -92,7 +92,12 @@ public class CommentServiceImpl implements CommentService{
         }
         commentVo.setRoot(comment.getRootId());
         Integer userId = comment.getUserId();
-        commentVo.setUsername(userDao.queryUserById(userId).getName());
+        System.out.println("id是"+userId);
+        User queryUserById = userDao.queryUserById(userId);
+        System.out.println(queryUserById);
+        String name = queryUserById.getName();
+        System.out.println("姓名是"+name);
+        commentVo.setUsername(name);
 
         return commentVo;
     }
