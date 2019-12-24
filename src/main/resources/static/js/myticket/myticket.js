@@ -19,7 +19,7 @@ var order = new Vue({
 
 function doGetOrder(order){
 	var url = "order/findOrders";
-	var userId = 7;               //动态获取用户id
+	var userId = sessionStorage.getItem("userId");               //动态获取用户id
 	var params = {"userId":userId};
 	$.post(url,params,function (result) {
 		$.each(result.data,function (index,value) {

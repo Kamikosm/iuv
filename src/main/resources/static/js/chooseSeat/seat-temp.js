@@ -18,8 +18,8 @@ $(function() {
 
 function insertSeats(movie) {
     var url = "ticket/addSeats";
-    var sceneId = 3;                        //需要动态获取场次id
-    var userId = 7;                       //需要动态获取用户id
+    var sceneId = sessionStorage.getItem("sceneId");                        //需要动态获取场次id
+    var userId = sessionStorage.getItem("userId");                       //需要动态获取用户id
     var seatIds = sessionStorage.getItem("seats");   //从前面网页获取座位信息
     var params = {"sceneId":sceneId,"userId":userId,"seatIds":seatIds};
     $.post(url,params,function (result) {
@@ -33,7 +33,7 @@ function insertSeats(movie) {
 function insertOrder(movie) {
     var url = "order/insertOrder";
     var mvName = movie.movieMsg.mvName;
-    var userId = 7;                      //需要动态获取用户id
+    var userId = sessionStorage.getItem("userId");                     //需要动态获取用户id
     var price = sessionStorage.getItem("price"); //从前面网页获取price
     var movieImg = movie.movieMsg.smlPic;
     var seatId = sessionStorage.getItem("seats");     //从前面网页获取座位信息
@@ -53,7 +53,7 @@ function insertOrder(movie) {
 
 function getSeats(){
     var url = "/ticket/getSeats"
-    var params = {sceneId:3};            //需要动态获取场次id
+    var params = {sceneId:sessionStorage.getItem("sceneId")};            //需要动态获取场次id
     $.post(url,params,function (result) {
         var seats = result.data;
         for (var i = 0; i < seats.length; i++) {
@@ -129,7 +129,7 @@ function someChangs(movie) {
 
 function AjaxMovieMsg(movie) {
     var url = "/ticket/getMsg";
-    var params = {movieId:1};        //需要动态获取电影id
+    var params = {movieId:sessionStorage.getItem("movieId")};        //需要动态获取电影id
     $.post(url,params,function (result) {
         movie.movieMsg = result.data;
     });
@@ -137,7 +137,7 @@ function AjaxMovieMsg(movie) {
 
 function AjaxSceneMsg(movie) {
     var url = "/ticket/getSceneMsg"
-    var params = {sceneId:3};       //需要动态获取场次id
+    var params = {sceneId:sessionStorage.getItem("sceneId")};       //需要动态获取场次id
     $.post(url,params,function (result) {
         var date = result.data.sceneTime;
         var time = new Date(date);
